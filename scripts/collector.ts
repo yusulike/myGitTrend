@@ -124,6 +124,8 @@ export function generateFallbackSummary(raw: RawRepoItem): {
   };
 }
 
+let activeWorkingModel = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest';
+
 export async function summarizeBatchWithGemini(
   items: RawRepoItem[],
   apiKey: string,
@@ -132,9 +134,8 @@ export async function summarizeBatchWithGemini(
   if (items.length === 0) return results;
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const preferredModel = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite';
   const candidateModels = Array.from(new Set([
-    preferredModel,
+    activeWorkingModel,
     'gemini-flash-lite-latest',
     'gemini-3.1-flash-lite',
     'gemini-2.5-flash-lite',
@@ -202,6 +203,7 @@ ${idx + 1}. [${item.owner}/${item.repo}]
           }
         }
         success = true;
+        activeWorkingModel = modelName;
         console.log(`[mgt Collector] Successfully summarized with model: ${modelName}`);
       }
     } catch (error: any) {
