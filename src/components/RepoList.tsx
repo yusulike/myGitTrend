@@ -30,14 +30,14 @@ export function RepoList({
 
   if (items.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 px-4 text-center bg-[#161b22] border border-[#30363d] rounded-2xl shadow-lg shadow-black/20">
-        <div className="w-12 h-12 rounded-full bg-[#21262d] flex items-center justify-center text-[#8b949e] mb-3">
+      <div className="flex flex-col items-center justify-center py-20 px-4 text-center bg-white dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-2xl shadow-sm dark:shadow-lg dark:shadow-black/20">
+        <div className="w-12 h-12 rounded-full bg-slate-100 dark:bg-[#21262d] flex items-center justify-center text-slate-400 dark:text-[#8b949e] mb-3">
           <SearchX className="w-6 h-6" />
         </div>
-        <h3 className="text-base font-semibold text-[#f0f6fc] mb-1">
+        <h3 className="text-base font-semibold text-slate-900 dark:text-[#f0f6fc] mb-1">
           검색 및 필터 조건에 맞는 프로젝트가 없습니다
         </h3>
-        <p className="text-xs text-[#8b949e] max-w-sm mb-4">
+        <p className="text-xs text-slate-500 dark:text-[#8b949e] max-w-sm mb-4">
           다른 검색어를 입력하시거나 언어/기간 필터를 조정해 보세요.
         </p>
         {onResetFilters && (

@@ -21,7 +21,7 @@ export function Header({
   onSelectDate,
 }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-30 bg-[#161b22]/95 backdrop-blur-md border-b border-[#30363d] transition-colors">
+    <header className="sticky top-0 z-30 bg-white/95 dark:bg-[#161b22]/95 backdrop-blur-md border-b border-slate-200 dark:border-[#30363d] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         {/* Brand */}
         <div className="flex items-center gap-3">
@@ -30,14 +30,14 @@ export function Header({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-sky-200 to-sky-400 bg-clip-text text-transparent">
+              <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-slate-900 via-sky-800 to-sky-600 dark:from-white dark:via-sky-200 dark:to-sky-400 bg-clip-text text-transparent">
                 mgt
               </span>
-              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#21262d] text-sky-400 border border-[#30363d]">
+              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-sky-50 dark:bg-[#21262d] text-sky-600 dark:text-sky-400 border border-sky-100 dark:border-[#30363d]">
                 myGitTrend
               </span>
             </div>
-            <p className="text-[11px] text-[#8b949e] hidden sm:block">
+            <p className="text-[11px] text-slate-500 dark:text-[#8b949e] hidden sm:block">
               AI가 한국어로 요약해주는 깃허브 트렌드 큐레이션
             </p>
           </div>
@@ -54,10 +54,10 @@ export function Header({
           {/* Bookmarks Toggle Button */}
           <button
             onClick={onOpenBookmarks}
-            className="relative flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-[#21262d] hover:bg-[#30363d] border border-[#30363d] text-[#f0f6fc] transition-colors"
+            className="relative flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-slate-200 dark:bg-[#21262d] dark:hover:bg-[#30363d] border border-slate-200 dark:border-[#30363d] text-slate-700 dark:text-[#f0f6fc] transition-colors"
             title="북마크 모아보기"
           >
-            <Bookmark className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+            <Bookmark className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 fill-amber-500 dark:fill-amber-400" />
             <span className="hidden sm:inline">북마크</span>
             {bookmarkCount > 0 && (
               <span className="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-amber-500 text-white">
@@ -69,11 +69,11 @@ export function Header({
           {/* Dark Mode Toggle */}
           <button
             onClick={onToggleDarkMode}
-            className="p-2 rounded-xl text-[#8b949e] hover:text-[#f0f6fc] hover:bg-[#21262d] border border-transparent hover:border-[#30363d] transition-colors"
+            className="p-2 rounded-xl text-slate-500 dark:text-[#8b949e] hover:text-slate-900 dark:hover:text-[#f0f6fc] hover:bg-slate-100 dark:hover:bg-[#21262d] border border-transparent hover:border-slate-200 dark:hover:border-[#30363d] transition-colors"
             title={isDark ? '라이트 모드로 전환' : '다크 모드로 전환'}
             aria-label="테마 전환"
           >
-            {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4" />}
+            {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
           </button>
 
           {/* GitHub Repo Link */}
@@ -81,7 +81,7 @@ export function Header({
             href="https://github.com/trending"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-xl text-[#8b949e] hover:text-[#f0f6fc] hover:bg-[#21262d] border border-transparent hover:border-[#30363d] transition-colors"
+            className="p-2 rounded-xl text-slate-500 dark:text-[#8b949e] hover:text-slate-900 dark:hover:text-[#f0f6fc] hover:bg-slate-100 dark:hover:bg-[#21262d] border border-transparent hover:border-slate-200 dark:hover:border-[#30363d] transition-colors"
             title="GitHub Trending 바로가기"
             aria-label="GitHub Trending 바로가기"
           >

@@ -100,7 +100,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0d1117] text-[#f0f6fc] transition-colors">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#0d1117] text-slate-900 dark:text-[#f0f6fc] transition-colors">
       <Header
         bookmarkCount={bookmarks.length}
         onOpenBookmarks={() => setIsBookmarkDrawerOpen(true)}
@@ -113,26 +113,26 @@ export default function App() {
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
         {/* Hero Banner / Summary info */}
-        <section className="relative overflow-hidden bg-[#161b22] border border-[#30363d] rounded-2xl p-6 sm:p-8 shadow-lg shadow-black/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <section className="relative overflow-hidden bg-white dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-2xl p-6 sm:p-8 shadow-sm dark:shadow-lg dark:shadow-black/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="absolute -top-24 -left-24 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="relative space-y-2 z-10">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#21262d] border border-[#30363d] text-xs font-semibold text-sky-400">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 dark:bg-[#21262d] border border-sky-100 dark:border-[#30363d] text-xs font-semibold text-sky-700 dark:text-sky-400">
               <Sparkles className="w-3.5 h-3.5" />
               <span>AI 기반 일일 큐레이션</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#f0f6fc]">
+            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-[#f0f6fc]">
               오늘의 GitHub 급상승 프로젝트
             </h1>
-            <p className="text-sm text-[#8b949e] max-w-xl">
+            <p className="text-sm text-slate-600 dark:text-[#8b949e] max-w-xl">
               GitHub에서 주목받고 있는 전 세계 오픈소스 트렌드를 AI가 한국어로 핵심만 짚어 요약해드립니다.
             </p>
           </div>
 
           {data && (
-            <div className="relative z-10 bg-[#0d1117] border border-[#30363d] rounded-xl p-4 text-xs shrink-0 space-y-1">
-              <div className="text-sky-400 font-semibold">데이터 기준일</div>
-              <div className="text-lg font-bold text-[#f0f6fc]">{data.date}</div>
-              <div className="text-[11px] text-[#8b949e]">
+            <div className="relative z-10 bg-slate-50 dark:bg-[#0d1117] border border-slate-200 dark:border-[#30363d] rounded-xl p-4 text-xs shrink-0 space-y-1">
+              <div className="text-sky-600 dark:text-sky-400 font-semibold">데이터 기준일</div>
+              <div className="text-lg font-bold text-slate-900 dark:text-[#f0f6fc]">{data.date}</div>
+              <div className="text-[11px] text-slate-500 dark:text-[#8b949e]">
                 수집된 프로젝트: 총 {data.items.length}개
               </div>
             </div>
@@ -197,21 +197,21 @@ export default function App() {
       />
 
       {/* Footer */}
-      <footer className="mt-12 border-t border-[#30363d] bg-[#0d1117] py-6 text-center text-xs text-[#8b949e]">
+      <footer className="mt-12 border-t border-slate-200 dark:border-[#30363d] bg-white dark:bg-[#0d1117] py-6 text-center text-xs text-slate-500 dark:text-[#8b949e]">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-[#f0f6fc]">mgt</span>
+            <span className="font-bold text-slate-900 dark:text-[#f0f6fc]">mgt</span>
             <span>•</span>
             <span>myGitTrend © {new Date().getFullYear()}</span>
           </div>
-          <div className="flex items-center gap-4 text-[#8b949e]">
+          <div className="flex items-center gap-4 text-slate-500 dark:text-[#8b949e]">
             <span>Powered by GitHub Actions & Gemini AI</span>
             <span>•</span>
             <a
               href="https://github.com/trending"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#f0f6fc] underline transition-colors"
+              className="hover:text-slate-900 dark:hover:text-[#f0f6fc] underline transition-colors"
             >
               GitHub Trending
             </a>
