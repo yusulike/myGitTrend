@@ -5,6 +5,22 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { TrendItem, TrendSnapshot, Period } from '../src/types/trend';
 import { generateMockSnapshot } from './mockData';
 
+// Auto-load .env if present in root
+const envPath = path.resolve(process.cwd(), '.env');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  envContent.split('\n').forEach((line) => {
+    const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)?\s*$/);
+    if (match) {
+      const key = match[1];
+      let value = (match[2] || '').trim().replace(/^['"](.*)['"]$/, '$1');
+      if (!process.env[key]) {
+        process.env[key] = value;
+      }
+    }
+  });
+}
+
 export interface RawRepoItem {
   owner: string;
   repo: string;
@@ -114,7 +130,8 @@ export async function summarizeWithGemini(
 ): Promise<{ summaryKo: string; keyFeaturesKo: string[]; tags: string[] }> {
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    const modelName = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
+    const model = genAI.getGenerativeModel({ model: modelName });
 
     const prompt = `
 당신은 깃허브 인기 오픈소스 프로젝트를 개발자에게 소개하는 기술 큐레이터입니다.
