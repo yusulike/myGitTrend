@@ -1,0 +1,1034 @@
+{
+  "date": "2026-10-16",
+  "collectedAt": "2026-10-16T17:41:17.667Z",
+  "languages": [
+    "All",
+    "C++",
+    "Go",
+    "HTML",
+    "Java",
+    "JavaScript",
+    "Kotlin",
+    "Python",
+    "Rust",
+    "Shell",
+    "TypeScript"
+  ],
+  "items": [
+    {
+      "id": "anthropics/claude-plugins-official",
+      "owner": "anthropics",
+      "repo": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 40204,
+      "forks": 4379,
+      "starsPeriod": 1552,
+      "since": "daily",
+      "summaryKo": "anthropics/claude-plugins-official - Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 40,204개 획득",
+        "최근 증가 추이: +1,552 stars (daily)"
+      ],
+      "tags": [
+        "Python",
+        "AI"
+      ]
+    },
+    {
+      "id": "K-Dense-AI/scientific-agent-skills",
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "stars": 51282,
+      "forks": 4545,
+      "starsPeriod": 1158,
+      "since": "daily",
+      "summaryKo": "K-Dense-AI/scientific-agent-skills - Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 51,282개 획득",
+        "최근 증가 추이: +1,158 stars (daily)"
+      ],
+      "tags": [
+        "Python",
+        "AI",
+        "Backend"
+      ]
+    },
+    {
+      "id": "affaan-m/ECC",
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 281184,
+      "forks": 41812,
+      "starsPeriod": 1057,
+      "since": "daily",
+      "summaryKo": "affaan-m/ECC - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: JavaScript",
+        "깃허브 스타: 281,184개 획득",
+        "최근 증가 추이: +1,057 stars (daily)"
+      ],
+      "tags": [
+        "JavaScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "HKUDS/CLI-Anything",
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 53350,
+      "forks": 4834,
+      "starsPeriod": 323,
+      "since": "daily",
+      "summaryKo": "HKUDS/CLI-Anything - \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 53,350개 획득",
+        "최근 증가 추이: +323 stars (daily)"
+      ],
+      "tags": [
+        "Python",
+        "AI",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "mksglu/context-mode",
+      "owner": "mksglu",
+      "repo": "context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 30118,
+      "forks": 2117,
+      "starsPeriod": 449,
+      "since": "daily",
+      "summaryKo": "mksglu/context-mode - Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 30,118개 획득",
+        "최근 증가 추이: +449 stars (daily)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "ruvnet/ruflo",
+      "owner": "ruvnet",
+      "repo": "ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 75521,
+      "forks": 8954,
+      "starsPeriod": 672,
+      "since": "daily",
+      "summaryKo": "ruvnet/ruflo - 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 75,521개 획득",
+        "최근 증가 추이: +672 stars (daily)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "Frontend",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "android/skills",
+      "owner": "android",
+      "repo": "skills",
+      "url": "https://github.com/android/skills",
+      "description": "No description provided.",
+      "language": "Kotlin",
+      "stars": 7964,
+      "forks": 526,
+      "starsPeriod": 35,
+      "since": "daily",
+      "summaryKo": "skills는 Kotlin 기반의 오픈소스 프로젝트입니다.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Kotlin",
+        "깃허브 스타: 7,964개 획득",
+        "최근 증가 추이: +35 stars (daily)"
+      ],
+      "tags": [
+        "Kotlin"
+      ]
+    },
+    {
+      "id": "obra/superpowers",
+      "owner": "obra",
+      "repo": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 300528,
+      "forks": 26837,
+      "starsPeriod": 973,
+      "since": "daily",
+      "summaryKo": "obra/superpowers - An agentic skills framework & software development methodology that works.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Shell",
+        "깃허브 스타: 300,528개 획득",
+        "최근 증가 추이: +973 stars (daily)"
+      ],
+      "tags": [
+        "Shell",
+        "AI"
+      ]
+    },
+    {
+      "id": "cursor/plugins",
+      "owner": "cursor",
+      "repo": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 11851,
+      "forks": 1152,
+      "starsPeriod": 282,
+      "since": "daily",
+      "summaryKo": "cursor/plugins - Cursor plugin specification and official plugins",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 11,851개 획득",
+        "최근 증가 추이: +282 stars (daily)"
+      ],
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "id": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 70574,
+      "forks": 7731,
+      "starsPeriod": 2301,
+      "since": "daily",
+      "summaryKo": "debpalash/VoiceStudio - VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 70,574개 획득",
+        "최근 증가 추이: +2,301 stars (daily)"
+      ],
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "id": "MadsLorentzen/ai-job-search",
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 48111,
+      "forks": 16560,
+      "starsPeriod": 879,
+      "since": "daily",
+      "summaryKo": "MadsLorentzen/ai-job-search - The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 48,111개 획득",
+        "최근 증가 추이: +879 stars (daily)"
+      ],
+      "tags": [
+        "Python",
+        "AI",
+        "Frontend"
+      ]
+    },
+    {
+      "id": "hmjz100/LinkSwift",
+      "owner": "hmjz100",
+      "repo": "LinkSwift",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "language": "JavaScript",
+      "stars": 23548,
+      "forks": 1428,
+      "starsPeriod": 702,
+      "since": "daily",
+      "summaryKo": "hmjz100/LinkSwift - 一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: JavaScript",
+        "깃허브 스타: 23,548개 획득",
+        "최근 증가 추이: +702 stars (daily)"
+      ],
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "xerj-org/xerj",
+      "owner": "xerj-org",
+      "repo": "xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "language": "Rust",
+      "stars": 6700,
+      "forks": 339,
+      "starsPeriod": 1647,
+      "since": "daily",
+      "summaryKo": "xerj-org/xerj - XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 6,700개 획득",
+        "최근 증가 추이: +1,647 stars (daily)"
+      ],
+      "tags": [
+        "Rust",
+        "AI",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "morluto/rea",
+      "owner": "morluto",
+      "repo": "rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 287373,
+      "forks": 72368,
+      "starsPeriod": 239477,
+      "since": "weekly",
+      "summaryKo": "morluto/rea - Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 287,373개 획득",
+        "최근 증가 추이: +239,477 stars (weekly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "storytold/artcraft",
+      "owner": "storytold",
+      "repo": "artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 30288,
+      "forks": 4821,
+      "starsPeriod": 22319,
+      "since": "weekly",
+      "summaryKo": "storytold/artcraft - ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 30,288개 획득",
+        "최근 증가 추이: +22,319 stars (weekly)"
+      ],
+      "tags": [
+        "Rust"
+      ]
+    },
+    {
+      "id": "boykopovar/AnyPS5",
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 39603,
+      "forks": 3548,
+      "starsPeriod": 25174,
+      "since": "weekly",
+      "summaryKo": "boykopovar/AnyPS5 - Tool for automatic PS5 executables porting to Linux and Windows",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: C++",
+        "깃허브 스타: 39,603개 획득",
+        "최근 증가 추이: +25,174 stars (weekly)"
+      ],
+      "tags": [
+        "C++",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 56319,
+      "forks": 3567,
+      "starsPeriod": 10237,
+      "since": "weekly",
+      "summaryKo": "cathrynlavery/diagram-design - Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: HTML",
+        "깃허브 스타: 56,319개 획득",
+        "최근 증가 추이: +10,237 stars (weekly)"
+      ],
+      "tags": [
+        "HTML",
+        "AI"
+      ]
+    },
+    {
+      "id": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "repo": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 65147,
+      "forks": 5869,
+      "starsPeriod": 5318,
+      "since": "weekly",
+      "summaryKo": "heygen-com/hyperframes - Write HTML. Render video. Built for agents.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 65,147개 획득",
+        "최근 증가 추이: +5,318 stars (weekly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "Frontend"
+      ]
+    },
+    {
+      "id": "mattpocock/skills",
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 293823,
+      "forks": 24640,
+      "starsPeriod": 12147,
+      "since": "weekly",
+      "summaryKo": "mattpocock/skills - Skills for Real Engineers. Straight from my .agents directory.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Shell",
+        "깃허브 스타: 293,823개 획득",
+        "최근 증가 추이: +12,147 stars (weekly)"
+      ],
+      "tags": [
+        "Shell",
+        "AI"
+      ]
+    },
+    {
+      "id": "NationalSecurityAgency/ghidra",
+      "owner": "NationalSecurityAgency",
+      "repo": "ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 89469,
+      "forks": 9997,
+      "starsPeriod": 6614,
+      "since": "weekly",
+      "summaryKo": "NationalSecurityAgency/ghidra - Ghidra is a software reverse engineering (SRE) framework",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Java",
+        "깃허브 스타: 89,469개 획득",
+        "최근 증가 추이: +6,614 stars (weekly)"
+      ],
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "mksglu/context-mode",
+      "owner": "mksglu",
+      "repo": "context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 30118,
+      "forks": 2117,
+      "starsPeriod": 4038,
+      "since": "weekly",
+      "summaryKo": "mksglu/context-mode - Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 30,118개 획득",
+        "최근 증가 추이: +4,038 stars (weekly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "ranxianglei/billion-context",
+      "owner": "ranxianglei",
+      "repo": "billion-context",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 1514,
+      "forks": 121,
+      "starsPeriod": 659,
+      "since": "weekly",
+      "summaryKo": "ranxianglei/billion-context - A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 1,514개 획득",
+        "최근 증가 추이: +659 stars (weekly)"
+      ],
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "id": "anthropics/claude-plugins-official",
+      "owner": "anthropics",
+      "repo": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 40204,
+      "forks": 4379,
+      "starsPeriod": 2217,
+      "since": "weekly",
+      "summaryKo": "anthropics/claude-plugins-official - Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 40,204개 획득",
+        "최근 증가 추이: +2,217 stars (weekly)"
+      ],
+      "tags": [
+        "Python",
+        "AI"
+      ]
+    },
+    {
+      "id": "earthtojake/text-to-cad",
+      "owner": "earthtojake",
+      "repo": "text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.",
+      "language": "Python",
+      "stars": 20919,
+      "forks": 2068,
+      "starsPeriod": 2244,
+      "since": "weekly",
+      "summaryKo": "earthtojake/text-to-cad - Give your agent CAD superpowers.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 20,919개 획득",
+        "최근 증가 추이: +2,244 stars (weekly)"
+      ],
+      "tags": [
+        "Python",
+        "AI"
+      ]
+    },
+    {
+      "id": "cloudflare/security-audit-skill",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 30138,
+      "forks": 1871,
+      "starsPeriod": 25242,
+      "since": "monthly",
+      "summaryKo": "cloudflare/security-audit-skill - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: JavaScript",
+        "깃허브 스타: 30,138개 획득",
+        "최근 증가 추이: +25,242 stars (monthly)"
+      ],
+      "tags": [
+        "JavaScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "paperclipai/paperclip",
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "stars": 103080,
+      "forks": 17249,
+      "starsPeriod": 22181,
+      "since": "monthly",
+      "summaryKo": "paperclipai/paperclip - The open-source app everyone uses to manage agents at work",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 103,080개 획득",
+        "최근 증가 추이: +22,181 stars (monthly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "anthropics/financial-services",
+      "owner": "anthropics",
+      "repo": "financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "No description provided.",
+      "language": "Python",
+      "stars": 40070,
+      "forks": 5627,
+      "starsPeriod": 5252,
+      "since": "monthly",
+      "summaryKo": "financial-services는 Python 기반의 오픈소스 프로젝트입니다.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 40,070개 획득",
+        "최근 증가 추이: +5,252 stars (monthly)"
+      ],
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "id": "heygen-com/hyperframes",
+      "owner": "heygen-com",
+      "repo": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 65147,
+      "forks": 5869,
+      "starsPeriod": 14246,
+      "since": "monthly",
+      "summaryKo": "heygen-com/hyperframes - Write HTML. Render video. Built for agents.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 65,147개 획득",
+        "최근 증가 추이: +14,246 stars (monthly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "Frontend"
+      ]
+    },
+    {
+      "id": "vectorize-io/hindsight",
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "stars": 50422,
+      "forks": 6099,
+      "starsPeriod": 26652,
+      "since": "monthly",
+      "summaryKo": "vectorize-io/hindsight - Hindsight: Agent Memory That Learns",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 50,422개 획득",
+        "최근 증가 추이: +26,652 stars (monthly)"
+      ],
+      "tags": [
+        "Python",
+        "AI"
+      ]
+    },
+    {
+      "id": "debpalash/VoiceStudio",
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 70574,
+      "forks": 7731,
+      "starsPeriod": 38181,
+      "since": "monthly",
+      "summaryKo": "debpalash/VoiceStudio - VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 70,574개 획득",
+        "최근 증가 추이: +38,181 stars (monthly)"
+      ],
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "id": "affaan-m/ECC",
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 281184,
+      "forks": 41812,
+      "starsPeriod": 22953,
+      "since": "monthly",
+      "summaryKo": "affaan-m/ECC - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: JavaScript",
+        "깃허브 스타: 281,184개 획득",
+        "최근 증가 추이: +22,953 stars (monthly)"
+      ],
+      "tags": [
+        "JavaScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "agent-substrate/substrate",
+      "owner": "agent-substrate",
+      "repo": "substrate",
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": "Agent Substrate: the core system",
+      "language": "Go",
+      "stars": 5288,
+      "forks": 583,
+      "starsPeriod": 3368,
+      "since": "monthly",
+      "summaryKo": "agent-substrate/substrate - Agent Substrate: the core system",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Go",
+        "깃허브 스타: 5,288개 획득",
+        "최근 증가 추이: +3,368 stars (monthly)"
+      ],
+      "tags": [
+        "Go",
+        "AI"
+      ]
+    },
+    {
+      "id": "anthropics/knowledge-work-plugins",
+      "owner": "anthropics",
+      "repo": "knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 29864,
+      "forks": 3377,
+      "starsPeriod": 5835,
+      "since": "monthly",
+      "summaryKo": "anthropics/knowledge-work-plugins - Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 29,864개 획득",
+        "최근 증가 추이: +5,835 stars (monthly)"
+      ],
+      "tags": [
+        "Python",
+        "AI"
+      ]
+    },
+    {
+      "id": "mksglu/context-mode",
+      "owner": "mksglu",
+      "repo": "context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 30118,
+      "forks": 2117,
+      "starsPeriod": 6744,
+      "since": "monthly",
+      "summaryKo": "mksglu/context-mode - Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 30,118개 획득",
+        "최근 증가 추이: +6,744 stars (monthly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "NVIDIA/OpenShell",
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 16420,
+      "forks": 1801,
+      "starsPeriod": 7813,
+      "since": "monthly",
+      "summaryKo": "NVIDIA/OpenShell - OpenShell is the safe, private runtime for autonomous AI agents.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 16,420개 획득",
+        "최근 증가 추이: +7,813 stars (monthly)"
+      ],
+      "tags": [
+        "Rust",
+        "AI"
+      ]
+    },
+    {
+      "id": "tashfeenahmed/freellmapi",
+      "owner": "tashfeenahmed",
+      "repo": "freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 36122,
+      "forks": 4870,
+      "starsPeriod": 9499,
+      "since": "monthly",
+      "summaryKo": "tashfeenahmed/freellmapi - 7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 36,122개 획득",
+        "최근 증가 추이: +9,499 stars (monthly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "TencentCloud/Octop",
+      "owner": "TencentCloud",
+      "repo": "Octop",
+      "url": "https://github.com/TencentCloud/Octop",
+      "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "language": "Python",
+      "stars": 9677,
+      "forks": 1223,
+      "starsPeriod": 7082,
+      "since": "monthly",
+      "summaryKo": "TencentCloud/Octop - A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 9,677개 획득",
+        "최근 증가 추이: +7,082 stars (monthly)"
+      ],
+      "tags": [
+        "Python",
+        "AI"
+      ]
+    },
+    {
+      "id": "trycua/cua",
+      "owner": "trycua",
+      "repo": "cua",
+      "url": "https://github.com/trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "language": "Rust",
+      "stars": 29949,
+      "forks": 2145,
+      "starsPeriod": 7322,
+      "since": "monthly",
+      "summaryKo": "trycua/cua - Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 29,949개 획득",
+        "최근 증가 추이: +7,322 stars (monthly)"
+      ],
+      "tags": [
+        "Rust",
+        "AI"
+      ]
+    },
+    {
+      "id": "NationalSecurityAgency/ghidra",
+      "owner": "NationalSecurityAgency",
+      "repo": "ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 89469,
+      "forks": 9997,
+      "starsPeriod": 12092,
+      "since": "monthly",
+      "summaryKo": "NationalSecurityAgency/ghidra - Ghidra is a software reverse engineering (SRE) framework",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Java",
+        "깃허브 스타: 89,469개 획득",
+        "최근 증가 추이: +12,092 stars (monthly)"
+      ],
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "addyosmani/agent-skills",
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 107305,
+      "forks": 11167,
+      "starsPeriod": 13095,
+      "since": "monthly",
+      "summaryKo": "addyosmani/agent-skills - Production-grade engineering skills for AI coding agents.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: JavaScript",
+        "깃허브 스타: 107,305개 획득",
+        "최근 증가 추이: +13,095 stars (monthly)"
+      ],
+      "tags": [
+        "JavaScript",
+        "AI"
+      ]
+    },
+    {
+      "id": "anthropics/claude-code",
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "TypeScript",
+      "stars": 151211,
+      "forks": 26843,
+      "starsPeriod": 6760,
+      "since": "monthly",
+      "summaryKo": "anthropics/claude-code - Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 151,211개 획득",
+        "최근 증가 추이: +6,760 stars (monthly)"
+      ],
+      "tags": [
+        "TypeScript",
+        "AI",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "Tencent/WeKnora",
+      "owner": "Tencent",
+      "repo": "WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "stars": 34372,
+      "forks": 4585,
+      "starsPeriod": 10698,
+      "since": "monthly",
+      "summaryKo": "Tencent/WeKnora - Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Go",
+        "깃허브 스타: 34,372개 획득",
+        "최근 증가 추이: +10,698 stars (monthly)"
+      ],
+      "tags": [
+        "Go",
+        "AI"
+      ]
+    },
+    {
+      "id": "rohitg00/ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 70155,
+      "forks": 12333,
+      "starsPeriod": 15242,
+      "since": "monthly",
+      "summaryKo": "rohitg00/ai-engineering-from-scratch - Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 70,155개 획득",
+        "최근 증가 추이: +15,242 stars (monthly)"
+      ],
+      "tags": [
+        "Python",
+        "AI",
+        "Frontend",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "cursor/plugins",
+      "owner": "cursor",
+      "repo": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 11851,
+      "forks": 1152,
+      "starsPeriod": 3928,
+      "since": "monthly",
+      "summaryKo": "cursor/plugins - Cursor plugin specification and official plugins",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 11,851개 획득",
+        "최근 증가 추이: +3,928 stars (monthly)"
+      ],
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "id": "longbridge/gpui-kit",
+      "owner": "longbridge",
+      "repo": "gpui-kit",
+      "url": "https://github.com/longbridge/gpui-kit",
+      "description": "Rust GUI components for building fantastic cross-platform desktop application by using GPUI.",
+      "language": "Rust",
+      "stars": 17766,
+      "forks": 1078,
+      "starsPeriod": 3233,
+      "since": "monthly",
+      "summaryKo": "longbridge/gpui-kit - Rust GUI components for building fantastic cross-platform desktop application by using GPUI.",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 17,766개 획득",
+        "최근 증가 추이: +3,233 stars (monthly)"
+      ],
+      "tags": [
+        "Rust",
+        "Frontend",
+        "DevTools"
+      ]
+    },
+    {
+      "id": "VectifyAI/PageIndex",
+      "owner": "VectifyAI",
+      "repo": "PageIndex",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "language": "Python",
+      "stars": 39176,
+      "forks": 3401,
+      "starsPeriod": 3625,
+      "since": "monthly",
+      "summaryKo": "VectifyAI/PageIndex - 📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "keyFeaturesKo": [
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 39,176개 획득",
+        "최근 증가 추이: +3,625 stars (monthly)"
+      ],
+      "tags": [
+        "Python"
+      ]
+    }
+  ]
+}
