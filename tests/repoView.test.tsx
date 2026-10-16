@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import React from 'react';
 import { RepoCard } from '../src/components/RepoCard';
 import { RepoList } from '../src/components/RepoList';
 import { TrendItem } from '../src/types/trend';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { TrendItem } from '../types/trend';
 import { RepoCard } from './RepoCard';
 import { SearchX, Loader2 } from 'lucide-react';

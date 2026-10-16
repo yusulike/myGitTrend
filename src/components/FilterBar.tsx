@@ -1,4 +1,3 @@
-import React from 'react';
 import { FilterState, Period, SortOption } from '../types/trend';
 import { Flame, Calendar, Sparkles, ArrowUpDown, RotateCcw } from 'lucide-react';
 

@@ -1,5 +1,4 @@
-import React from 'react';
-import { History, CalendarDays } from 'lucide-react';
+import { History } from 'lucide-react';
 
 interface DateSelectorProps {
   availableDates: string[];

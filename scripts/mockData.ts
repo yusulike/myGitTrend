@@ -1,4 +1,4 @@
-import { TrendItem, TrendSnapshot, Period } from '../src/types/trend';
+import { TrendItem, TrendSnapshot } from '../src/types/trend';
 
 export const MOCK_TRENDING_ITEMS: TrendItem[] = [
   {
