@@ -131,12 +131,11 @@ export async function summarizeBatchWithGemini(
   const results = new Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[] }>();
   if (items.length === 0) return results;
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const modelName = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
-    const model = genAI.getGenerativeModel({ model: modelName });
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const preferredModel = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
+  const candidateModels = Array.from(new Set([preferredModel, 'gemini-1.5-flash', 'gemini-2.0-flash']));
 
-    const prompt = `
+  const prompt = `
 당신은 깃허브 인기 오픈소스 프로젝트를 개발자에게 소개하는 기술 큐레이터입니다.
 아래 제공된 ${items.length}개의 오픈소스 프로젝트 목록을 각각 분석하여 한국어로 요약해주세요.
 
@@ -158,25 +157,35 @@ ${idx + 1}. [${item.owner}/${item.repo}]
 ]
 `;
 
-    console.log(`[mgt Collector] Calling Gemini API (${modelName}) with batch of ${items.length} repos (1 API request)...`);
-    const result = await model.generateContent(prompt);
-    const text = result.response.text().trim();
-    const cleanJson = text.replace(/^```json/, '').replace(/^```/, '').replace(/```$/, '').trim();
-    const parsedArray = JSON.parse(cleanJson);
+  let success = false;
+  for (const modelName of candidateModels) {
+    if (success) break;
+    try {
+      console.log(`[mgt Collector] Calling Gemini API (${modelName}) with batch of ${items.length} repos (1 API request)...`);
+      const model = genAI.getGenerativeModel({ model: modelName });
+      const result = await model.generateContent(prompt);
+      const text = result.response.text().trim();
+      const cleanJson = text.replace(/^```json/, '').replace(/^```/, '').replace(/```$/, '').trim();
+      const parsedArray = JSON.parse(cleanJson);
 
-    if (Array.isArray(parsedArray)) {
-      for (const entry of parsedArray) {
-        if (entry.id && entry.summaryKo) {
-          results.set(entry.id, {
-            summaryKo: entry.summaryKo,
-            keyFeaturesKo: Array.isArray(entry.keyFeaturesKo) ? entry.keyFeaturesKo : [],
-            tags: Array.isArray(entry.tags) ? entry.tags : [],
-          });
+      if (Array.isArray(parsedArray)) {
+        for (const entry of parsedArray) {
+          if (entry.id && entry.summaryKo) {
+            results.set(entry.id, {
+              summaryKo: entry.summaryKo,
+              keyFeaturesKo: Array.isArray(entry.keyFeaturesKo) ? entry.keyFeaturesKo : [],
+              tags: Array.isArray(entry.tags) ? entry.tags : [],
+            });
+          }
         }
+        success = true;
+        console.log(`[mgt Collector] Successfully summarized with model: ${modelName}`);
       }
+    } catch (error: any) {
+      console.warn(`[Gemini API] Error with ${modelName} (${error?.status || error?.message}): trying fallback model...`);
+      // Brief pause before trying next candidate model
+      await new Promise((r) => setTimeout(r, 1000));
     }
-  } catch (error) {
-    console.warn('[Gemini API] Batch summarization error, falling back to heuristic summaries:', error);
   }
 
   // Fill in any missing items in batch with fallback
