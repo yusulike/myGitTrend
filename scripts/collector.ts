@@ -142,22 +142,33 @@ export async function summarizeBatchWithGemini(
   ]));
 
   const prompt = `
-당신은 깃허브 인기 오픈소스 프로젝트를 개발자에게 소개하는 기술 큐레이터입니다.
-아래 제공된 ${items.length}개의 오픈소스 프로젝트 목록을 각각 분석하여 한국어로 요약해주세요.
+당신은 전 세계 오픈소스 트렌드를 분석하고 실무 개발자들에게 핵심 기술 가치를 전달하는 수석 소프트웨어 아키텍트이자 테크 큐레이터입니다.
+아래 제공된 ${items.length}개의 프로젝트를 깊이 있게 분석하여, 한국 개발자가 직관적으로 가치를 체감할 수 있는 최고 품질의 큐레이션 요약을 작성해주세요.
+
+[품질 작성 지침]
+1. 원문 직역 금지: 단순 영문 번역투("~을 위한 도구입니다")를 지양하고, 전문적이고 명쾌한 개발자 언어로 서술하세요.
+2. 핵심 요약 (summaryKo):
+   - "기존의 어떤 고질적인 문제/한계를 해결하는지", "기존 대안 대비 핵심 차별점/혁신 요소가 무엇인지"를 1~2문장으로 임팩트 있게 작성하세요.
+   - 예시: "기존 Docker 빌드 및 캐싱 병목을 해결하기 위해 Rust로 재작성된 초고속 컨테이너 빌더로, CI/CD 배포 파이프라인 시간을 최대 80% 단축해줍니다."
+3. 주요 특징 (keyFeaturesKo):
+   - 기술적 아키텍처/성능 차별점, 지원 생태계, 실무 추천 대상을 중심으로 3~4개의 명확한 불릿 포인트를 작성하세요.
+4. 기술 태그 (tags):
+   - 언어명 외에 "LLM-Agent", "CI-CD", "Zero-Dependency", "In-Memory-DB", "High-Performance" 등 실무 기술 키워드 3~4개를 정확하게 추출하세요.
 
 [프로젝트 목록]
 ${items.map((item, idx) => `
 ${idx + 1}. [${item.owner}/${item.repo}]
-- 언어: ${item.language}
+- 주 언어: ${item.language}
 - 원문 설명: ${item.description}
+- 전체 Star: ${item.stars.toLocaleString()}개 / 최근 급상승: +${item.starsPeriod.toLocaleString()} stars (${item.since})
 `).join('')}
 
-반드시 아래와 같은 JSON 배열 형식으로만 응답해주세요 (마크다운 백틱 없이 순수 JSON만 출력):
+반드시 아래 JSON 배열 형식으로만 응답해주세요 (마크다운 백틱 없이 순수 JSON만 출력):
 [
   {
     "id": "owner/repo",
-    "summaryKo": "개발자가 핵심 가치를 바로 이해할 수 있는 명확한 한국어 1~2문장 요약",
-    "keyFeaturesKo": ["핵심 특징 1", "핵심 특징 2", "핵심 특징 3"],
+    "summaryKo": "구체적 문제 해결과 차별점이 드러난 명쾌한 한국어 1~2문장 요약",
+    "keyFeaturesKo": ["아키텍처 및 성능 특징", "생태계 및 연동 지원", "실무 적용 이점"],
     "tags": ["태그1", "태그2", "태그3"]
   }
 ]
@@ -277,9 +288,9 @@ export async function runCollection(): Promise<TrendSnapshot> {
   const uniqueRepos = Array.from(uniqueRepoMap.values());
   console.log(`[mgt Collector] Found ${allRaw.length} total trending items (${uniqueRepos.length} unique repos).`);
 
-  // 2. Batch summarize with Gemini (chunks of 20 repos per request)
-  // With 20 repos per request, 40 unique repos will use ONLY 2 API calls!
-  const BATCH_SIZE = 20;
+  // 2. Batch summarize with Gemini (chunks of 6 repos per request for deep, high-quality analysis)
+  // 38 unique repos / 6 = ~6-7 requests total, well within the 500 RPD free tier limit!
+  const BATCH_SIZE = 6;
   const aiSummaries = new Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[] }>();
 
   if (apiKey) {
