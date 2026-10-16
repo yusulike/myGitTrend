@@ -11,7 +11,7 @@ export function DateSelector({
   selectedDate,
   onSelectDate,
 }: DateSelectorProps) {
-  if (availableDates.length <= 1 && !selectedDate) {
+  if (availableDates.length === 0 && !selectedDate) {
     return null;
   }
 
