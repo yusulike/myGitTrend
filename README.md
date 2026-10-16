@@ -1,8 +1,10 @@
 # 🚀 mgt (myGitTrend)
 
 > **GitHub 급상승 트렌드를 AI(Google Gemini)가 한국어로 핵심만 짚어 요약해주는 서버리스 대시보드**
+> 
+> 🌐 **배포 사이트 바로가기**: [https://yusulike.github.io/myGitTrend/](https://yusulike.github.io/myGitTrend/)
 
-[![Daily Trend Collection & Deploy](https://github.com/your-username/myGitTrend/actions/workflows/daily-trend.yml/badge.svg)](https://github.com/your-username/myGitTrend/actions/workflows/daily-trend.yml)
+[![Daily Trend Collection & Deploy](https://github.com/yusulike/myGitTrend/actions/workflows/daily-trend.yml/badge.svg)](https://github.com/yusulike/myGitTrend/actions/workflows/daily-trend.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -10,7 +12,7 @@
 ## ✨ 핵심 기능
 
 - ⚡ **AI 핵심 요약 (Korean Curations)**:
-  - Google Gemini 2.5 Flash를 활용하여 각 오픈소스 프로젝트의 핵심 가치 1~2줄 요약, 주요 특징 3~4개, 카테고리 태그 자동 생성.
+  - Google Gemini Flash Lite를 활용하여 각 오픈소스 프로젝트의 핵심 가치 1~2줄 요약, 주요 특징 3~4개, 카테고리 태그 자동 생성.
 - 📅 **다양한 기간 및 언어 필터링**:
   - `오늘 (Daily)`, `이번 주 (Weekly)`, `이번 달 (Monthly)` 기간 전환.
   - TypeScript, Rust, Python, Go 등 주 프로그래밍 언어별 원클릭 필터 칩.
