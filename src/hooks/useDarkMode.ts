@@ -7,9 +7,9 @@ export function useDarkMode() {
     try {
       const saved = localStorage.getItem(THEME_KEY);
       if (saved) return saved === 'dark';
-      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return true; // Default to dark gray theme
     } catch {
-      return false;
+      return true;
     }
   });
 
