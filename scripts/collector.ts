@@ -132,8 +132,14 @@ export async function summarizeBatchWithGemini(
   if (items.length === 0) return results;
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const preferredModel = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
-  const candidateModels = Array.from(new Set([preferredModel, 'gemini-1.5-flash', 'gemini-2.0-flash']));
+  const preferredModel = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite';
+  const candidateModels = Array.from(new Set([
+    preferredModel,
+    'gemini-flash-lite-latest',
+    'gemini-3.1-flash-lite',
+    'gemini-2.5-flash-lite',
+    'gemini-1.5-flash',
+  ]));
 
   const prompt = `
 당신은 깃허브 인기 오픈소스 프로젝트를 개발자에게 소개하는 기술 큐레이터입니다.
@@ -162,7 +168,13 @@ ${idx + 1}. [${item.owner}/${item.repo}]
     if (success) break;
     try {
       console.log(`[mgt Collector] Calling Gemini API (${modelName}) with batch of ${items.length} repos (1 API request)...`);
-      const model = genAI.getGenerativeModel({ model: modelName });
+      const model = genAI.getGenerativeModel({
+        model: modelName,
+        generationConfig: {
+          responseMimeType: 'application/json',
+          temperature: 0.2,
+        },
+      });
       const result = await model.generateContent(prompt);
       const text = result.response.text().trim();
       const cleanJson = text.replace(/^```json/, '').replace(/^```/, '').replace(/```$/, '').trim();
