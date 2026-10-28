@@ -61,6 +61,21 @@ export function DateSelector({
   const [viewYear, setViewYear] = useState(initialView.year);
   const [viewMonth, setViewMonth] = useState(initialView.month);
 
+  // Selected date formatted for trigger button display
+  const triggerLabel = useMemo(() => {
+    if (!selectedDate) {
+      return '최신 트렌드';
+    }
+    const parsed = parseDateStr(selectedDate);
+    if (!parsed) return selectedDate;
+    return `${parsed.year}.${pad2(parsed.month + 1)}.${pad2(parsed.day)}`;
+  }, [selectedDate]);
+
+  const todayStr = useMemo(() => {
+    const d = new Date();
+    return formatDateStr(d.getFullYear(), d.getMonth(), d.getDate());
+  }, []);
+
   // Sync view when selectedDate changes from outside
   useEffect(() => {
     if (selectedDate) {
@@ -96,6 +111,7 @@ export function DateSelector({
     };
   }, [isOpen]);
 
+  // If no dates are available and no date selected, hide selector safely without breaking hook order
   if (availableDates.length === 0 && !selectedDate) {
     return null;
   }
@@ -135,21 +151,6 @@ export function DateSelector({
   const firstDayOfWeek = new Date(viewYear, viewMonth, 1).getDay();
   const totalDaysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
   const totalDaysInPrevMonth = new Date(viewYear, viewMonth, 0).getDate();
-
-  // Selected date formatted for trigger button display
-  const triggerLabel = useMemo(() => {
-    if (!selectedDate) {
-      return '최신 트렌드';
-    }
-    const parsed = parseDateStr(selectedDate);
-    if (!parsed) return selectedDate;
-    return `${parsed.year}.${pad2(parsed.month + 1)}.${pad2(parsed.day)}`;
-  }, [selectedDate]);
-
-  const todayStr = useMemo(() => {
-    const d = new Date();
-    return formatDateStr(d.getFullYear(), d.getMonth(), d.getDate());
-  }, []);
 
   return (
     <div className="relative inline-flex items-center" ref={containerRef}>

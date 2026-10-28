@@ -134,4 +134,29 @@ describe('DateSelector Calendar Component', () => {
     fireEvent.click(screen.getByLabelText('이전 달'));
     expect(screen.getByText(/2026년 9월/i)).toBeDefined();
   });
+
+  it('safely handles transition from empty availableDates to populated dates without hook errors', () => {
+    const { rerender } = render(
+      <DateSelector
+        availableDates={[]}
+        selectedDate=""
+        onSelectDate={() => {}}
+      />
+    );
+
+    // Initial render with empty dates should return null
+    expect(screen.queryByRole('button')).toBeNull();
+
+    // Rerender when data arrives (previously threw React Error #310)
+    rerender(
+      <DateSelector
+        availableDates={['2026-10-16']}
+        selectedDate=""
+        onSelectDate={() => {}}
+      />
+    );
+
+    // Trigger button should now render cleanly without React hook order error
+    expect(screen.getByText('최신 트렌드')).toBeDefined();
+  });
 });
