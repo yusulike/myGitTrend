@@ -8,7 +8,6 @@ interface SearchScopeTabsProps {
   globalCount: number;
   selectedDate?: string;
   searchQuery: string;
-  archiveStartDate?: string;
 }
 
 export function SearchScopeTabs({
@@ -18,7 +17,6 @@ export function SearchScopeTabs({
   globalCount,
   selectedDate,
   searchQuery,
-  archiveStartDate,
 }: SearchScopeTabsProps) {
   const dateLabel = selectedDate ? selectedDate : '실시간 최신';
 
@@ -59,11 +57,6 @@ export function SearchScopeTabs({
         >
           <Archive className="w-3.5 h-3.5" />
           <span>전체 아카이브</span>
-          {archiveStartDate && (
-            <span className="text-[10px] text-slate-500 dark:text-[#8b949e] font-mono">
-              ({archiveStartDate}~)
-            </span>
-          )}
           <span
             className={`ml-1 px-1.5 py-0.2 rounded-full text-[10px] ${
               searchScope === 'all'

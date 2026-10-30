@@ -469,7 +469,6 @@ export default function App() {
             globalCount={filteredGlobalItems.length}
             selectedDate={selectedDate}
             searchQuery={filter.search}
-            archiveStartDate={archiveStartDate}
           />
 
           <FilterBar
