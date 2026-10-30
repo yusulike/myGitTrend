@@ -11,6 +11,7 @@ import {
   Sparkles,
   ChevronDown,
   ChevronUp,
+  Crown,
 } from 'lucide-react';
 
 interface RepoCardProps {
@@ -18,6 +19,7 @@ interface RepoCardProps {
   isBookmarked: boolean;
   onToggleBookmark: (id: string) => void;
   onTagClick?: (tag: string) => void;
+  rank?: number;
 }
 
 const LANGUAGE_COLORS: Record<string, string> = {
@@ -40,6 +42,7 @@ export function RepoCard({
   isBookmarked,
   onToggleBookmark,
   onTagClick,
+  rank,
 }: RepoCardProps) {
   const [copied, setCopied] = useState(false);
   const [showOriginal, setShowOriginal] = useState(false);
@@ -60,17 +63,42 @@ export function RepoCard({
 
   const langColor = LANGUAGE_COLORS[item.language] || '#94a3b8';
 
+  const cardId = `repo-card-${item.id.replace(/[/.]/g, '-')}`;
+
   return (
-    <article className="group bg-white dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-2xl p-5 hover:border-sky-500/60 dark:hover:border-[#58a6ff]/60 shadow-sm hover:shadow-md dark:shadow-lg dark:shadow-black/30 dark:hover:shadow-black/50 transition-all flex flex-col justify-between">
+    <article
+      id={cardId}
+      className="group bg-white dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-2xl p-5 hover:border-sky-500/60 dark:hover:border-[#58a6ff]/60 shadow-sm hover:shadow-md dark:shadow-lg dark:shadow-black/30 dark:hover:shadow-black/50 transition-all flex flex-col justify-between scroll-mt-24"
+    >
       <div>
         {/* Header row: Owner/Repo + Quick Actions */}
         <div className="flex items-start justify-between gap-3 mb-2.5">
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 flex items-center gap-2 flex-wrap">
+            {/* Crown Badge for Top 1, 2, 3 located to the left of the title */}
+            {rank === 1 && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-black bg-amber-100/90 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700/80 shrink-0 shadow-xs">
+                <Crown className="w-3.5 h-3.5 text-amber-500 fill-amber-400 shrink-0" />
+                <span>1위</span>
+              </span>
+            )}
+            {rank === 2 && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-black bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 shrink-0 shadow-xs">
+                <Crown className="w-3.5 h-3.5 text-slate-400 dark:text-slate-300 fill-slate-300 dark:fill-slate-500 shrink-0" />
+                <span>2위</span>
+              </span>
+            )}
+            {rank === 3 && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-black bg-orange-100/90 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 border border-orange-300/80 dark:border-orange-700/60 shrink-0 shadow-xs">
+                <Crown className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400 fill-orange-500/80 shrink-0" />
+                <span>3위</span>
+              </span>
+            )}
+
             <a
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group-hover:text-sky-600 dark:group-hover:text-[#58a6ff] font-bold text-base sm:text-lg text-slate-900 dark:text-[#f0f6fc] flex items-center gap-1.5 break-all transition-colors"
+              className="group-hover:text-sky-600 dark:group-hover:text-[#58a6ff] font-bold text-base sm:text-lg text-slate-900 dark:text-[#f0f6fc] inline-flex items-center gap-1.5 break-all transition-colors"
             >
               <span className="text-slate-500 dark:text-[#8b949e] font-normal">
                 {item.owner} /
@@ -142,7 +170,7 @@ export function RepoCard({
         </div>
 
         {/* AI Summary Highlight Box */}
-        <div className="bg-slate-50 dark:bg-[#0d1117] border border-slate-200 dark:border-[#30363d] rounded-xl p-4 mb-3.5 shadow-sm dark:shadow-inner">
+        <div className="bg-sky-50/60 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/30 rounded-xl p-4 mb-3.5 shadow-sm dark:shadow-inner">
           <div className="flex items-center gap-1.5 text-sky-600 dark:text-sky-400 text-xs font-bold mb-2">
             <Sparkles className="w-4 h-4 text-sky-600 dark:text-sky-400" />
             <span>AI 핵심 요약</span>
@@ -152,7 +180,7 @@ export function RepoCard({
           </p>
 
           {item.keyFeaturesKo && item.keyFeaturesKo.length > 0 && (
-            <ul className="space-y-1.5 pt-2 border-t border-slate-200 dark:border-[#30363d]">
+            <ul className="space-y-1.5 pt-2.5 border-t border-sky-100 dark:border-sky-900/30">
               {item.keyFeaturesKo.map((feat, idx) => (
                 <li
                   key={idx}

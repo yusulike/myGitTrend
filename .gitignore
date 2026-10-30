@@ -4,3 +4,5 @@ dist
 .DS_Store
 .env
 .env.local
+.impeccable/live/
+.impeccable/*.local.json

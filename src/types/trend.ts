@@ -26,6 +26,7 @@ export interface TrendSnapshot {
 }
 
 export type SortOption = 'starsPeriod' | 'starsTotal' | 'name';
+export type SearchScope = 'current' | 'all';
 
 export interface FilterState {
   search: string;
@@ -33,6 +34,7 @@ export interface FilterState {
   selectedLanguage: string;
   sortBy: SortOption;
   onlyBookmarks: boolean;
+  searchScope: SearchScope;
 }
 
 export function isValidTrendItem(item: any): item is TrendItem {
@@ -54,6 +56,22 @@ export function isValidTrendItem(item: any): item is TrendItem {
   );
 }
 
+export interface GlobalSearchIndexItem {
+  id: string;                      // "owner/repo"
+  owner: string;
+  repo: string;
+  url: string;
+  description: string;
+  language: string;
+  stars: number;
+  forks: number;
+  summaryKo: string;
+  tags: string[];
+  appearedDates: string[];         // ["2026-10-28", "2026-10-20"]
+  lastAppeared: string;            // "2026-10-28"
+  maxStarsPeriod: number;          // 최고 급상승 폭
+}
+
 export function createDefaultFilterState(): FilterState {
   return {
     search: '',
@@ -61,5 +79,6 @@ export function createDefaultFilterState(): FilterState {
     selectedLanguage: 'All',
     sortBy: 'starsPeriod',
     onlyBookmarks: false,
+    searchScope: 'current',
   };
 }

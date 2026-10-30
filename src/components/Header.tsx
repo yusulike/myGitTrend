@@ -1,14 +1,10 @@
-import { Sparkles, Bookmark, Moon, Sun } from 'lucide-react';
-import { DateSelector } from './DateSelector';
+import { Bookmark, Moon, Sun } from 'lucide-react';
 
 interface HeaderProps {
   bookmarkCount: number;
   onOpenBookmarks: () => void;
   isDark: boolean;
   onToggleDarkMode: () => void;
-  availableDates: string[];
-  selectedDate: string;
-  onSelectDate: (date: string) => void;
 }
 
 export function Header({
@@ -16,41 +12,49 @@ export function Header({
   onOpenBookmarks,
   isDark,
   onToggleDarkMode,
-  availableDates,
-  selectedDate,
-  onSelectDate,
 }: HeaderProps) {
   return (
     <header className="sticky top-0 z-30 bg-white/95 dark:bg-[#161b22]/95 backdrop-blur-md border-b border-slate-200 dark:border-[#30363d] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         {/* Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-brand-500 flex items-center justify-center text-white shadow-md shadow-sky-500/20">
-            <Sparkles className="w-5 h-5" />
+          {/* Custom Git + Trend Engineering Logo */}
+          <div className="w-9 h-9 rounded-xl bg-slate-900 dark:bg-[#21262d] border border-slate-700/60 dark:border-[#30363d] flex items-center justify-center text-sky-400 shadow-xs group cursor-default">
+            <svg
+              className="w-5 h-5 transition-transform duration-200 group-hover:scale-110"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="6" cy="6" r="3" />
+              <path d="M6 9v9" />
+              <path d="M9 15l9-9" />
+              <path d="M13 6h5v5" />
+            </svg>
           </div>
+
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-slate-900 via-sky-800 to-sky-600 dark:from-white dark:via-sky-200 dark:to-sky-400 bg-clip-text text-transparent">
-                mgt
+              <span className="font-black text-lg tracking-tight text-slate-900 dark:text-[#f0f6fc]">
+                <span className="text-slate-400 dark:text-[#8b949e] font-normal">my</span>GitTrend
               </span>
-              <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-sky-50 dark:bg-[#21262d] text-sky-600 dark:text-sky-400 border border-sky-100 dark:border-[#30363d]">
-                myGitTrend
+              <span className="text-xs font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-md bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 border border-sky-200/60 dark:border-sky-800/60">
+                Radar
               </span>
             </div>
-            <p className="text-[11px] text-slate-500 dark:text-[#8b949e] hidden sm:block">
-              AI가 한국어로 요약해주는 깃허브 트렌드 큐레이션
+            <p className="text-xs text-slate-500 dark:text-[#8b949e] hidden sm:block font-medium">
+              글로벌 오픈소스 급상승 트렌드 & 3초 핵심 인사이트
             </p>
           </div>
         </div>
 
         {/* Actions & Navigation */}
         <div className="flex items-center gap-2 sm:gap-3">
-          <DateSelector
-            availableDates={availableDates}
-            selectedDate={selectedDate}
-            onSelectDate={onSelectDate}
-          />
-
           {/* Bookmarks Toggle Button */}
           <button
             onClick={onOpenBookmarks}
@@ -60,7 +64,7 @@ export function Header({
             <Bookmark className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 fill-amber-500 dark:fill-amber-400" />
             <span className="hidden sm:inline">북마크</span>
             {bookmarkCount > 0 && (
-              <span className="px-1.5 py-0.2 rounded-full text-[10px] font-bold bg-amber-500 text-white">
+              <span className="px-1.5 py-0.2 rounded-full text-xs font-bold bg-amber-500 text-white">
                 {bookmarkCount}
               </span>
             )}

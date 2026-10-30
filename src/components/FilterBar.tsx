@@ -7,6 +7,8 @@ interface FilterBarProps {
   onFilterChange: (newFilter: FilterState) => void;
   totalCount: number;
   filteredCount: number;
+  hidePeriod?: boolean;
+  archiveStartDate?: string;
 }
 
 const PERIOD_OPTIONS: { label: string; value: Period; icon: any }[] = [
@@ -27,6 +29,8 @@ export function FilterBar({
   onFilterChange,
   totalCount,
   filteredCount,
+  hidePeriod = false,
+  archiveStartDate,
 }: FilterBarProps) {
   const isFiltered =
     filter.search !== '' ||
@@ -46,26 +50,35 @@ export function FilterBar({
     <div className="space-y-4">
       {/* Top row: Period tabs & Sort dropdown */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        {/* Period Tabs */}
-        <div className="inline-flex p-1 bg-slate-100 dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-xl">
-          {PERIOD_OPTIONS.map(({ label, value, icon: Icon }) => {
-            const isActive = filter.selectedPeriod === value;
-            return (
-              <button
-                key={value}
-                onClick={() => onFilterChange({ ...filter, selectedPeriod: value })}
-                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-                  isActive
-                    ? 'bg-white dark:bg-[#21262d] text-sky-600 dark:text-sky-400 border border-slate-200/80 dark:border-[#30363d] shadow-sm'
-                    : 'text-slate-500 dark:text-[#8b949e] hover:text-slate-900 dark:hover:text-[#f0f6fc]'
-                }`}
-              >
-                <Icon className="w-3.5 h-3.5" />
-                {label}
-              </button>
-            );
-          })}
-        </div>
+        {/* Period Tabs (or Global View Note) */}
+        {!hidePeriod ? (
+          <div className="inline-flex p-1 bg-slate-100 dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-xl">
+            {PERIOD_OPTIONS.map(({ label, value, icon: Icon }) => {
+              const isActive = filter.selectedPeriod === value;
+              return (
+                <button
+                  key={value}
+                  onClick={() => onFilterChange({ ...filter, selectedPeriod: value })}
+                  className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                    isActive
+                      ? 'bg-white dark:bg-[#21262d] text-sky-600 dark:text-sky-400 border border-slate-200/80 dark:border-[#30363d] shadow-sm'
+                      : 'text-slate-500 dark:text-[#8b949e] hover:text-slate-900 dark:hover:text-[#f0f6fc]'
+                  }`}
+                >
+                  <Icon className="w-3.5 h-3.5" />
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-sky-50 dark:bg-[#161b22] border border-sky-100 dark:border-[#30363d] rounded-xl text-xs text-sky-800 dark:text-sky-300 font-medium">
+            <Sparkles className="w-3.5 h-3.5 text-sky-500" />
+            <span>
+              전체 아카이브 누적 뷰 {archiveStartDate ? `(${archiveStartDate} 수집 시작 ~ 현재)` : ''}
+            </span>
+          </div>
+        )}
 
         {/* Sort & Count */}
         <div className="flex items-center gap-2 self-end sm:self-auto">

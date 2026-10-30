@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "collect": "tsx scripts/collector.ts"
+    "collect": "tsx scripts/collector.ts",
+    "build:index": "tsx scripts/build-search-index.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

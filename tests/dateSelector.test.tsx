@@ -15,7 +15,7 @@ describe('DateSelector Calendar Component', () => {
       />
     );
 
-    expect(screen.getByText('최신 트렌드')).toBeDefined();
+    expect(screen.getByText('실시간 최신')).toBeDefined();
     expect(screen.queryByRole('dialog')).toBeNull();
   });
 
@@ -157,6 +157,6 @@ describe('DateSelector Calendar Component', () => {
     );
 
     // Trigger button should now render cleanly without React hook order error
-    expect(screen.getByText('최신 트렌드')).toBeDefined();
+    expect(screen.getByText('실시간 최신')).toBeDefined();
   });
 });

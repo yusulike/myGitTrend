@@ -54,10 +54,11 @@ export function RepoList({
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-      {items.map((item) => (
+      {items.map((item, idx) => (
         <RepoCard
           key={item.id}
           item={item}
+          rank={idx + 1}
           isBookmarked={isBookmarked(item.id)}
           onToggleBookmark={onToggleBookmark}
           onTagClick={onTagClick}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T14:10:00Z",
+  "title": "Design System: myGitTrend",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Sky Signal",
+        "canonical": "#0284c7",
+        "tonalRamp": ["#082f49", "#0c4a6e", "#0369a1", "#0284c7", "#38bdf8", "#7dd3fc", "#bae6fd", "#f0f9ff"]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Sky Signal Deep",
+        "canonical": "#0369a1",
+        "tonalRamp": ["#082f49", "#0c4a6e", "#075985", "#0369a1", "#0284c7", "#38bdf8", "#7dd3fc", "#e0f2fe"]
+      },
+      "accent-star": {
+        "role": "secondary",
+        "displayName": "Amber Star",
+        "canonical": "#f59e0b",
+        "tonalRamp": ["#451a03", "#78350f", "#b45309", "#d97706", "#f59e0b", "#fbbf24", "#fde68a", "#fffbeb"]
+      },
+      "accent-trend": {
+        "role": "secondary",
+        "displayName": "Ember Flame",
+        "canonical": "#f97316",
+        "tonalRamp": ["#431407", "#7c2d12", "#c2410c", "#ea580c", "#f97316", "#fb923c", "#fdba74", "#fff7ed"]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Light Slate Canvas",
+        "canonical": "#f8fafc",
+        "tonalRamp": ["#0f172a", "#1e293b", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f8fafc"]
+      },
+      "neutral-surface": {
+        "role": "neutral",
+        "displayName": "Light Surface Card",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#020617", "#0f172a", "#334155", "#64748b", "#94a3b8", "#e2e8f0", "#f1f5f9", "#ffffff"]
+      },
+      "neutral-border": {
+        "role": "neutral",
+        "displayName": "Light Border Muted",
+        "canonical": "#e2e8f0",
+        "tonalRamp": ["#0f172a", "#1e293b", "#475569", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f8fafc"]
+      },
+      "dark-bg": {
+        "role": "neutral",
+        "displayName": "GitHub Dark Canvas",
+        "canonical": "#0d1117",
+        "tonalRamp": ["#010409", "#0d1117", "#161b22", "#21262d", "#30363d", "#484f58", "#8b949e", "#f0f6fc"]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "GitHub Dark Surface",
+        "canonical": "#161b22",
+        "tonalRamp": ["#010409", "#0d1117", "#161b22", "#1c2128", "#21262d", "#30363d", "#6e7681", "#f0f6fc"]
+      },
+      "dark-border": {
+        "role": "neutral",
+        "displayName": "GitHub Dark Border",
+        "canonical": "#30363d",
+        "tonalRamp": ["#0d1117", "#161b22", "#21262d", "#30363d", "#484f58", "#6e7681", "#8b949e", "#c9d1d9"]
+      }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline", "purpose": "Header title and section primary headings." },
+      "title": { "displayName": "Card Title", "purpose": "Repository owner and name in card headers." },
+      "body": { "displayName": "Body", "purpose": "AI Korean summaries and repository description." },
+      "label": { "displayName": "Label", "purpose": "Filter tags, count badges, and action labels." }
+    },
+    "shadows": [
+      { "name": "base-rest", "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)", "purpose": "Default elevation for cards and inputs in light mode." },
+      { "name": "hover-lift", "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)", "purpose": "Hover elevation for cards." },
+      { "name": "dark-depth", "value": "0 10px 15px -3px rgba(0, 0, 0, 0.3)", "purpose": "Dark mode card hover and drawer modal shadow." },
+      { "name": "focus-glow", "value": "0 0 0 3px rgba(2, 132, 199, 0.2)", "purpose": "Focus ring indicator for inputs and interactive controls." }
+    ],
+    "motion": [
+      { "name": "transition-standard", "value": "all 0.15s ease-in-out", "purpose": "Micro-interactions, button hovers, color shifts." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Used for main calls to action such as active filter states or primary submissions.",
+      "html": "<button class=\"ds-btn-primary\">적용하기</button>",
+      "css": ".ds-btn-primary { background: #0284c7; color: #ffffff; padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; border: none; cursor: pointer; transition: background 0.15s ease; } .ds-btn-primary:hover { background: #0369a1; } .ds-btn-primary:focus-visible { outline: 2px solid #0284c7; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Tab Button",
+      "kind": "chip",
+      "refersTo": "filter-tab",
+      "description": "Period toggle switch tab item.",
+      "html": "<button class=\"ds-tab-active\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z\"/></svg> 오늘</button>",
+      "css": ".ds-tab-active { display: inline-flex; align-items: center; gap: 6px; background: #ffffff; color: #0284c7; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 14px; font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,0.05); } .ds-tab-active svg { color: #f97316; }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Real-time search bar with icon prefix.",
+      "html": "<div class=\"ds-search-wrapper\"><svg class=\"ds-search-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input class=\"ds-input-search\" placeholder=\"레포 이름, 키워드, AI 요약 검색...\" /></div>",
+      "css": ".ds-search-wrapper { position: relative; width: 100%; max-width: 320px; } .ds-search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #94a3b8; pointer-events: none; } .ds-input-search { width: 100%; background: #ffffff; color: #0f172a; border: 1px solid #e2e8f0; border-radius: 12px; padding: 9px 12px 9px 36px; font-size: 14px; outline: none; transition: border-color 0.15s, box-shadow 0.15s; } .ds-input-search:focus { border-color: #0284c7; box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2); }"
+    },
+    {
+      "name": "Repo Summary Card",
+      "kind": "card",
+      "refersTo": "card-repo",
+      "description": "Standard repository card with AI Korean summary callout.",
+      "html": "<div class=\"ds-card-repo\"><div class=\"ds-card-title\"><span class=\"ds-card-owner\">shadcn /</span> ui</div><div class=\"ds-ai-box\"><span class=\"ds-ai-badge\">✨ AI 요약</span><p class=\"ds-ai-text\">재사용 가능한 고품질 UI 컴포넌트 모음집으로 복사-붙여넣기 기반의 유연한 커스터마이징을 제공합니다.</p></div></div>",
+      "css": ".ds-card-repo { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: border-color 0.15s, box-shadow 0.15s; } .ds-card-repo:hover { border-color: rgba(2, 132, 199, 0.6); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); } .ds-card-title { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 12px; } .ds-card-owner { font-weight: 400; color: #64748b; } .ds-ai-box { background: rgba(240, 249, 255, 0.6); border: 1px solid #e0f2fe; border-radius: 12px; padding: 12px; } .ds-ai-badge { display: inline-block; font-size: 11px; font-weight: 700; color: #0284c7; margin-bottom: 4px; } .ds-ai-text { font-size: 13px; line-height: 1.45; color: #334155; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Hacker's Radar",
+    "overview": "myGitTrend는 글로벌 오픈소스 생태계에서 급부상하는 프로젝트를 실시간으로 포착하고, 노이즈 없이 핵심 가치만을 정밀하게 전달하는 레이더이자 관측소입니다. GitHub 특유의 정교한 개발자 툴 감성(GitHub Dark #0d1117 및 정밀한 1px 보더)을 바탕으로, AI 요약 큐레이션이 선명하게 부각되는 스카이블루 액센트를 결합했습니다.\n\n복잡한 시각적 장식이나 과도한 일러스트를 배제하고, 높은 정보 밀도(High Information Density) 속에서도 눈의 피로 없이 카드를 빠르게 스캐닝할 수 있는 위계 질서를 갖춥니다. 다크 모드와 라이트 모드 양쪽 모두에서 텍스트 대비와 뱃지 가독성이 엄격히 보장됩니다.",
+    "keyCharacteristics": [
+      "정밀한 1px 구조 (Precision Borders): 모호한 면 분할 대신 선명한 1px 경계선(#e2e8f0 / #30363d)으로 명확한 정보 구획 정의.",
+      "초고속 스캐닝 위계 (Scanability Hierarchy): 레포 이름(굵은 타이틀) → AI 요약 박스(은은한 틴트 배경) → 특징 뱃지 → 메타 정보 순서의 즉각적 시선 유도.",
+      "개발자 액션 즉시성 (Instant Utility): git clone 원클릭 복사, 북마크 토글, GitHub 바로가기가 호버 시 명확한 피드백과 함께 즉시 노출."
+    ],
+    "rules": [
+      {
+        "name": "The Native Contrast Rule",
+        "body": "배경과 텍스트의 대비는 항상 WCAG AAA 기준(7:1 이상)을 준수하며, 다크 모드에서는 #0d1117과 #f0f6fc, 라이트 모드에서는 #f8fafc와 #0f172a의 순수 대비를 유지한다.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Restraint Rule",
+        "body": "Primary 스카이블루는 화면 전체 면적의 10% 이하로 절제하여 사용하며, 오직 시선 집중(AI 요약, 인터랙티브 포커스)에만 부여한다.",
+        "section": "colors"
+      },
+      {
+        "name": "The Truncation Guard Rule",
+        "body": "긴 레포지토리 설명이나 작성자 이름이 레이아웃을 깨뜨리지 않도록, 한 줄 말줄임(truncate) 또는 최대 2줄 제한(line-clamp-2)을 명확히 명시한다.",
+        "section": "typography"
+      },
+      {
+        "name": "The Border-Before-Shadow Rule",
+        "body": "깊이감의 1차 구분선은 항상 1px 테두리(border)이며, 그림자는 평면 위에 떠 있는 인터랙션 피드백(Hover/Focus/Modal)으로만 동작한다.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "카드나 컴포넌트를 추가할 때 항상 다크 모드 클래스(dark:bg-[#161b22], dark:border-[#30363d])를 쌍으로 작성한다.",
+      "AI 요약 텍스트 박스는 일반 영문 설명보다 시각적으로 우선순위가 높도록 상단에 배치하고 미세한 스카이 틴트를 적용한다.",
+      "Star, Fork, 언어 메타데이터는 숫자를 K 단위(예: 1.2k)로 축약 표기하여 가로 폭을 보존한다.",
+      "모든 인터랙티브 아이콘 버튼에는 직관적인 title 및 aria-label을 제공한다."
+    ],
+    "donts": [
+      "GitHub 고유의 다크 배경톤(#0d1117, #161b22)을 임의의 회색(#222222, #333333)이나 순수 블랙(#000000)으로 대체하지 않는다.",
+      "카드 호버 시 레이아웃 흔들림(Layout Shift)을 유발하는 과도한 확대 스케일(scale-105 등)을 적용하지 않는다 (경계선 색상 및 그림자 강조만 허용).",
+      "액센트 컬러를 요약/포커스 영역 외의 일반 텍스트나 넓은 배경에 남용하지 않는다."
+    ]
+  }
+}

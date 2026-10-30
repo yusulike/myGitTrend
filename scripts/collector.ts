@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as path from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { TrendItem, TrendSnapshot, Period } from '../src/types/trend';
+import { TrendItem, TrendSnapshot, Period, GlobalSearchIndexItem } from '../src/types/trend';
 import { generateMockSnapshot } from './mockData';
 
 // Auto-load .env if present in root
@@ -365,7 +365,89 @@ function saveDataFiles(snapshot: TrendSnapshot) {
   }
   fs.writeFileSync(indexPath, JSON.stringify(dateList, null, 2), 'utf-8');
 
+  // 4. Build or update unified search-index.json across all archives
+  buildGlobalSearchIndex(dataDir, archivesDir, dateList);
+
   console.log(`[mgt Collector] Saved data to ${latestPath} and ${archivePath}`);
+}
+
+export function buildGlobalSearchIndex(
+  dataDir = path.resolve(process.cwd(), 'public/data'),
+  archivesDir = path.resolve(process.cwd(), 'public/data/archives'),
+  dateList?: string[]
+) {
+  if (!dateList) {
+    const indexPath = path.join(dataDir, 'archive-index.json');
+    if (fs.existsSync(indexPath)) {
+      try {
+        dateList = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+      } catch {
+        dateList = [];
+      }
+    } else {
+      dateList = fs.existsSync(archivesDir)
+        ? fs.readdirSync(archivesDir).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''))
+        : [];
+    }
+  }
+
+  const indexMap = new Map<string, GlobalSearchIndexItem>();
+  const datesToProcess = dateList || [];
+
+  // Read all available archive files in chronological order (or reverse)
+  for (const date of datesToProcess) {
+    const filePath = path.join(archivesDir, `${date}.json`);
+    if (!fs.existsSync(filePath)) continue;
+
+    try {
+      const snap: TrendSnapshot = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      for (const item of snap.items || []) {
+        const id = item.id || `${item.owner}/${item.repo}`;
+        const existing = indexMap.get(id);
+
+        if (!existing) {
+          indexMap.set(id, {
+            id,
+            owner: item.owner,
+            repo: item.repo,
+            url: item.url,
+            description: item.description,
+            language: item.language,
+            stars: item.stars,
+            forks: item.forks,
+            summaryKo: item.summaryKo,
+            tags: item.tags || [],
+            appearedDates: [date],
+            lastAppeared: date,
+            maxStarsPeriod: item.starsPeriod || 0,
+          });
+        } else {
+          // Merge history
+          if (!existing.appearedDates.includes(date)) {
+            existing.appearedDates.push(date);
+          }
+          if (new Date(date) > new Date(existing.lastAppeared)) {
+            existing.lastAppeared = date;
+            existing.stars = Math.max(existing.stars, item.stars);
+            existing.forks = Math.max(existing.forks, item.forks);
+            if (item.summaryKo) existing.summaryKo = item.summaryKo;
+          }
+          existing.maxStarsPeriod = Math.max(existing.maxStarsPeriod, item.starsPeriod || 0);
+        }
+      }
+    } catch (e) {
+      console.warn(`[mgt Collector] Warning: Failed to read archive for indexing ${date}:`, e);
+    }
+  }
+
+  // Sort by appeared frequency and max stars
+  const globalIndex = Array.from(indexMap.values()).sort(
+    (a, b) => b.appearedDates.length - a.appearedDates.length || b.stars - a.stars
+  );
+
+  const searchIndexPath = path.join(dataDir, 'search-index.json');
+  fs.writeFileSync(searchIndexPath, JSON.stringify(globalIndex, null, 2), 'utf-8');
+  console.log(`[mgt Collector] Generated global search index (${globalIndex.length} unique repos) at ${searchIndexPath}`);
 }
 
 // Self-executing if run directly via CLI (tsx scripts/collector.ts)
