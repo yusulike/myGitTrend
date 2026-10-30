@@ -110,6 +110,20 @@ export default function App() {
     return ['All', ...Array.from(langs).sort()];
   }, [globalIndex]);
 
+  // Count items by collection period (daily, weekly, monthly)
+  const periodCounts = useMemo(() => {
+    if (!data?.items) return { daily: 0, weekly: 0, monthly: 0, total: 0 };
+    let daily = 0;
+    let weekly = 0;
+    let monthly = 0;
+    for (const item of data.items) {
+      if (item.since === 'daily') daily++;
+      else if (item.since === 'weekly') weekly++;
+      else if (item.since === 'monthly') monthly++;
+    }
+    return { daily, weekly, monthly, total: data.items.length };
+  }, [data]);
+
   // Filtered items from Global Search Index
   const filteredGlobalItems = useMemo(() => {
     if (!globalIndex || globalIndex.length === 0) return [];
@@ -396,6 +410,28 @@ export default function App() {
                       </span>
                       <span className="text-xs text-slate-500 dark:text-[#8b949e]">개</span>
                     </div>
+                    <div className="text-[10px] tabular-nums font-mono flex items-center gap-1 mt-0.5">
+                      <span
+                        className={filter.selectedPeriod === 'daily' ? 'text-sky-600 dark:text-sky-400 font-bold' : 'text-slate-400 dark:text-[#8b949e]'}
+                        title="일간(Daily) 트렌드 수집 개수"
+                      >
+                        D:{periodCounts.daily}
+                      </span>
+                      <span className="text-slate-300 dark:text-[#30363d]">·</span>
+                      <span
+                        className={filter.selectedPeriod === 'weekly' ? 'text-sky-600 dark:text-sky-400 font-bold' : 'text-slate-400 dark:text-[#8b949e]'}
+                        title="주간(Weekly) 트렌드 수집 개수"
+                      >
+                        W:{periodCounts.weekly}
+                      </span>
+                      <span className="text-slate-300 dark:text-[#30363d]">·</span>
+                      <span
+                        className={filter.selectedPeriod === 'monthly' ? 'text-sky-600 dark:text-sky-400 font-bold' : 'text-slate-400 dark:text-[#8b949e]'}
+                        title="월간(Monthly) 트렌드 수집 개수"
+                      >
+                        M:{periodCounts.monthly}
+                      </span>
+                    </div>
                   </div>
                   {weatherStatus.topRepo && (
                     <div>
@@ -405,6 +441,9 @@ export default function App() {
                       <div className="text-base font-bold text-rose-500 dark:text-rose-400 tabular-nums mt-0.5 truncate">
                         +{weatherStatus.topRepo.stars >= 1000 ? `${(weatherStatus.topRepo.stars / 1000).toFixed(1)}k` : weatherStatus.topRepo.stars}
                         <span className="text-[11px] font-normal text-rose-500/80 ml-0.5">Star</span>
+                      </div>
+                      <div className="text-[10px] text-slate-400 dark:text-[#8b949e] truncate mt-0.5 font-mono" title={weatherStatus.topRepo.name}>
+                        {weatherStatus.topRepo.name.split('/')[1] || weatherStatus.topRepo.name}
                       </div>
                     </div>
                   )}
