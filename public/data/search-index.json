@@ -6,18 +6,17 @@
     "url": "https://github.com/affaan-m/ECC",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
     "language": "JavaScript",
-    "stars": 294120,
-    "forks": 43536,
-    "summaryKo": "다양한 AI 코딩 에이전트(Claude Code, Cursor 등) 환경에서 성능 저하나 보안 취약점이 발생하는 문제를 해결하기 위해, 메모리·시큐리티·리서치 기능을 통합 최적화한 성능 하네스 시스템입니다.",
+    "stars": 294595,
+    "forks": 43609,
+    "summaryKo": "AI 코딩 에이전트의 성능 저하 및 컨텍스트 유실 문제를 해결하기 위해, 스킬, 인스턴스 메모리, 보안, 리서치 중심 개발 방법론을 통합한 차세대 에이전트 하네스 성능 최적화 운영체제입니다.",
     "tags": [
-      "AI-Coding",
-      "Performance-Optimization",
+      "LLM-Agent",
+      "High-Performance",
       "Security",
-      "High-Performance"
+      "CI-CD"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -35,7 +34,7 @@
       "2026-10-16"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 25494
+    "maxStarsPeriod": 24663
   },
   {
     "id": "debpalash/VoiceStudio",
@@ -44,18 +43,17 @@
     "url": "https://github.com/debpalash/VoiceStudio",
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "language": "Python",
-    "stars": 96944,
-    "forks": 10749,
-    "summaryKo": "비싼 클라우드 기반 음성 서비스의 비용 부담과 데이터 프라이버시 문제를 해결하는 완전 로컬 구동형 오픈소스 음성 합성 및 복제 스튜디오입니다.",
+    "stars": 97638,
+    "forks": 10839,
+    "summaryKo": "클라우드 기반 유료 음성 API(ElevenLabs 등)에 의존하던 구조에서 벗어나, 로컬 기기에서 완벽하게 동작하며 646개 언어의 음성 복제, 더빙, 전사를 지원하는 오픈소스 AI 보이스 스튜디오입니다.",
     "tags": [
-      "Python",
-      "Voice-Cloning",
-      "AI-Audio",
-      "Local-First"
+      "AI-Voice",
+      "Speech-To-Text",
+      "Local-AI",
+      "Python"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -82,18 +80,17 @@
     "url": "https://github.com/NationalSecurityAgency/ghidra",
     "description": "Ghidra is a software reverse engineering (SRE) framework",
     "language": "Java",
-    "stars": 96512,
-    "forks": 10891,
-    "summaryKo": "고가의 상용 디컴파일러가 가진 비용 부담을 해결하기 위해 미국 국가안보국(NSA)이 공개한 강력한 오픈소스 소프트웨어 리버스 엔지니어링(SRE) 프레임워크입니다.",
+    "stars": 96693,
+    "forks": 10915,
+    "summaryKo": "미국 국가안보국(NSA)이 개발하고 오픈소스로 공개한 엔터프라이즈급 소프트웨어 리버스 엔지니어링(SRE) 프레임워크로, 복잡한 컴파일 코드 분석의 확장성과 협업 문제를 해결합니다.",
     "tags": [
-      "Java",
-      "Security",
       "Reverse-Engineering",
-      "SRE"
+      "Security",
+      "Binary-Analysis",
+      "Java"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -120,18 +117,17 @@
     "url": "https://github.com/heygen-com/hyperframes",
     "description": "Write HTML. Render video. Built for agents.",
     "language": "TypeScript",
-    "stars": 76614,
-    "forks": 7006,
-    "summaryKo": "HTML 코드를 기반으로 고화질 동영상을 프로그래밍 방식으로 렌더링하여, AI 에이전트가 자동으로 영상 콘텐츠를 대량 생성할 수 있게 돕는 툴킷입니다.",
+    "stars": 76986,
+    "forks": 7052,
+    "summaryKo": "AI 에이전트가 코드로 HTML을 작성하면 고품질 비디오로 자동 렌더링해주는 프레임워크로, 복잡한 영상 편집 툴 없이 프로그래매틱하게 비디오를 생성하는 고질적 문제를 해결합니다.",
     "tags": [
-      "TypeScript",
-      "Video-Rendering",
       "LLM-Agent",
-      "Automation"
+      "Video-Generation",
+      "TypeScript",
+      "Node.js"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -158,18 +154,17 @@
     "url": "https://github.com/cloudflare/security-audit-skill",
     "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
     "language": "JavaScript",
-    "stars": 55410,
-    "forks": 3614,
-    "summaryKo": "코딩 에이전트가 다단계 보안 감사를 자율적으로 수행하고, 독립적으로 검증 가능한 머신러닝/머신리더블 취약점 리포트를 도출하도록 지원하는 전문가용 보안 스킬입니다. 복잡한 코드베이스에서 잠재적 보안 리스크를 누락 없이 식별합니다.",
+    "stars": 56126,
+    "forks": 3660,
+    "summaryKo": "코딩 에이전트를 자율형 보안 감사관으로 변환하여, 다단계 교차 검증을 통해 오탐을 줄이고 기계 판독이 가능한 신뢰도 높은 취약점 리포트를 도출합니다.",
     "tags": [
-      "Security-Audit",
+      "Security",
       "LLM-Agent",
-      "Vulnerability-Scanner",
-      "DevSecOps"
+      "Code-Audit",
+      "Compliance"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -196,18 +191,16 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "language": "Python",
-    "stars": 45586,
-    "forks": 4747,
-    "summaryKo": "Claude Code 환경에서 파편화되던 확장 기능 관리의 복잡성을 해결하기 위해 Anthropic이 직접 보증하는 공식 플러그인 디렉토리입니다.",
+    "stars": 45682,
+    "forks": 4753,
+    "summaryKo": "Claude Code 환경에서 검증된 공식 및 서드파티 플러그인을 손쉽게 탐색하고 설치할 수 있는 표준 디렉토리입니다.",
     "tags": [
-      "AI-Assistant",
       "LLM-Agent",
-      "Developer-Tools",
-      "Plugin-System"
+      "Claude-Code",
+      "Plugin-Directory"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -228,24 +221,60 @@
     "maxStarsPeriod": 8525
   },
   {
+    "id": "tashfeenahmed/freellmapi",
+    "owner": "tashfeenahmed",
+    "repo": "freellmapi",
+    "url": "https://github.com/tashfeenahmed/freellmapi",
+    "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+    "language": "TypeScript",
+    "stars": 45558,
+    "forks": 6223,
+    "summaryKo": "수십 개 무료 LLM 제공업체의 파편화된 API와 요금제 한계 문제를 해결하며, 34개 제공업체의 635개 무료 모델 엔드포인트를 단일 OpenAI 호환 `/v1` 엔드포인트로 통합하여 제공합니다.",
+    "tags": [
+      "LLM-Gateway",
+      "API-Integration",
+      "OpenAI-Compatible",
+      "Smart-Routing"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27",
+      "2026-10-26",
+      "2026-10-25",
+      "2026-10-24",
+      "2026-10-23",
+      "2026-10-22",
+      "2026-10-21",
+      "2026-10-20",
+      "2026-10-19",
+      "2026-10-18",
+      "2026-10-17",
+      "2026-10-16"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 15643
+  },
+  {
     "id": "anthropics/knowledge-work-plugins",
     "owner": "anthropics",
     "repo": "knowledge-work-plugins",
     "url": "https://github.com/anthropics/knowledge-work-plugins",
     "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
     "language": "Python",
-    "stars": 34209,
-    "forks": 3771,
-    "summaryKo": "Claude Cowork 환경에서 지식 노동자의 생산성을 극대화하기 위해 설계된 공식 오픈소스 플러그인 리포지토리입니다.",
+    "stars": 34325,
+    "forks": 3791,
+    "summaryKo": "Claude를 특정 직무와 기업 환경에 최적화된 전문가로 변환해주는 오픈소스 플러그인 모음으로, 일반적인 LLM 사용의 범용적 한계를 넘어서 팀 맞춤형 업무 자동화를 실현합니다.",
     "tags": [
-      "Python",
       "LLM-Agent",
+      "Claude",
       "Productivity",
-      "Plugin"
+      "Workflow-Automation"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -272,18 +301,17 @@
     "url": "https://github.com/mksglu/context-mode",
     "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
     "language": "TypeScript",
-    "stars": 33048,
-    "forks": 2279,
-    "summaryKo": "AI 코딩 에이전트 사용 시 방대한 툴 출력으로 인해 발생하는 컨텍스트 윈도우 낭비와 비용 병목을 샌드박싱과 메모리 지속성으로 98% 절감해주는 최적화 솔루션입니다.",
+    "stars": 33112,
+    "forks": 2283,
+    "summaryKo": "AI 코딩 에이전트의 고질적인 컨텍스트 윈도우 한계를 해결하기 위해, 툴 출력을 샌드박싱하고 세션 메모리를 지속 유지하는 최적화 솔루션입니다.",
     "tags": [
+      "AI-Coding-Agent",
       "Context-Optimization",
-      "LLM-Agent",
-      "Token-Reduction",
-      "MCP"
+      "MCP",
+      "Memory-Management"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -301,7 +329,7 @@
       "2026-10-16"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 8913
+    "maxStarsPeriod": 8881
   },
   {
     "id": "cursor/plugins",
@@ -310,18 +338,17 @@
     "url": "https://github.com/cursor/plugins",
     "description": "Cursor plugin specification and official plugins",
     "language": "TypeScript",
-    "stars": 14886,
-    "forks": 1532,
-    "summaryKo": "차세대 AI 코드 에디터인 Cursor의 확장 한계를 극복하기 위해 공식 플러그인 규격을 정의하고 생태계 기반을 마련하는 표준 스펙 저장소입니다.",
+    "stars": 14980,
+    "forks": 1544,
+    "summaryKo": "Cursor 에이전트의 역량을 극대화하기 위해 스킬 매핑, 팀 워크플로우, 심층 코드 리뷰 등을 제공하는 공식 플러그인 사양 및 구현체 모음입니다.",
     "tags": [
-      "Code-Editor",
-      "Plugin-Specification",
-      "Developer-Experience",
-      "AI-Native"
+      "LLM-Agent",
+      "Cursor",
+      "Developer-Tools",
+      "Code-Review"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -339,7 +366,7 @@
       "2026-10-16"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 5817
+    "maxStarsPeriod": 5799
   },
   {
     "id": "ruvnet/ruflo",
@@ -348,54 +375,16 @@
     "url": "https://github.com/ruvnet/ruflo",
     "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
     "language": "TypeScript",
-    "stars": 80311,
-    "forks": 9417,
-    "summaryKo": "단일 에이전트의 확장성 한계를 극복하기 위해, 멀티 플레이어 에이전트 스웜과 자율 워크플로우를 조율하고 적응형 메모리 및 벡터 RAG를 지원하는 오리지널 에이전트 하네스입니다.",
-    "tags": [
-      "Multi-Agent",
-      "Vector-RAG",
-      "Autonomous-Workflows",
-      "High-Performance"
-    ],
-    "appearedDates": [
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27",
-      "2026-10-26",
-      "2026-10-25",
-      "2026-10-24",
-      "2026-10-23",
-      "2026-10-22",
-      "2026-10-21",
-      "2026-10-20",
-      "2026-10-19",
-      "2026-10-18",
-      "2026-10-17",
-      "2026-10-16"
-    ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 3708
-  },
-  {
-    "id": "tashfeenahmed/freellmapi",
-    "owner": "tashfeenahmed",
-    "repo": "freellmapi",
-    "url": "https://github.com/tashfeenahmed/freellmapi",
-    "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-    "language": "TypeScript",
-    "stars": 44720,
-    "forks": 6081,
-    "summaryKo": "유료 LLM API 사용 비용과 단일 공급자 장애(Vendor Lock-in) 문제를 해결하기 위해, 34개의 무료 공급자와 635개의 모델 엔드포인트를 단일 /v1 엔드포인트로 통합하고 스마트 라우팅과 자동 페일오버를 지원하는 고성능 프록시입니다.",
+    "stars": 80186,
+    "forks": 9402,
+    "summaryKo": "복잡하고 파편화된 AI 에이전트 간의 협업 및 자율 워크플로우 조율의 한계를 극복하기 위해 설계된 멀티 에이전트 하네스 프레임워크입니다.",
     "tags": [
       "TypeScript",
       "LLM-Agent",
-      "High-Performance",
-      "OpenAI-Compatible"
+      "Multi-Agent",
+      "Vector-RAG"
     ],
     "appearedDates": [
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -412,8 +401,8 @@
       "2026-10-17",
       "2026-10-16"
     ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 15157
+    "lastAppeared": "2026-10-30",
+    "maxStarsPeriod": 3708
   },
   {
     "id": "earthtojake/text-to-cad",
@@ -422,18 +411,17 @@
     "url": "https://github.com/earthtojake/text-to-cad",
     "description": "Design physical products with AI",
     "language": "Python",
-    "stars": 24543,
-    "forks": 2350,
-    "summaryKo": "자연어 텍스트 명령만으로 3D 물리 제품 디자인과 CAD 모델링을 자동 생성하여 하드웨어 설계 장벽을 낮춰주는 AI 도구입니다.",
+    "stars": 24674,
+    "forks": 2360,
+    "summaryKo": "AI 에이전트가 텍스트 명령만으로 실제 물리적 제품의 3D CAD 모델(STEP, GLB, STL 등)을 로컬 환경에서 생성할 수 있도록 지원하는 개발자용 플러그인 및 라이브러리입니다.",
     "tags": [
-      "Python",
-      "CAD",
-      "Generative-AI",
-      "3D-Modeling"
+      "Text-To-CAD",
+      "AI-Agent",
+      "3D-Modeling",
+      "Python"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -485,108 +473,6 @@
     ],
     "lastAppeared": "2026-10-29",
     "maxStarsPeriod": 11650
-  },
-  {
-    "id": "pbakaus/impeccable",
-    "owner": "pbakaus",
-    "repo": "impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-    "language": "Rust",
-    "stars": 98381,
-    "forks": 5804,
-    "summaryKo": "AI 코딩 어시스턴트가 생성하는 저품질 코드와 조잡한 UI 산출물을 미연에 방지하기 위해 정밀한 디자인 시스템 보완과 엄격한 코드 감사를 수행하는 Rust 기반 에이전트 검증 도구입니다.",
-    "tags": [
-      "Rust",
-      "LLM-Agent",
-      "Code-Quality",
-      "Design-System"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27",
-      "2026-10-26",
-      "2026-10-25",
-      "2026-10-24",
-      "2026-10-23",
-      "2026-10-22",
-      "2026-10-21",
-      "2026-10-20"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 25479
-  },
-  {
-    "id": "pingdotgg/t3code",
-    "owner": "pingdotgg",
-    "repo": "t3code",
-    "url": "https://github.com/pingdotgg/t3code",
-    "description": "No description provided.",
-    "language": "TypeScript",
-    "stars": 35755,
-    "forks": 8800,
-    "summaryKo": "T3 스택 철학을 이어받아 현대적인 웹 개발 워크플로우에 최적화된 차세대 타입스크립트 기반 개발 환경 및 유틸리티 툴킷입니다.",
-    "tags": [
-      "TypeScript",
-      "Full-Stack",
-      "DX",
-      "High-Performance"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27",
-      "2026-10-26",
-      "2026-10-25",
-      "2026-10-24",
-      "2026-10-23",
-      "2026-10-22",
-      "2026-10-21",
-      "2026-10-19"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 9973
-  },
-  {
-    "id": "android/skills",
-    "owner": "android",
-    "repo": "skills",
-    "url": "https://github.com/android/skills",
-    "description": "No description provided.",
-    "language": "Kotlin",
-    "stars": 10175,
-    "forks": 664,
-    "summaryKo": "안드로이드 생태계 전반의 최신 기술 스택과 베스트 프 prácticas를 표준화하여 개발자들이 복잡한 안드로이드 아키텍처를 빠르게 마스터할 수 있도록 돕는 공식 가이드 저장소입니다.",
-    "tags": [
-      "Android",
-      "Kotlin",
-      "Mobile-Architecture",
-      "Best-Practices"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-27",
-      "2026-10-26",
-      "2026-10-25",
-      "2026-10-24",
-      "2026-10-23",
-      "2026-10-22",
-      "2026-10-21",
-      "2026-10-19",
-      "2026-10-18",
-      "2026-10-17",
-      "2026-10-16"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 2568
   },
   {
     "id": "anomalyco/opencode",
@@ -655,6 +541,39 @@
     "maxStarsPeriod": 25709
   },
   {
+    "id": "pbakaus/impeccable",
+    "owner": "pbakaus",
+    "repo": "impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+    "language": "Rust",
+    "stars": 99102,
+    "forks": 5857,
+    "summaryKo": "AI 코딩 에이전트가 획일적이고 뻔한 디자인('AI slop')을 생성하는 고질적인 문제를 해결하며, 체계적인 디자인 어휘와 감사(audit) 도구를 통해 감각적인 UI 구현을 강제합니다.",
+    "tags": [
+      "LLM-Agent",
+      "Design-System",
+      "Frontend",
+      "UI-UX"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27",
+      "2026-10-26",
+      "2026-10-25",
+      "2026-10-24",
+      "2026-10-23",
+      "2026-10-22",
+      "2026-10-21",
+      "2026-10-20"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 25479
+  },
+  {
     "id": "rohitg00/ai-engineering-from-scratch",
     "owner": "rohitg00",
     "repo": "ai-engineering-from-scratch",
@@ -686,6 +605,72 @@
     ],
     "lastAppeared": "2026-10-27",
     "maxStarsPeriod": 17489
+  },
+  {
+    "id": "pingdotgg/t3code",
+    "owner": "pingdotgg",
+    "repo": "t3code",
+    "url": "https://github.com/pingdotgg/t3code",
+    "description": "No description provided.",
+    "language": "TypeScript",
+    "stars": 37207,
+    "forks": 8878,
+    "summaryKo": "로컬 개발 환경에 갇혀 있는 다양한 AI 코딩 에이전트를 모바일과 웹, 데스크톱에서 원격으로 통합 제어할 수 있는 오픈소스 에이전트 하네스 컨트롤 서피스입니다.",
+    "tags": [
+      "TypeScript",
+      "LLM-Agent",
+      "Remote-Control",
+      "Electron"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27",
+      "2026-10-26",
+      "2026-10-25",
+      "2026-10-24",
+      "2026-10-23",
+      "2026-10-22",
+      "2026-10-21",
+      "2026-10-19"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 9973
+  },
+  {
+    "id": "android/skills",
+    "owner": "android",
+    "repo": "skills",
+    "url": "https://github.com/android/skills",
+    "description": "No description provided.",
+    "language": "Kotlin",
+    "stars": 10208,
+    "forks": 665,
+    "summaryKo": "공식 Android 가이드라인을 기반으로 LLM 에이전트의 특화된 도메인 이해도를 높여주는 모듈형 AI 지침(Agent Skills) 저장소입니다.",
+    "tags": [
+      "Android",
+      "LLM-Agent",
+      "Kotlin",
+      "Developer-Experience"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-27",
+      "2026-10-26",
+      "2026-10-25",
+      "2026-10-24",
+      "2026-10-23",
+      "2026-10-22",
+      "2026-10-21",
+      "2026-10-19",
+      "2026-10-18",
+      "2026-10-17",
+      "2026-10-16"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 2568
   },
   {
     "id": "vectorize-io/hindsight",
@@ -875,36 +860,6 @@
     "maxStarsPeriod": 4790
   },
   {
-    "id": "thedotmack/claude-mem",
-    "owner": "thedotmack",
-    "repo": "claude-mem",
-    "url": "https://github.com/thedotmack/claude-mem",
-    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-    "language": "TypeScript",
-    "stars": 107971,
-    "forks": 9478,
-    "summaryKo": "AI 에이전트 세션 간 컨텍스트 유실 문제를 해결하기 위해, 에이전트의 모든 활동을 기록하고 압축하여 다음 세션에 자동으로 주입해주는 영구 컨텍스트 관리 시스템입니다.",
-    "tags": [
-      "TypeScript",
-      "LLM-Agent",
-      "Context-Management",
-      "Developer-Tools"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27",
-      "2026-10-26",
-      "2026-10-25",
-      "2026-10-24"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 12705
-  },
-  {
     "id": "akitaonrails/ai-memory",
     "owner": "akitaonrails",
     "repo": "ai-memory",
@@ -964,6 +919,34 @@
     "maxStarsPeriod": 7268
   },
   {
+    "id": "thedotmack/claude-mem",
+    "owner": "thedotmack",
+    "repo": "claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "language": "TypeScript",
+    "stars": 108866,
+    "forks": 9537,
+    "summaryKo": "AI 코딩 에이전트 간 세션이 종료되어도 문맥이 유실되는 고질적인 한계를 극복하기 위해, 에이전트의 활동을 자동으로 캡처 및 압축하여 향후 세션에 영구 주입합니다.",
+    "tags": [
+      "LLM-Agent",
+      "TypeScript",
+      "Context-Management"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27",
+      "2026-10-26",
+      "2026-10-25",
+      "2026-10-24"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 12705
+  },
+  {
     "id": "K-Dense-AI/scientific-agent-skills",
     "owner": "K-Dense-AI",
     "repo": "scientific-agent-skills",
@@ -991,35 +974,6 @@
     ],
     "lastAppeared": "2026-10-24",
     "maxStarsPeriod": 4719
-  },
-  {
-    "id": "Nutlope/hallmark",
-    "owner": "Nutlope",
-    "repo": "hallmark",
-    "url": "https://github.com/Nutlope/hallmark",
-    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "language": "CSS",
-    "stars": 43991,
-    "forks": 2318,
-    "summaryKo": "AI 코드 생성 도구가 흔히 범하는 획일적이고 부자연스러운 디자인 패턴('AI-slop')을 원천 차단하고 세련된 UI/UX 산출물을 유도하는 디자인 프롬프트 스킬입니다. Claude Code 및 Cursor 등과 연동해 프로덕션 수준의 완성도 높은 디자인 시스템을 구현합니다.",
-    "tags": [
-      "LLM-Agent",
-      "UI-UX",
-      "Design-System",
-      "AI-Coding"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27",
-      "2026-10-26",
-      "2026-10-25"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 14378
   },
   {
     "id": "VectifyAI/PageIndex",
@@ -1051,76 +1005,20 @@
     "maxStarsPeriod": 4054
   },
   {
-    "id": "obra/superpowers",
-    "owner": "obra",
-    "repo": "superpowers",
-    "url": "https://github.com/obra/superpowers",
-    "description": "An agentic skills framework & software development methodology that works.",
-    "language": "Shell",
-    "stars": 310109,
-    "forks": 27592,
-    "summaryKo": "AI 에이전트가 실제 소프트웨어 개발 라이프사이클에 유연하게 녹아들 수 있도록 구조화된 에이전트 역량 프레임워크이자 검증된 실무 개발 방법론입니다.",
-    "tags": [
-      "Shell",
-      "LLM-Agent",
-      "Software-Methodology",
-      "Workflow-Automation"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-17",
-      "2026-10-16"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 5636
-  },
-  {
-    "id": "multica-ai/andrej-karpathy-skills",
-    "owner": "multica-ai",
-    "repo": "andrej-karpathy-skills",
-    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-    "language": "Markdown / Other",
-    "stars": 227540,
-    "forks": 22707,
-    "summaryKo": "Андрей Кар파시(Andrej Karpathy)가 지적한 LLM 코딩의 치명적인 함정과 한계점들을 분석하여, Claude Code의 행동 양식을 교정하고 개발 생산성을 높이는 단일 CLAUDE.md 설정 파일입니다. AI 코딩 보조 도구의 할루시네이션과 컨텍스트 손실을 최소화합니다.",
-    "tags": [
-      "LLM-Agent",
-      "AI-Coding",
-      "Productivity",
-      "Zero-Dependency"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27",
-      "2026-10-26"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 4293
-  },
-  {
     "id": "DietrichGebert/ponytail",
     "owner": "DietrichGebert",
     "repo": "ponytail",
     "url": "https://github.com/DietrichGebert/ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "language": "JavaScript",
-    "stars": 180407,
+    "stars": 180406,
     "forks": 9906,
-    "summaryKo": "불필요한 코드 작성으로 인한 기술 부채를 방지하기 위해, 가장 게으른 시니어 개발자의 사고방식을 이식하여 '가장 완벽한 코드는 작성하지 않은 코드'라는 원칙을 AI 에이전트로 구현한 미니멀리즘 개발 지원 도구입니다.",
+    "summaryKo": "불필요한 코드 양산과 과도한 엔지니어링 문제를 해결하기 위해, '가장 게으른 시니어 개발자'의 관점에서 최소한의 코드로 최대의 효율을 내도록 AI 에이전트의 사고 방식을 교정하는 도구입니다.",
     "tags": [
-      "AI-Refactoring",
+      "LLM-Agent",
       "Code-Quality",
-      "Minimalism",
-      "LLM-Agent"
+      "Productivity",
+      "Architecture"
     ],
     "appearedDates": [
       "2026-10-30",
@@ -1135,32 +1033,32 @@
     "maxStarsPeriod": 33063
   },
   {
-    "id": "TauricResearch/TradingAgents",
-    "owner": "TauricResearch",
-    "repo": "TradingAgents",
-    "url": "https://github.com/TauricResearch/TradingAgents",
-    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-    "language": "Python",
-    "stars": 119083,
-    "forks": 22780,
-    "summaryKo": "기존 금융 트레이딩 봇의 단순 규칙 기반 한계를 극복하기 위해 멀티 에이전트 LLM 협업 구조를 도입한 프레임워크로, 복잡한 시장 상황을 다각도로 분석하여 고도화된 투자 전략 수립을 지원합니다.",
+    "id": "Nutlope/hallmark",
+    "owner": "Nutlope",
+    "repo": "hallmark",
+    "url": "https://github.com/Nutlope/hallmark",
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "language": "CSS",
+    "stars": 44603,
+    "forks": 2363,
+    "summaryKo": "AI 코딩 도구가 찍어내는 획일적이고 기계적인 디자인(AI Slop)을 방지하고 고품질의 세련된 UI를 생성하도록 강제하는 디자인 스킬입니다.",
     "tags": [
-      "LLM-Agent",
-      "Financial-Trading",
-      "Python",
-      "Multi-Agent"
+      "AI-Design",
+      "CSS",
+      "UI-UX",
+      "Developer-Tools"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
       "2026-10-27",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-10-25"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 5557
+    "maxStarsPeriod": 14378
   },
   {
     "id": "anthropics/financial-services",
@@ -1191,24 +1089,50 @@
     "maxStarsPeriod": 5573
   },
   {
-    "id": "AgriciDaniel/claude-seo",
-    "owner": "AgriciDaniel",
-    "repo": "claude-seo",
-    "url": "https://github.com/AgriciDaniel/claude-seo",
-    "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-    "language": "Python",
-    "stars": 25079,
-    "forks": 3319,
-    "summaryKo": "Claude Code 환경에서 기술적 SEO, E-E-A-T, GEO/AEO, 에이전트 최적화까지 26개의 서브 스킬과 19개의 에이전트로 웹 서비스의 검색 엔진 최적화를 완전 자동화하는 툴킷입니다. 복잡한 SEO 분석과 리포팅 작업을 대폭 간소화합니다.",
+    "id": "obra/superpowers",
+    "owner": "obra",
+    "repo": "superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "language": "Shell",
+    "stars": 310492,
+    "forks": 27630,
+    "summaryKo": "AI 코딩 에이전트가 무작정 코드를 작성하기 전 명세를 구체화하고 철저한 단계를 거치도록 강제하는 소프트웨어 개발 방법론 및 스킬 프레임워크입니다.",
     "tags": [
-      "SEO",
       "LLM-Agent",
-      "Web-Optimization",
-      "Automation"
+      "Workflow",
+      "Methodology",
+      "Shell"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-17",
+      "2026-10-16"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 5636
+  },
+  {
+    "id": "multica-ai/andrej-karpathy-skills",
+    "owner": "multica-ai",
+    "repo": "andrej-karpathy-skills",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "language": "Markdown / Other",
+    "stars": 227887,
+    "forks": 22733,
+    "summaryKo": "Andrej Karpathy가 지적한 LLM 코딩의 치명적인 함정(무단 가정, 과도한 추상화, 무분별한 코드 수정)을 단 하나의 CLAUDE.md 파일로 해결합니다.",
+    "tags": [
+      "LLM-Agent",
+      "Claude-Code",
+      "Best-Practices",
+      "Prompt-Engineering"
+    ],
+    "appearedDates": [
+      "2026-11-01",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
@@ -1216,7 +1140,34 @@
       "2026-10-26"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 6891
+    "maxStarsPeriod": 4293
+  },
+  {
+    "id": "TauricResearch/TradingAgents",
+    "owner": "TauricResearch",
+    "repo": "TradingAgents",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "language": "Python",
+    "stars": 119415,
+    "forks": 22852,
+    "summaryKo": "단일 LLM 모델 기반 금융 분석의 높은 환각 확률과 전략 편향성 문제를 해결하기 위해, 다중 멀티 에이전트가 협업하여 리서치, 리스크 관리, 트레이딩 결정을 수행하는 고도화된 금융 트레이딩 프레임워크입니다.",
+    "tags": [
+      "LLM-Agent",
+      "FinTech",
+      "Multi-Agent",
+      "High-Performance"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27",
+      "2026-10-26"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 5557
   },
   {
     "id": "MadsLorentzen/ai-job-search",
@@ -1326,31 +1277,58 @@
     "maxStarsPeriod": 22319
   },
   {
-    "id": "JetBrains/thinkrail",
-    "owner": "JetBrains",
-    "repo": "thinkrail",
-    "url": "https://github.com/JetBrains/thinkrail",
-    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "language": "TypeScript",
-    "stars": 6619,
-    "forks": 358,
-    "summaryKo": "웹 기반 AI 코딩 도구의 기능적 한계와 무거운 기존 IDE의 성능 저하 문제를 동시에 해결하기 위해, 개발자의 작업 패턴에 실시간으로 적응하는 가볍고 강력한 지능형 IDE입니다.",
+    "id": "AgriciDaniel/claude-seo",
+    "owner": "AgriciDaniel",
+    "repo": "claude-seo",
+    "url": "https://github.com/AgriciDaniel/claude-seo",
+    "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+    "language": "Python",
+    "stars": 25388,
+    "forks": 3346,
+    "summaryKo": "Claude Code 내에서 복잡한 SEO 감사를 자동화하여 구글 검색 순위 상승뿐만 아니라 ChatGPT, Perplexity 등 AI 검색 엔진의 인용(GEO/AEO)까지 최적화합니다.",
     "tags": [
-      "TypeScript",
-      "IDE",
       "LLM-Agent",
-      "Developer-Tools"
+      "SEO",
+      "Optimization",
+      "Python"
     ],
     "appearedDates": [
-      "2026-10-31",
+      "2026-11-01",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28",
       "2026-10-27",
       "2026-10-26"
     ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 1173
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 6891
+  },
+  {
+    "id": "JetBrains/thinkrail",
+    "owner": "JetBrains",
+    "repo": "thinkrail",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "language": "TypeScript",
+    "stars": 6925,
+    "forks": 387,
+    "summaryKo": "개발자의 작업 방식을 학습하고 살아있는 명세(Living Specs)를 통해 프로젝트 지향적 AI 페어 프로그래밍을 지원하는 JetBrains의 차세대 에이전틱 IDE입니다.",
+    "tags": [
+      "IDE",
+      "LLM-Agent",
+      "TypeScript",
+      "Developer-Tools"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27",
+      "2026-10-26"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 5738
   },
   {
     "id": "agent-substrate/substrate",
@@ -1380,110 +1358,6 @@
     "maxStarsPeriod": 3659
   },
   {
-    "id": "mattpocock/skills",
-    "owner": "mattpocock",
-    "repo": "skills",
-    "url": "https://github.com/mattpocock/skills",
-    "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "language": "Shell",
-    "stars": 308490,
-    "forks": 25963,
-    "summaryKo": "실무 엔지니어들이 AI 코딩 에이전트를 실전에 즉시 투입할 수 있도록 검증된 프롬프트와 에이전트 자동화 스크립트를 체계적으로 모아둔 실전 엔지니어링 킷입니다.",
-    "tags": [
-      "Shell",
-      "LLM-Agent",
-      "Automation",
-      "Workflow"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-18",
-      "2026-10-17",
-      "2026-10-16"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 12147
-  },
-  {
-    "id": "Leonxlnx/taste-skill",
-    "owner": "Leonxlnx",
-    "repo": "taste-skill",
-    "url": "https://github.com/Leonxlnx/taste-skill",
-    "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
-    "language": "JavaScript",
-    "stars": 107104,
-    "forks": 7244,
-    "summaryKo": "AI 코딩 에이전트가 획일적이고 완성도 낮은 웹 페이지를 찍어내는 고질적인 문제를 해결하기 위해, 아트 디렉션과 브라우저 시각 검증 능력을 부여하는 에이전트 스킬 세트입니다.",
-    "tags": [
-      "LLM-Agent",
-      "Web-Design",
-      "Browser-Automation",
-      "JavaScript"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 15847
-  },
-  {
-    "id": "Panniantong/Agent-Reach",
-    "owner": "Panniantong",
-    "repo": "Agent-Reach",
-    "url": "https://github.com/Panniantong/Agent-Reach",
-    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-    "language": "Python",
-    "stars": 106866,
-    "forks": 9501,
-    "summaryKo": "AI 에이전트가 고비용의 폐쇄형 API 제약 없이 트위터, 레딧, 유튜브 등 전 세계 주요 웹 플랫폼의 방대한 데이터를 실시간으로 수집하고 검색할 수 있도록 시각을 열어주는 제로 API 수수료 CLI 도구입니다.",
-    "tags": [
-      "Python",
-      "LLM-Agent",
-      "Web-Scraping",
-      "Zero-Dependency"
-    ],
-    "appearedDates": [
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28",
-      "2026-10-27"
-    ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 21207
-  },
-  {
-    "id": "HKUDS/DeepTutor",
-    "owner": "HKUDS",
-    "repo": "DeepTutor",
-    "url": "https://github.com/HKUDS/DeepTutor",
-    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-    "language": "Python",
-    "stars": 52914,
-    "forks": 6475,
-    "summaryKo": "일회성 답변에 그치는 기존 AI 챗봇의 한계를 극복하고 사용자의 학습 이력을 영구적으로 추적하여 맞춤형 교육을 제공하는 평생 개인화 튜터링 플랫폼입니다.",
-    "tags": [
-      "Python",
-      "LLM-Agent",
-      "Personalized-Learning",
-      "EdTech"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 2376
-  },
-  {
     "id": "longbridge/gpui-kit",
     "owner": "longbridge",
     "repo": "gpui-kit",
@@ -1508,32 +1382,6 @@
     ],
     "lastAppeared": "2026-10-20",
     "maxStarsPeriod": 3797
-  },
-  {
-    "id": "jakubkrehel/skills",
-    "owner": "jakubkrehel",
-    "repo": "skills",
-    "url": "https://github.com/jakubkrehel/skills",
-    "description": "A collection of agent skills that help you build great interfaces.",
-    "language": "Markdown",
-    "stars": 9630,
-    "forks": 369,
-    "summaryKo": "AI 에이전트가 일관성 없는 사용자 인터페이스를 생성하는 문제를 해결하기 위해, 검증된 UI/UX 베스트셀러 패턴과 디자인 시스템 지식을 에이전트 스킬 형태로 체계화한 컬렉션입니다.",
-    "tags": [
-      "AI-UI",
-      "Design-System",
-      "Markdown",
-      "Agent-Skills"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30",
-      "2026-10-29",
-      "2026-10-28"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 1272
   },
   {
     "id": "makecindy/cindy",
@@ -1612,6 +1460,56 @@
     "maxStarsPeriod": 3505
   },
   {
+    "id": "Leonxlnx/taste-skill",
+    "owner": "Leonxlnx",
+    "repo": "taste-skill",
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+    "language": "JavaScript",
+    "stars": 107575,
+    "forks": 7271,
+    "summaryKo": "AI 코딩 에이전트가 기계적이고 단조로운 UI를 생성하는 한계를 극복하고, 예술적 방향성, 레퍼런스 이미지, 실제 브라우저 검증 기능을 결합하여 '미적 감각(Taste)'을 갖춘 코드를 작성하도록 지원하는 스킬셋입니다.",
+    "tags": [
+      "LLM-Agent",
+      "UI-UX",
+      "Frontend",
+      "Design-Systems"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 15847
+  },
+  {
+    "id": "Panniantong/Agent-Reach",
+    "owner": "Panniantong",
+    "repo": "Agent-Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+    "language": "Python",
+    "stars": 106450,
+    "forks": 9451,
+    "summaryKo": "비싼 유료 API 비용과 파편화된 스크래핑 제약을 극복하고, 단 하나의 CLI로 트위터, 레딧, 유튜브 등 전 세계 웹 생태계를 AI 에이전트가 실시간 탐색할 수 있게 지원합니다.",
+    "tags": [
+      "LLM-Agent",
+      "Web-Scraping",
+      "Zero-Dependency",
+      "CLI"
+    ],
+    "appearedDates": [
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28",
+      "2026-10-27"
+    ],
+    "lastAppeared": "2026-10-30",
+    "maxStarsPeriod": 20593
+  },
+  {
     "id": "vllm-project/vllm",
     "owner": "vllm-project",
     "repo": "vllm",
@@ -1635,6 +1533,31 @@
     ],
     "lastAppeared": "2026-10-26",
     "maxStarsPeriod": 1445
+  },
+  {
+    "id": "shiyu-coder/Kronos",
+    "owner": "shiyu-coder",
+    "repo": "Kronos",
+    "url": "https://github.com/shiyu-coder/Kronos",
+    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "language": "Python",
+    "stars": 45163,
+    "forks": 7465,
+    "summaryKo": "금융 시장의 복잡하고 방대한 시계열 데이터를 효과적으로 처리하지 못하는 기존 범용 모델의 한계를 넘어, 금융 시장 전용 언어를 학습한 파운데이션 모델입니다.",
+    "tags": [
+      "Python",
+      "Financial-Markets",
+      "Foundation-Model",
+      "Time-Series"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-22",
+      "2026-10-21",
+      "2026-10-20"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 733
   },
   {
     "id": "hmjz100/LinkSwift",
@@ -1687,54 +1610,54 @@
     "maxStarsPeriod": 7435
   },
   {
-    "id": "Renhuai123/ziwei-doushu",
-    "owner": "Renhuai123",
-    "repo": "ziwei-doushu",
-    "url": "https://github.com/Renhuai123/ziwei-doushu",
-    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-    "language": "TypeScript",
-    "stars": 12347,
-    "forks": 2423,
-    "summaryKo": "복잡한 전통 자미두수 명리학 계산의 번거로움을 해결하기 위해, 고서 데이터와 정교한 알고리즘을 결합하여 정확한 명盘 계산과 사화 시스템을 제공하는 오픈소스 엔진입니다.",
-    "tags": [
-      "TypeScript",
-      "Algorithm",
-      "Open-Source",
-      "Engine"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-26",
-      "2026-10-24"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 1126
-  },
-  {
     "id": "togg53192-cmd/jailbreaks",
     "owner": "togg53192-cmd",
     "repo": "jailbreaks",
     "url": "https://github.com/togg53192-cmd/jailbreaks",
     "description": "LIST OF ALL MY JAILBREAKS",
     "language": "Markdown / Other",
-    "stars": 11220,
-    "forks": 1628,
-    "summaryKo": "AI 모델의 안전성 가드레일을 우회하는 프롬프트 엔지니어링 기법들의 방대한 집합으로, LLM의 보안 취약점 분석 및 레드티밍 연구를 수행하는 엔지니어들에게 실질적인 테스트 케이스를 제공합니다.",
+    "stars": 12751,
+    "forks": 1924,
+    "summaryKo": "다양한 프론티어 및 오픈웨이트 모델의 거버넌스 한계를 우회하고 제어하기 위한 시스템 프롬프트와 에이전트 지침 모음입니다.",
     "tags": [
       "LLM-Security",
-      "Red-Teaming",
-      "Prompt-Engineering",
-      "AI-Safety"
+      "System-Prompts",
+      "Agent-Policy",
+      "Markdown"
     ],
     "appearedDates": [
-      "2026-10-31",
+      "2026-11-01",
       "2026-10-30",
       "2026-10-29",
       "2026-10-28"
     ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 2055
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 1594
+  },
+  {
+    "id": "jakubkrehel/skills",
+    "owner": "jakubkrehel",
+    "repo": "skills",
+    "url": "https://github.com/jakubkrehel/skills",
+    "description": "A collection of agent skills that help you build great interfaces.",
+    "language": "Markdown",
+    "stars": 9947,
+    "forks": 385,
+    "summaryKo": "AI 에이전트가 인터페이스 구현 시 겪는 시각적 완성도 저하 및 일관성 부족 문제를 해결하기 위해, 접근성, 타이포그래피, 컬러 체계를 정밀하게 제어할 수 있는 고품질 디자인 에이전트 스킬 컬렉션을 제공합니다.",
+    "tags": [
+      "LLM-Agent",
+      "Design-Systems",
+      "UI-UX",
+      "Accessibility"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 1272
   },
   {
     "id": "nightly-labs/openbot",
@@ -1743,13 +1666,13 @@
     "url": "https://github.com/nightly-labs/openbot",
     "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
     "language": "TypeScript",
-    "stars": 4031,
+    "stars": 4028,
     "forks": 370,
-    "summaryKo": "웹 기반 AI 서비스들의 산발적인 컨텍스트 유실 문제를 해결하고, 여러 AI 팀원(Codex, Claude, Grok)을 로컬 환경에서 영구적이고 체계적으로 협업시키는 데스크톱 워크스페이스입니다.",
+    "summaryKo": "웹 기반 AI 도구들의 분산된 작업 환경 문제를 해결하고, 여러 AI 팀원(Codex, Claude, Grok)을 로컬 환경에서 통합 관리하는 데스크톱 워크스페이스입니다.",
     "tags": [
       "TypeScript",
       "Local-First",
-      "LLM-Agent",
+      "Multi-Agent",
       "Desktop-Workspace"
     ],
     "appearedDates": [
@@ -1762,28 +1685,28 @@
     "maxStarsPeriod": 1054
   },
   {
-    "id": "flutter/flutter",
-    "owner": "flutter",
-    "repo": "flutter",
-    "url": "https://github.com/flutter/flutter",
-    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
-    "language": "Dart",
-    "stars": 180852,
-    "forks": 32831,
-    "summaryKo": "멀티플랫폼 개발 시 파편화된 UI와 성능 저하 문제를 해결하기 위해 고성능 렌더링 엔진을 제공하는 구글의 대표적인 크로스플랫폼 UI 프레임워크입니다.",
+    "id": "mattpocock/skills",
+    "owner": "mattpocock",
+    "repo": "skills",
+    "url": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "language": "Shell",
+    "stars": 295156,
+    "forks": 24757,
+    "summaryKo": "실무 엔지니어들이 실제 프로덕션 환경에서 검증된 AI 에이전트 설정과 프롬프트를 즉시 적용할 수 있도록 .agents 디렉토리 표준을 제공합니다.",
     "tags": [
-      "Cross-Platform",
-      "UI-Framework",
-      "Mobile-Development",
-      "High-Performance"
+      "LLM-Agent",
+      "Automation",
+      "Developer-Tools",
+      "Shell"
     ],
     "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30"
+      "2026-10-18",
+      "2026-10-17",
+      "2026-10-16"
     ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 2257
+    "lastAppeared": "2026-10-18",
+    "maxStarsPeriod": 12147
   },
   {
     "id": "addyosmani/agent-skills",
@@ -1834,28 +1757,28 @@
     "maxStarsPeriod": 549
   },
   {
-    "id": "shiyu-coder/Kronos",
-    "owner": "shiyu-coder",
-    "repo": "Kronos",
-    "url": "https://github.com/shiyu-coder/Kronos",
-    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "id": "HKUDS/DeepTutor",
+    "owner": "HKUDS",
+    "repo": "DeepTutor",
+    "url": "https://github.com/HKUDS/DeepTutor",
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
     "language": "Python",
-    "stars": 42867,
-    "forks": 7073,
-    "summaryKo": "복잡하고 비정형적인 금융 시장 데이터 분석의 한계를 해결하기 위해, 금융 시계열 및 시장 언어를 학습하여 정교한 예측과 인사이트를 도출하는 파운데이션 모델입니다.",
+    "stars": 50775,
+    "forks": 6241,
+    "summaryKo": "기존 획일적인 교육 시스템의 한계를 극복하고 사용자 맞춤형 학습 경험을 지속 제공하는 평생 교육용 LLM 에이전트 프레임워크입니다.",
     "tags": [
       "Python",
-      "Foundation-Model",
-      "Finance",
-      "Time-Series"
+      "LLM-Agent",
+      "EdTech",
+      "Personalized-Learning"
     ],
     "appearedDates": [
-      "2026-10-22",
-      "2026-10-21",
-      "2026-10-20"
+      "2026-10-30",
+      "2026-10-29",
+      "2026-10-28"
     ],
-    "lastAppeared": "2026-10-22",
-    "maxStarsPeriod": 733
+    "lastAppeared": "2026-10-30",
+    "maxStarsPeriod": 2376
   },
   {
     "id": "wshobson/agents",
@@ -1890,12 +1813,12 @@
     "language": "C",
     "stars": 41728,
     "forks": 8495,
-    "summaryKo": "웹 생태계의 근간이 되는 PHP 언어 인터프리터의 코어 엔진으로, 지속적인 성능 최적화와 메모리 관리 개선을 통해 대규모 웹 애플리케이션의 런타임 속도를 가속화합니다.",
+    "summaryKo": "웹 생태계의 근간이 되는 PHP 언어의 핵심 인터프리터 소스코드 저장소로, 지속적인 코어 최적화를 통해 실행 성능과 메모리 효율을 극대화합니다.",
     "tags": [
-      "Runtime",
+      "Interpreter",
+      "Web-Backend",
       "High-Performance",
-      "Backend",
-      "Interpreter"
+      "Open-Source"
     ],
     "appearedDates": [
       "2026-10-30",
@@ -1930,20 +1853,43 @@
     "maxStarsPeriod": 10698
   },
   {
+    "id": "Renhuai123/ziwei-doushu",
+    "owner": "Renhuai123",
+    "repo": "ziwei-doushu",
+    "url": "https://github.com/Renhuai123/ziwei-doushu",
+    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "language": "TypeScript",
+    "stars": 12970,
+    "forks": 2544,
+    "summaryKo": "오픈소스화된 전통 명리학 알고리즘과 대규모 해석 데이터를 결합하여 정밀한 자미두수 분석 및 AI 해석을 제공하는 고성능 타이뿌(Paipan) 엔진입니다.",
+    "tags": [
+      "TypeScript",
+      "Algorithm",
+      "Dataset",
+      "Open-Source"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-26",
+      "2026-10-24"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 953
+  },
+  {
     "id": "elayadesign/ai-design-skills",
     "owner": "elayadesign",
     "repo": "ai-design-skills",
     "url": "https://github.com/elayadesign/ai-design-skills",
     "description": "No description provided.",
     "language": "Markdown / Other",
-    "stars": 12488,
-    "forks": 908,
-    "summaryKo": "디자인 에이전트 구축 시 일관성 없는 UI/UX 산출물 문제를 해결하며, AI가 즉시 이해하고 활용할 수 있는 정형화된 디자인 시스템 프롬프트를 제공합니다.",
+    "stars": 12485,
+    "forks": 906,
+    "summaryKo": "AI 기반 디자인 워크플로우의 파편화된 프롬프트 관리 한계를 극복하고, 디자이너와 엔지니어 간의 협업 효율을 극대화하는 재사용 가능한 스킬셋 모음입니다.",
     "tags": [
-      "UI-UX",
-      "Design-System",
-      "Prompt-Engineering",
-      "Frontend"
+      "AI-Design",
+      "Workflow",
+      "Markdown"
     ],
     "appearedDates": [
       "2026-10-30",
@@ -1978,30 +1924,6 @@
     "maxStarsPeriod": 843
   },
   {
-    "id": "milind-soni/OpenMausBot",
-    "owner": "milind-soni",
-    "repo": "OpenMausBot",
-    "url": "https://github.com/milind-soni/OpenMausBot",
-    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "language": "TypeScript",
-    "stars": 9720,
-    "forks": 1349,
-    "summaryKo": "기존 Grok 봇의 유연성 한계를 극복하고 개발자가 직접 제어할 수 있는 가상 머신 환경을 내장한 오픈소스 AI 봇 대안 솔루션입니다.",
-    "tags": [
-      "TypeScript",
-      "Virtual-Machine",
-      "LLM-Agent",
-      "Bot-Framework"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31",
-      "2026-10-30"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 1303
-  },
-  {
     "id": "xerj-org/xerj",
     "owner": "xerj-org",
     "repo": "xerj",
@@ -2024,54 +1946,6 @@
     ],
     "lastAppeared": "2026-10-18",
     "maxStarsPeriod": 1648
-  },
-  {
-    "id": "macro-inc/macro",
-    "owner": "macro-inc",
-    "repo": "macro",
-    "url": "https://github.com/macro-inc/macro",
-    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-    "language": "Rust",
-    "stars": 5894,
-    "forks": 540,
-    "summaryKo": "이메일, 채팅, 문서, 작업 관리 등 파편화된 협업 도구의 컨텍스트 단절 문제를 해결하기 위해, 모든 데이터를 공유 AI 메모리와 @ 링크로 통합한 차세대 유니파이드 워크스페이스입니다.",
-    "tags": [
-      "Rust",
-      "AI-Memory",
-      "Collaboration",
-      "Workspace"
-    ],
-    "appearedDates": [
-      "2026-10-31",
-      "2026-10-29",
-      "2026-10-28"
-    ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 117
-  },
-  {
-    "id": "expo/skills",
-    "owner": "expo",
-    "repo": "skills",
-    "url": "https://github.com/expo/skills",
-    "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
-    "language": "Shell",
-    "stars": 3912,
-    "forks": 247,
-    "summaryKo": "Expo 및 EAS(Expo Application Services) 생태계에서 AI 에이전트가 개발 워크플로우를 정확히 이해하고 수행할 수 있도록 전문적인 도메인 지식과 스킬셋을 모아둔 쉘 기반 큐레이션 컬렉션입니다.",
-    "tags": [
-      "CI-CD",
-      "Mobile-Development",
-      "Shell",
-      "LLM-Agent"
-    ],
-    "appearedDates": [
-      "2026-10-31",
-      "2026-10-29",
-      "2026-10-28"
-    ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 212
   },
   {
     "id": "ranxianglei/billion-context",
@@ -2098,27 +1972,27 @@
     "maxStarsPeriod": 888
   },
   {
-    "id": "anthropics/skills",
-    "owner": "anthropics",
-    "repo": "skills",
-    "url": "https://github.com/anthropics/skills",
-    "description": "Public repository for Agent Skills",
-    "language": "Python",
-    "stars": 185925,
-    "forks": 21948,
-    "summaryKo": "AI 에이전트가 복잡하고 반복적인 실무 태스크를 안정적으로 수행할 수 있도록 앤트로픽(Anthropic)이 공식 제공하는 모듈형 에이전트 스킬 리포지토리입니다.",
+    "id": "flutter/flutter",
+    "owner": "flutter",
+    "repo": "flutter",
+    "url": "https://github.com/flutter/flutter",
+    "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+    "language": "Dart",
+    "stars": 180921,
+    "forks": 32851,
+    "summaryKo": "단일 코드베이스로 모바일, 웹, 데스크톱을 아우르는 고성능 멀티플랫폼 앱을 빠르게 구축할 수 있는 구글의 오픈소스 UI SDK입니다.",
     "tags": [
-      "LLM-Agent",
-      "Anthropic",
-      "Python",
-      "Automation"
+      "Cross-Platform",
+      "Mobile-App",
+      "UI-Framework",
+      "Dart"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31"
+      "2026-10-30"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 2389
+    "maxStarsPeriod": 2257
   },
   {
     "id": "ruvnet/RuView",
@@ -2167,50 +2041,27 @@
     "maxStarsPeriod": 392
   },
   {
-    "id": "lightpanda-io/browser",
-    "owner": "lightpanda-io",
-    "repo": "browser",
-    "url": "https://github.com/lightpanda-io/browser",
-    "description": "Lightpanda: the headless browser designed for AI and automation",
-    "language": "Zig",
-    "stars": 39304,
-    "forks": 1912,
-    "summaryKo": "기존 헤드리스 브라우저들이 가진 과도한 메모리 소비와 느린 속도 문제를 해결하기 위해 Zig로 처음부터 설계된 AI 및 자동화 전용 초고속 헤드리스 브라우저입니다.",
-    "tags": [
-      "Zig",
-      "Headless-Browser",
-      "Web-Automation",
-      "High-Performance"
-    ],
-    "appearedDates": [
-      "2026-11-01",
-      "2026-10-31"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 929
-  },
-  {
     "id": "Donchitos/Claude-Code-Game-Studios",
     "owner": "Donchitos",
     "repo": "Claude-Code-Game-Studios",
     "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
     "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
     "language": "Shell",
-    "stars": 31245,
-    "forks": 4282,
-    "summaryKo": "개인 개발 환경에서도 대형 게임 스튜디오의 조직 구조와 협업 프로세스를 재현할 수 있도록, 49개의 AI 에이전트와 72개의 워크플로우 스킬을 제공하는 멀티 에이전트 게임 개발 스튜디오 시스템입니다.",
+    "stars": 31958,
+    "forks": 4365,
+    "summaryKo": "단일 Claude Code 세션을 49개의 AI 에이전트와 74개의 스킬이 협업하는 체계적인 게임 개발 스튜디오로 확장해주는 오케스트레이션 프레임워크입니다.",
     "tags": [
-      "Shell",
       "LLM-Agent",
+      "AI-Workflow",
       "Game-Dev",
-      "Multi-Agent"
+      "Claude-Code"
     ],
     "appearedDates": [
       "2026-11-01",
       "2026-10-30"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 742
+    "maxStarsPeriod": 970
   },
   {
     "id": "xiaolai/the-craft-of-selfteaching",
@@ -2242,14 +2093,14 @@
     "url": "https://github.com/YuJunZhiXue/dsh-purge",
     "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
     "language": "JavaScript",
-    "stars": 14648,
-    "forks": 3390,
-    "summaryKo": "특정 대형 언어 모델의 과도한 제한이나 규격화된 응답 제약으로 인해 실무 커스텀이 어려운 문제를 해결하기 위해, 모델별 맞춤형 프롬프트 스왑과 탈출(Jailbreak) 기능을 제공하는 하네스 도구입니다.",
+    "stars": 15263,
+    "forks": 3509,
+    "summaryKo": "특정 AI 모델의 과도한 안전 필터로 인해 발생하는 실무 활용 제약 및 프롬프트 제한 문제를 해결하기 위해, 모델별 맞춤형 프롬프트 스와핑을 지원하는 사이버보안 레드팀 평가용 툴킷입니다.",
     "tags": [
-      "Prompt-Engineering",
-      "LLM-Bypass",
-      "JavaScript",
-      "Custom-Harness"
+      "LLM-Agent",
+      "Security",
+      "Zero-Dependency",
+      "High-Performance"
     ],
     "appearedDates": [
       "2026-11-01",
@@ -2259,50 +2110,50 @@
     "maxStarsPeriod": 6641
   },
   {
+    "id": "milind-soni/OpenMausBot",
+    "owner": "milind-soni",
+    "repo": "OpenMausBot",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "language": "TypeScript",
+    "stars": 10348,
+    "forks": 1432,
+    "summaryKo": "비싼 구독료와 폐쇄적인 생태계의 기존 AI 챗봇(Grok Bot 등)의 한계를 극복하고, 로컬 환경에서 가상 머신과 연동되어 직접 코드를 실행하고 일하는 자율형 오픈소스 AI 봇 팀입니다.",
+    "tags": [
+      "TypeScript",
+      "React",
+      "Electron",
+      "LLM-Agent"
+    ],
+    "appearedDates": [
+      "2026-11-01",
+      "2026-10-30"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 1199
+  },
+  {
     "id": "CopilotKit/OpenBot",
     "owner": "CopilotKit",
     "repo": "OpenBot",
     "url": "https://github.com/CopilotKit/OpenBot",
     "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
     "language": "TypeScript",
-    "stars": 8847,
-    "forks": 1111,
-    "summaryKo": "격리되지 않은 환경에서 동작하는 기존 AI 에이전트의 보안 및 제어 한계를 극복하기 위해, 전용 브라우저와 파일 시스템을 갖춘 가상 PC를 각 에이전트에 할당하여 투명하게 실행하는 오픈소스 AI 동료 시스템입니다.",
+    "stars": 9375,
+    "forks": 1174,
+    "summaryKo": "클라우드 종속적인 기존 AI 어시스턴트의 한계를 극복하고, 사내 인프라에서 완벽히 통제할 수 있는 오픈소스 AI 코워커 플랫폼입니다.",
     "tags": [
-      "AI-Agent",
-      "Sandbox",
+      "LLM-Agent",
       "TypeScript",
-      "Automation"
-    ],
-    "appearedDates": [
-      "2026-10-31",
-      "2026-10-30"
-    ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 706
-  },
-  {
-    "id": "mvschwarz/openrig",
-    "owner": "mvschwarz",
-    "repo": "openrig",
-    "url": "https://github.com/mvschwarz/openrig",
-    "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
-    "language": "TypeScript",
-    "stars": 8495,
-    "forks": 698,
-    "summaryKo": "개별 AI 어시스턴트의 고립된 작업 한계를 극복하고, Claude Code, Codex, Pi 등을 역할 기반의 유기적인 멀티 에이전트 팀으로 오케스트레이션하는 프레임워크입니다.",
-    "tags": [
-      "Multi-Agent",
-      "AI-Collaboration",
-      "Workflow-Automation",
-      "Distributed-AI"
+      "Infrastructure",
+      "AI-Coworker"
     ],
     "appearedDates": [
       "2026-11-01",
-      "2026-10-31"
+      "2026-10-30"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 6245
+    "maxStarsPeriod": 247
   },
   {
     "id": "Gaurav-Gosain/tuios",
@@ -2328,6 +2179,52 @@
     "maxStarsPeriod": 2223
   },
   {
+    "id": "macro-inc/macro",
+    "owner": "macro-inc",
+    "repo": "macro",
+    "url": "https://github.com/macro-inc/macro",
+    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+    "language": "Rust",
+    "stars": 5477,
+    "forks": 522,
+    "summaryKo": "이메일, 채팅, 문서, 작업, CRM 등 파편화된 팀 협업 툴의 비효율성을 해결하기 위해, 모든 에셋을 공유 AI 메모리로 연결한 통합 워크스페이스입니다.",
+    "tags": [
+      "Rust",
+      "Collaboration-Tool",
+      "Shared-AI-Memory",
+      "High-Performance"
+    ],
+    "appearedDates": [
+      "2026-10-29",
+      "2026-10-28"
+    ],
+    "lastAppeared": "2026-10-29",
+    "maxStarsPeriod": 117
+  },
+  {
+    "id": "expo/skills",
+    "owner": "expo",
+    "repo": "skills",
+    "url": "https://github.com/expo/skills",
+    "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+    "language": "Shell",
+    "stars": 3623,
+    "forks": 230,
+    "summaryKo": "AI 코딩 에이전트가 Expo 생태계 및 EAS(Expo Application Services)의 최신 모바일 개발 표준을 이해하지 못해 발생하는 레거시 코드 생성 문제를 해결하는 전문 스킬 컬렉션입니다.",
+    "tags": [
+      "Expo",
+      "React-Native",
+      "AI-Agent",
+      "Mobile-Dev"
+    ],
+    "appearedDates": [
+      "2026-10-29",
+      "2026-10-28"
+    ],
+    "lastAppeared": "2026-10-29",
+    "maxStarsPeriod": 212
+  },
+  {
     "id": "Kruk2/jasna",
     "owner": "Kruk2",
     "repo": "jasna",
@@ -2349,6 +2246,50 @@
     ],
     "lastAppeared": "2026-10-20",
     "maxStarsPeriod": 498
+  },
+  {
+    "id": "public-apis/public-apis",
+    "owner": "public-apis",
+    "repo": "public-apis",
+    "url": "https://github.com/public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "language": "Python",
+    "stars": 494299,
+    "forks": 55177,
+    "summaryKo": "개발자들이 분산되어 있는 무료 API 정보를 찾느라 겪는 탐색 비용을 없애고, 검증된 프로덕션 급 REST API를 단일 대소 보드와 통합 키로 즉시 연동할 수 있도록 지원합니다.",
+    "tags": [
+      "Python",
+      "Public-APIs",
+      "REST-API",
+      "Integration"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 298
+  },
+  {
+    "id": "anthropics/skills",
+    "owner": "anthropics",
+    "repo": "skills",
+    "url": "https://github.com/anthropics/skills",
+    "description": "Public repository for Agent Skills",
+    "language": "Python",
+    "stars": 186223,
+    "forks": 21991,
+    "summaryKo": "특정 기업의 브랜드 가이드라인 준수, 맞춤형 데이터 분석 등 복잡하고 반복적인 실무 작업을 Claude 에이전트가 표준화된 방식으로 완벽하게 수행할 수 있도록 지원하는 공식 Agent Skills 레퍼토리입니다.",
+    "tags": [
+      "LLM-Agent",
+      "CI-CD",
+      "Enterprise",
+      "Automation"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 2389
   },
   {
     "id": "msitarzewski/agency-agents",
@@ -2439,28 +2380,6 @@
     "maxStarsPeriod": 101
   },
   {
-    "id": "bregman-arie/devops-exercises",
-    "owner": "bregman-arie",
-    "repo": "devops-exercises",
-    "url": "https://github.com/bregman-arie/devops-exercises",
-    "description": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions",
-    "language": "Python",
-    "stars": 86036,
-    "forks": 20551,
-    "summaryKo": "DevOps, SRE, 클라우드 인프라 면접에서 반복적으로 출제되는 실무 아키텍처 및 트러블슈팅 문항을 체계적으로 정리한 종합 가이드입니다. 이론 중심의 학습에서 벗어나 실제 장애 상황과 운영 노하우를 한눈에 파악할 수 있도록 돕습니다.",
-    "tags": [
-      "DevOps",
-      "SRE",
-      "Cloud-Infrastructure",
-      "Kubernetes"
-    ],
-    "appearedDates": [
-      "2026-11-01"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 342
-  },
-  {
     "id": "mlabonne/llm-course",
     "owner": "mlabonne",
     "repo": "llm-course",
@@ -2503,6 +2422,28 @@
     ],
     "lastAppeared": "2026-10-26",
     "maxStarsPeriod": 152
+  },
+  {
+    "id": "ghostty-org/ghostty",
+    "owner": "ghostty-org",
+    "repo": "ghostty",
+    "url": "https://github.com/ghostty-org/ghostty",
+    "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+    "language": "Zig",
+    "stars": 63152,
+    "forks": 3812,
+    "summaryKo": "기존 터미널 에뮬레이터들이 강요하던 속도, 풍부한 기능, 네이티브 UI 간의 트레이드오프를 해결하고 GPU 가속과 플랫폼 네이티브 UI를 모두 결합한 고성능 터미널입니다.",
+    "tags": [
+      "Terminal-Emulator",
+      "GPU-Acceleration",
+      "Zig",
+      "High-Performance"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 556
   },
   {
     "id": "twentyhq/twenty",
@@ -2549,50 +2490,6 @@
     "maxStarsPeriod": 83
   },
   {
-    "id": "AstrBotDevs/AstrBot",
-    "owner": "AstrBotDevs",
-    "repo": "AstrBot",
-    "url": "https://github.com/AstrBotDevs/AstrBot",
-    "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
-    "language": "Python",
-    "stars": 45355,
-    "forks": 3323,
-    "summaryKo": "다양한 인스턴트 메시징(IM) 플랫폼과 대형 언어 모델(LLM)을 유연하게 연동할 수 있는 확장형 AI 에이전트 개발 프레임워크입니다.",
-    "tags": [
-      "LLM-Agent",
-      "Python",
-      "Chatbot",
-      "AI-Framework"
-    ],
-    "appearedDates": [
-      "2026-11-01"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 2137
-  },
-  {
-    "id": "THU-MAIC/OpenMAIC",
-    "owner": "THU-MAIC",
-    "repo": "OpenMAIC",
-    "url": "https://github.com/THU-MAIC/OpenMAIC",
-    "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
-    "language": "TypeScript",
-    "stars": 42217,
-    "forks": 6516,
-    "summaryKo": "정적이고 지루한 기존 이러닝 환경의 한계를 깨고, 여러 AI 에이전트들이 교사와 학생 역할을 맡아 토론과 상호작용을 주도하는 몰입형 멀티 에이전트 교실 시스템입니다.",
-    "tags": [
-      "TypeScript",
-      "Multi-Agent",
-      "Interactive-Classroom",
-      "EdTech"
-    ],
-    "appearedDates": [
-      "2026-11-01"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 116
-  },
-  {
     "id": "OpenBMB/VoxCPM",
     "owner": "OpenBMB",
     "repo": "VoxCPM",
@@ -2613,6 +2510,72 @@
     ],
     "lastAppeared": "2026-10-24",
     "maxStarsPeriod": 150
+  },
+  {
+    "id": "patchy631/ai-engineering-hub",
+    "owner": "patchy631",
+    "repo": "ai-engineering-hub",
+    "url": "https://github.com/patchy631/ai-engineering-hub",
+    "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+    "language": "Jupyter Notebook",
+    "stars": 40019,
+    "forks": 6467,
+    "summaryKo": "이론 중심의 AI 학습에서 벗어나, 실무에 즉시 적용할 수 있는 93개 이상의 프로덕션 급 AI 엔지니어링 프로젝트 모음입니다.",
+    "tags": [
+      "LLM-Agent",
+      "RAG",
+      "Jupyter-Notebook",
+      "AI-Engineering"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 573
+  },
+  {
+    "id": "lightpanda-io/browser",
+    "owner": "lightpanda-io",
+    "repo": "browser",
+    "url": "https://github.com/lightpanda-io/browser",
+    "description": "Lightpanda: the headless browser designed for AI and automation",
+    "language": "Zig",
+    "stars": 39885,
+    "forks": 1948,
+    "summaryKo": "무거우며 자원을 과도하게 소모하는 기존 Chromium 기반 헤드리스 브라우저의 한계를 극복하고, AI 에이전트와 웹 자동화를 위해 Zig 언어로 바닥부터 새로 설계된 초경량 고성능 브라우저입니다.",
+    "tags": [
+      "Zig",
+      "Headless-Browser",
+      "AI-Automation",
+      "High-Performance"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 827
+  },
+  {
+    "id": "hyprwm/Hyprland",
+    "owner": "hyprwm",
+    "repo": "Hyprland",
+    "url": "https://github.com/hyprwm/Hyprland",
+    "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+    "language": "C++",
+    "stars": 39248,
+    "forks": 2122,
+    "summaryKo": "불필요한 외부 의존성을 제거하고 화려한 애니메이션과 강력한 커스텀 기능을 제공하는 100% 독자 개발 Wayland 컴포지터입니다.",
+    "tags": [
+      "High-Performance",
+      "C++",
+      "Wayland",
+      "Desktop-Environment"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 91
   },
   {
     "id": "gitroomhq/postiz-app",
@@ -2643,42 +2606,42 @@
     "url": "https://github.com/vercel-labs/skills",
     "description": "The open agent skills tool - npx skills",
     "language": "TypeScript",
-    "stars": 37311,
-    "forks": 3220,
-    "summaryKo": "AI 에이전트 간의 파편화된 기능 확장 및 스킬 공유 문제를 해결하기 위해, npx 명령어로 즉시 실행 가능한 표준화된 오픈 에이전트 스킬 통합 도구입니다.",
+    "stars": 37548,
+    "forks": 3244,
+    "summaryKo": "오픈 에이전트 스킬 생태계를 위한 표준 CLI 도구로, 다양한 코딩 에이전트에 재사용 가능한 라이브러리 활용 지침을 주입합니다.",
     "tags": [
-      "TypeScript",
       "LLM-Agent",
-      "Zero-Dependency",
-      "High-Performance"
-    ],
-    "appearedDates": [
-      "2026-10-31"
-    ],
-    "lastAppeared": "2026-10-31",
-    "maxStarsPeriod": 4626
-  },
-  {
-    "id": "vorssaint/vorssaint-utils",
-    "owner": "vorssaint",
-    "repo": "vorssaint-utils",
-    "url": "https://github.com/vorssaint/vorssaint-utils",
-    "description": "Free and open-source macOS menu bar toolkit.",
-    "language": "Swift",
-    "stars": 31955,
-    "forks": 1543,
-    "summaryKo": "macOS 상단 메뉴바에서 시스템 자원과 유틸리티를 가볍고 직관적으로 모니터링할 수 있는 고성능 오픈소스 툴킷입니다. 무거운 상용 앱들을 대체하여 시스템 리소스 소모를 최소화하면서 필요한 기능을 즉시 사용할 수 있습니다.",
-    "tags": [
-      "macOS",
-      "Menu-Bar",
-      "Native-App",
-      "System-Utility"
+      "CLI",
+      "Vercel",
+      "Developer-Experience"
     ],
     "appearedDates": [
       "2026-11-01"
     ],
     "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 501
+    "maxStarsPeriod": 4721
+  },
+  {
+    "id": "cjpais/Handy",
+    "owner": "cjpais",
+    "repo": "Handy",
+    "url": "https://github.com/cjpais/Handy",
+    "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
+    "language": "Rust",
+    "stars": 36296,
+    "forks": 3433,
+    "summaryKo": "클라우드 전송 없이 로컬 환경에서 Whisper 엔진을 활용해 음성을 실시간 텍스트로 변환하는 프라이버시 중심의 크로스플랫폼 음성 인식 도구입니다.",
+    "tags": [
+      "Speech-To-Text",
+      "Rust",
+      "Local-First",
+      "Privacy"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 383
   },
   {
     "id": "alchaincyf/huashu-design",
@@ -2747,6 +2710,50 @@
     "maxStarsPeriod": 214
   },
   {
+    "id": "FlashML-org/FreeToken",
+    "owner": "FlashML-org",
+    "repo": "FreeToken",
+    "url": "https://github.com/FlashML-org/FreeToken",
+    "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+    "language": "Python",
+    "stars": 15234,
+    "forks": 1538,
+    "summaryKo": "데이터센터급 대형 MoE 모델을 고가의 서버 없이 일반 개인용 PC에서도 압도적인 속도로 구동할 수 있게 해주는 엣지 네이티브 추론 엔진입니다.",
+    "tags": [
+      "High-Performance",
+      "LLM-Serving",
+      "MoE",
+      "Python"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 232
+  },
+  {
+    "id": "kornia/kornia",
+    "owner": "kornia",
+    "repo": "kornia",
+    "url": "https://github.com/kornia/kornia",
+    "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+    "language": "Python",
+    "stars": 11686,
+    "forks": 1461,
+    "summaryKo": "PyTorch 기반으로 미분 가능한 기하학적 컴퓨터 비전 연산을 수행하여 공간 AI 및 딥러닝 파이프라인의 성능을 극대화하는 오픈소스 라이브러리입니다.",
+    "tags": [
+      "Computer-Vision",
+      "PyTorch",
+      "Deep-Learning",
+      "Spatial-AI"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 88
+  },
+  {
     "id": "Meloong-Git/PCL",
     "owner": "Meloong-Git",
     "repo": "PCL",
@@ -2791,28 +2798,6 @@
     "maxStarsPeriod": 226
   },
   {
-    "id": "Orkas-AI/Orkas",
-    "owner": "Orkas-AI",
-    "repo": "Orkas",
-    "url": "https://github.com/Orkas-AI/Orkas",
-    "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
-    "language": "JavaScript",
-    "stars": 6447,
-    "forks": 391,
-    "summaryKo": "복잡한 데스크톱 개발 작업에서 사용자의 목표를 분석하고 16개의 전문 AI 에이전트와 외부 코딩 도구를 총괄 지휘하여 완전 자동화를 수행하는 로컬 퍼스트 AI 팀 플랫폼입니다.",
-    "tags": [
-      "JavaScript",
-      "LLM-Agent",
-      "Multi-Agent",
-      "Desktop-App"
-    ],
-    "appearedDates": [
-      "2026-11-01"
-    ],
-    "lastAppeared": "2026-11-01",
-    "maxStarsPeriod": 1044
-  },
-  {
     "id": "withmarbleapp/os-taxonomy",
     "owner": "withmarbleapp",
     "repo": "os-taxonomy",
@@ -2832,6 +2817,28 @@
     ],
     "lastAppeared": "2026-10-20",
     "maxStarsPeriod": 284
+  },
+  {
+    "id": "beenuar/AiSOC",
+    "owner": "beenuar",
+    "repo": "AiSOC",
+    "url": "https://github.com/beenuar/AiSOC",
+    "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+    "language": "Python",
+    "stars": 6025,
+    "forks": 628,
+    "summaryKo": "외부 API 키 없이 자체 호스팅이 가능하며, LLM 에이전트를 통해 보안 텔레메트리를 분석하고 감사 가능한 의사결정 원장을 제공하는 오픈소스 AI 보안 운영 센터입니다.",
+    "tags": [
+      "LLM-Agent",
+      "Cybersecurity",
+      "SOC",
+      "Self-Hosted"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 436
   },
   {
     "id": "elie222/rakazo",
@@ -2876,5 +2883,27 @@
     ],
     "lastAppeared": "2026-10-25",
     "maxStarsPeriod": 13
+  },
+  {
+    "id": "anomalyco/hex",
+    "owner": "anomalyco",
+    "repo": "hex",
+    "url": "https://github.com/anomalyco/hex",
+    "description": "Local voice dictation for mac, windows and linux",
+    "language": "Rust",
+    "stars": 2931,
+    "forks": 173,
+    "summaryKo": "macOS, Windows, Linux 환경에서 외부 클라우드 전송 없이 로컬에서 음성을 고속으로 텍스트 받아쓰기 해주는 Rust 기반 오픈소스 툴입니다.",
+    "tags": [
+      "Rust",
+      "Voice-Dictation",
+      "Cross-Platform",
+      "Local-First"
+    ],
+    "appearedDates": [
+      "2026-11-01"
+    ],
+    "lastAppeared": "2026-11-01",
+    "maxStarsPeriod": 1329
   }
 ]
