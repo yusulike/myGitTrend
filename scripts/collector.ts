@@ -186,6 +186,19 @@ export async function summarizeBatchWithGemini(
   const results = new Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[]; report?: TechReport }>();
   if (items.length === 0) return results;
 
+  // Fetch README excerpts concurrently (with safe truncation)
+  const readmeSnippets = new Map<string, string>();
+  await Promise.all(
+    items.map(async (item) => {
+      try {
+        const snippet = await fetchReadmeSnippet(item.owner, item.repo);
+        readmeSnippets.set(`${item.owner}/${item.repo}`, snippet.slice(0, 1500));
+      } catch {
+        readmeSnippets.set(`${item.owner}/${item.repo}`, '');
+      }
+    })
+  );
+
   const genAI = new GoogleGenerativeAI(apiKey);
   const candidateModels = Array.from(new Set([
     activeWorkingModel,
@@ -197,25 +210,37 @@ export async function summarizeBatchWithGemini(
 
   const prompt = `
 당신은 전 세계 오픈소스 트렌드를 분석하고 실무 개발자들에게 핵심 기술 가치를 전달하는 수석 소프트웨어 아키텍트이자 테크 큐레이터입니다.
-아래 제공된 ${items.length}개의 프로젝트를 깊이 있게 분석하여, 한국 개발자가 직관적으로 가치를 체감할 수 있는 최고 품질의 큐레이션 요약을 작성해주세요.
+아래 제공된 ${items.length}개의 프로젝트와 README 발췌본을 깊이 있게 분석하여, 한국 개발자가 직관적으로 가치를 체감할 수 있는 최고 품질의 큐레이션 요약 및 1-Page 기술 심층 리포트(TechReport)를 작성해주세요.
 
 [품질 작성 지침]
-1. 원문 직역 금지: 단순 영문 번역투("~을 위한 도구입니다")를 지양하고, 전문적이고 명쾌한 개발자 언어로 서술하세요.
+1. 원문 직역 금지: 단순 영문 번역투를 지양하고, 전문적이고 명쾌한 개발자 언어로 서술하세요.
 2. 핵심 요약 (summaryKo):
    - "기존의 어떤 고질적인 문제/한계를 해결하는지", "기존 대안 대비 핵심 차별점/혁신 요소가 무엇인지"를 1~2문장으로 임팩트 있게 작성하세요.
-   - 예시: "기존 Docker 빌드 및 캐싱 병목을 해결하기 위해 Rust로 재작성된 초고속 컨테이너 빌더로, CI/CD 배포 파이프라인 시간을 최대 80% 단축해줍니다."
 3. 주요 특징 (keyFeaturesKo):
    - 기술적 아키텍처/성능 차별점, 지원 생태계, 실무 추천 대상을 중심으로 3~4개의 명확한 불릿 포인트를 작성하세요.
 4. 기술 태그 (tags):
-   - 언어명 외에 "LLM-Agent", "CI-CD", "Zero-Dependency", "In-Memory-DB", "High-Performance" 등 실무 기술 키워드 3~4개를 정확하게 추출하세요.
+   - "LLM-Agent", "CI-CD", "Zero-Dependency", "In-Memory-DB", "High-Performance" 등 실무 기술 키워드 3~4개를 정확하게 추출하세요.
+5. 1-Page 기술 심층 리포트 (report):
+   - overview: 프로젝트의 핵심 한 줄 가치 제안 및 솔루션 개요
+   - background: 등장 배경 및 기존 기술의 고질적 한계(Pain Point)
+   - architecture: 내부 구조, 성능 차별점, 런타임 모델 등 3~4개 기술 불릿
+   - useCases: 추천 도입 대상 및 실무 활용처 2~3개 불릿
+   - quickStart: installCommand (설치 명령어), codeSnippet (대표 예제 코드 스니펫), language (스니펫 언어)
+   - prosCons: strengths (핵심 강점 2개), considerations (도입 시 주의/고려사항 1~2개)
 
-[프로젝트 목록]
-${items.map((item, idx) => `
-${idx + 1}. [${item.owner}/${item.repo}]
+[프로젝트 목록 및 README 발췌]
+${items.map((item, idx) => {
+  const id = `${item.owner}/${item.repo}`;
+  const snippet = readmeSnippets.get(id);
+  return `
+${idx + 1}. [${id}]
 - 주 언어: ${item.language}
 - 원문 설명: ${item.description}
 - 전체 Star: ${item.stars.toLocaleString()}개 / 최근 급상승: +${item.starsPeriod.toLocaleString()} stars (${item.since})
-`).join('')}
+- README 발췌:
+${snippet ? snippet : '(README 제공 안 됨)'}
+`;
+}).join('\n')}
 
 반드시 아래 JSON 배열 형식으로만 응답해주세요 (마크다운 백틱 없이 순수 JSON만 출력):
 [
@@ -223,7 +248,22 @@ ${idx + 1}. [${item.owner}/${item.repo}]
     "id": "owner/repo",
     "summaryKo": "구체적 문제 해결과 차별점이 드러난 명쾌한 한국어 1~2문장 요약",
     "keyFeaturesKo": ["아키텍처 및 성능 특징", "생태계 및 연동 지원", "실무 적용 이점"],
-    "tags": ["태그1", "태그2", "태그3"]
+    "tags": ["태그1", "태그2", "태그3"],
+    "report": {
+      "overview": "솔루션 개요",
+      "background": "등장 배경 및 해결 과제",
+      "architecture": ["핵심 아키텍처 1", "성능 차별점 2"],
+      "useCases": ["추천 도입 대상 1", "실무 활용처 2"],
+      "quickStart": {
+        "installCommand": "설치 명령어",
+        "codeSnippet": "대표 코드 스니펫",
+        "language": "typescript"
+      },
+      "prosCons": {
+        "strengths": ["강점 1", "강점 2"],
+        "considerations": ["도입 시 고려사항"]
+      }
+    }
   }
 ]
 `;
@@ -248,10 +288,17 @@ ${idx + 1}. [${item.owner}/${item.repo}]
       if (Array.isArray(parsedArray)) {
         for (const entry of parsedArray) {
           if (entry.id && entry.summaryKo) {
+            const rawItem = items.find((it) => `${it.owner}/${it.repo}` === entry.id);
+            const fallbackReport = rawItem ? generateFallbackReport(rawItem) : undefined;
+            const validReport = (entry.report && typeof entry.report === 'object' && entry.report.overview)
+              ? entry.report
+              : fallbackReport;
+
             results.set(entry.id, {
               summaryKo: entry.summaryKo,
               keyFeaturesKo: Array.isArray(entry.keyFeaturesKo) ? entry.keyFeaturesKo : [],
               tags: Array.isArray(entry.tags) ? entry.tags : [],
+              report: validReport,
             });
           }
         }

@@ -103,4 +103,34 @@ describe('Collector & Summarizer', () => {
     expect(snapshot.items.length).toBeGreaterThanOrEqual(5);
     expect(snapshot.items.every(isValidTrendItem)).toBe(true);
   });
+
+  it('correctly maps Gemini JSON response containing report field', () => {
+    const sampleGeminiOutput = JSON.stringify([
+      {
+        id: 'owner/repo',
+        summaryKo: '테스트 요약',
+        keyFeaturesKo: ['특징 1', '특징 2'],
+        tags: ['AI', 'Python'],
+        report: {
+          overview: '개요 내용',
+          background: '배경 설명',
+          architecture: ['아키텍처 1', '아키텍처 2'],
+          useCases: ['활용처 1'],
+          quickStart: {
+            installCommand: 'pip install test',
+            codeSnippet: 'import test',
+            language: 'python',
+          },
+          prosCons: {
+            strengths: ['강점 1'],
+            considerations: ['고려사항 1'],
+          },
+        },
+      },
+    ]);
+
+    const parsed = JSON.parse(sampleGeminiOutput);
+    expect(parsed[0].report.overview).toBe('개요 내용');
+    expect(parsed[0].report.quickStart.installCommand).toBe('pip install test');
+  });
 });
