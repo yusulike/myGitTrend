@@ -71,27 +71,25 @@ export function RepoCard({
   return (
     <article
       id={cardId}
-      className="group bg-white dark:bg-[#161b22] border border-slate-200 dark:border-[#30363d] rounded-2xl p-5 hover:border-sky-500/60 dark:hover:border-[#58a6ff]/60 shadow-sm hover:shadow-md dark:shadow-lg dark:shadow-black/30 dark:hover:shadow-black/50 transition-all flex flex-col justify-between scroll-mt-24"
+      className="group bg-white dark:bg-[#161b22] border-2 border-slate-300 dark:border-slate-700 hover:border-sky-500 dark:hover:border-sky-400 rounded-2xl p-5 shadow-md hover:shadow-xl dark:shadow-black/50 transition-all flex flex-col justify-between scroll-mt-24"
     >
       <div>
-        {/* Header row: Owner/Repo + Quick Actions */}
         <div className="flex items-start justify-between gap-3 mb-2.5">
           <div className="min-w-0 flex-1 flex items-center gap-2 flex-wrap">
-            {/* Crown Badge for Top 1, 2, 3 located to the left of the title */}
             {rank === 1 && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-black bg-amber-100/90 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700/80 shrink-0 shadow-xs">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-black bg-amber-400/20 text-amber-600 dark:text-amber-300 border-2 border-amber-400/60 shrink-0 shadow-sm">
                 <Crown className="w-3.5 h-3.5 text-amber-500 fill-amber-400 shrink-0" />
                 <span>1위</span>
               </span>
             )}
             {rank === 2 && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-black bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-600 shrink-0 shadow-xs">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-black bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-100 border-2 border-slate-400 dark:border-slate-500 shrink-0 shadow-sm">
                 <Crown className="w-3.5 h-3.5 text-slate-400 dark:text-slate-300 fill-slate-300 dark:fill-slate-500 shrink-0" />
                 <span>2위</span>
               </span>
             )}
             {rank === 3 && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-black bg-orange-100/90 dark:bg-orange-950/60 text-orange-800 dark:text-orange-300 border border-orange-300/80 dark:border-orange-700/60 shrink-0 shadow-xs">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-black bg-orange-400/20 text-orange-700 dark:text-orange-300 border-2 border-orange-400/60 shrink-0 shadow-sm">
                 <Crown className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400 fill-orange-500/80 shrink-0" />
                 <span>3위</span>
               </span>
@@ -101,81 +99,64 @@ export function RepoCard({
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group-hover:text-sky-600 dark:group-hover:text-[#58a6ff] font-bold text-base sm:text-lg text-slate-900 dark:text-[#f0f6fc] inline-flex items-center gap-1.5 break-all transition-colors"
+              className="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 inline-flex items-center gap-1.5 break-all transition-colors"
             >
-              <span className="text-slate-500 dark:text-[#8b949e] font-normal">
-                {item.owner} /
-              </span>
+              <span className="text-slate-400 dark:text-slate-500 font-medium">{item.owner} /</span>
               <span>{item.repo}</span>
-              <ExternalLink className="w-3.5 h-3.5 text-slate-400 dark:text-[#8b949e] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+              <ExternalLink className="w-3.5 h-3.5 text-sky-500 shrink-0" />
             </a>
           </div>
 
           <div className="flex items-center gap-1.5 shrink-0">
-            {/* Clone URL Copy */}
             <button
               onClick={handleCopyClone}
-              className="p-1.5 rounded-lg text-slate-500 dark:text-[#8b949e] hover:text-slate-900 dark:hover:text-[#f0f6fc] hover:bg-slate-100 dark:hover:bg-[#21262d] border border-transparent hover:border-slate-200 dark:hover:border-[#30363d] transition-colors"
+              className="p-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors"
               title="git clone 명령어 복사"
             >
-              {copied ? (
-                <Check className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
-              ) : (
-                <Copy className="w-4 h-4" />
-              )}
+              {copied ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
             </button>
-
-            {/* Bookmark Button */}
             <button
               onClick={() => onToggleBookmark(item.id)}
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-lg transition-colors border ${
                 isBookmarked
-                  ? 'text-amber-500 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/60'
-                  : 'text-slate-400 dark:text-[#8b949e] hover:text-amber-500 dark:hover:text-amber-400 hover:bg-slate-100 dark:hover:bg-[#21262d] border border-transparent hover:border-slate-200 dark:hover:border-[#30363d]'
+                  ? 'text-amber-500 bg-amber-50 dark:bg-amber-950/60 border-amber-300 dark:border-amber-700'
+                  : 'text-slate-400 hover:text-amber-500 hover:bg-slate-100 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700'
               }`}
               title={isBookmarked ? '북마크 제거' : '북마크 추가'}
             >
-              <Bookmark
-                className={`w-4 h-4 ${isBookmarked ? 'fill-amber-500 dark:fill-amber-400' : ''}`}
-              />
+              <Bookmark className={`w-4 h-4 ${isBookmarked ? 'fill-amber-500' : ''}`} />
             </button>
           </div>
         </div>
 
-        {/* Stats & Language Row */}
-        <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-[#8b949e] mb-4">
+        {/* Stats Row with bold badges */}
+        <div className="flex flex-wrap items-center gap-2.5 text-xs mb-4">
           {item.language && (
-            <span className="flex items-center gap-1.5 font-medium text-slate-700 dark:text-[#f0f6fc]">
-              <span
-                className="w-2.5 h-2.5 rounded-full inline-block ring-1 ring-slate-300 dark:ring-slate-700"
-                style={{ backgroundColor: langColor }}
-              />
+            <span className="flex items-center gap-1.5 font-bold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100">
+              <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ backgroundColor: langColor }} />
               {item.language}
             </span>
           )}
-
-          <span className="flex items-center gap-1 font-medium text-slate-700 dark:text-[#f0f6fc]">
-            <Star className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 fill-amber-500 dark:fill-amber-400" />
+          <span className="flex items-center gap-1 font-bold px-2 py-0.5 rounded-md bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 text-amber-700 dark:text-amber-300">
+            <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
             {item.stars.toLocaleString()}
           </span>
-
-          <span className="flex items-center gap-1 font-medium text-slate-500 dark:text-[#8b949e]">
+          <span className="flex items-center gap-1 font-semibold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
             <GitFork className="w-3.5 h-3.5" />
             {item.forks.toLocaleString()}
           </span>
-
           {item.starsPeriod > 0 && (
-            <span className="flex items-center gap-1 font-semibold text-rose-600 dark:text-rose-300 bg-rose-50 dark:bg-rose-950/70 border border-rose-200 dark:border-rose-900/60 px-2 py-0.5 rounded-full">
-              <Flame className="w-3 h-3 fill-rose-500 text-rose-500" />
+            <span className="flex items-center gap-1 font-bold text-rose-700 dark:text-rose-200 bg-rose-100 dark:bg-rose-950/80 border border-rose-300 dark:border-rose-800 px-2.5 py-0.5 rounded-full shadow-xs">
+              <Flame className="w-3.5 h-3.5 fill-rose-500 text-rose-500" />
               +{item.starsPeriod.toLocaleString()} {periodLabel}
             </span>
           )}
         </div>
 
-        {/* AI Summary Highlight Box */}
-        <div className="bg-sky-50/60 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/30 rounded-xl p-4 mb-3.5 shadow-sm dark:shadow-inner">
+        {/* AI Summary Box with Left Accent Strip */}
+        <div className="border-l-4 border-l-sky-500 bg-sky-50/80 dark:bg-sky-950/30 border-y border-r border-slate-200 dark:border-slate-800 rounded-r-xl rounded-l-none p-4 mb-3.5 shadow-sm">
           <div className="flex items-center justify-between gap-2 mb-2">
-            <div className="flex items-center gap-1.5 text-sky-600 dark:text-sky-400 text-xs font-bold">
+            <div className="flex items-center gap-1.5 text-sky-700 dark:text-sky-300 text-xs font-black tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-sky-600 dark:text-sky-400" />
               <span>AI 핵심 요약</span>
             </div>
@@ -186,26 +167,21 @@ export function RepoCard({
                   e.stopPropagation();
                   onOpenReport(item);
                 }}
-                className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-lg bg-sky-600 hover:bg-sky-700 text-white shadow-xs hover:shadow transition-all"
-                title="1-Page 기술 심층 분석 보고서 열기"
+                className="inline-flex items-center gap-1 px-3 py-1 text-xs font-bold rounded-lg bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white shadow hover:shadow-md transition-all"
               >
                 <FileText className="w-3.5 h-3.5" />
                 <span>1p 심층 리포트</span>
               </button>
             )}
           </div>
-          <p className="text-sm font-semibold text-slate-800 dark:text-[#f0f6fc] leading-relaxed mb-3">
+          <p className="text-sm font-bold text-slate-900 dark:text-white leading-relaxed mb-3">
             {item.summaryKo}
           </p>
-
           {item.keyFeaturesKo && item.keyFeaturesKo.length > 0 && (
-            <ul className="space-y-1.5 pt-2.5 border-t border-sky-100 dark:border-sky-900/30">
+            <ul className="space-y-1.5 pt-2.5 border-t border-sky-200/60 dark:border-sky-800/50">
               {item.keyFeaturesKo.map((feat, idx) => (
-                <li
-                  key={idx}
-                  className="text-xs text-slate-600 dark:text-[#c9d1d9] flex items-start gap-2 leading-snug"
-                >
-                  <span className="text-sky-600 dark:text-sky-400 font-bold mt-0.5">•</span>
+                <li key={idx} className="text-xs text-slate-700 dark:text-slate-200 flex items-start gap-2 font-medium">
+                  <span className="text-sky-600 dark:text-sky-400 font-black mt-0.5">▶</span>
                   <span>{feat}</span>
                 </li>
               ))}
@@ -221,7 +197,7 @@ export function RepoCard({
                 key={tag}
                 type="button"
                 onClick={() => onTagClick?.(tag)}
-                className="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-[#21262d] border border-slate-200 dark:border-[#30363d] text-slate-600 dark:text-[#c9d1d9] hover:bg-slate-200 dark:hover:bg-[#30363d] hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-[#8b949e] transition-all"
+                className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-sky-50 dark:hover:bg-sky-950/50 hover:border-sky-400 transition-all"
               >
                 #{tag}
               </button>
@@ -230,21 +206,16 @@ export function RepoCard({
         )}
       </div>
 
-      {/* Footer / Original Description Collapse */}
-      <div className="pt-2 border-t border-slate-200 dark:border-[#30363d]">
+      <div className="pt-2 border-t border-slate-200 dark:border-slate-800">
         <button
           onClick={() => setShowOriginal(!showOriginal)}
-          className="text-[11px] text-slate-500 dark:text-[#8b949e] hover:text-slate-800 dark:hover:text-[#f0f6fc] flex items-center gap-1 transition-colors font-medium"
+          className="text-[11px] text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1 font-semibold"
         >
           <span>원문 설명 {showOriginal ? '접기' : '보기'}</span>
-          {showOriginal ? (
-            <ChevronUp className="w-3 h-3" />
-          ) : (
-            <ChevronDown className="w-3 h-3" />
-          )}
+          {showOriginal ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
         </button>
         {showOriginal && (
-          <p className="mt-1.5 text-xs text-slate-600 dark:text-[#8b949e] italic bg-slate-50 dark:bg-[#0d1117] border border-slate-200 dark:border-[#30363d] p-2.5 rounded-lg leading-relaxed">
+          <p className="mt-1.5 text-xs text-slate-700 dark:text-slate-300 italic bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-2.5 rounded-lg leading-relaxed">
             {item.description}
           </p>
         )}
