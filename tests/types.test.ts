@@ -47,4 +47,59 @@ describe('Data Models & Types', () => {
     expect(defaultFilter.sortBy).toBe('starsPeriod');
     expect(defaultFilter.onlyBookmarks).toBe(false);
   });
+
+  describe('TechReport Types & Validation', () => {
+    const baseItem: TrendItem = {
+      id: 'facebook/react',
+      owner: 'facebook',
+      repo: 'react',
+      url: 'https://github.com/facebook/react',
+      description: 'The library for web and native user interfaces.',
+      language: 'JavaScript',
+      stars: 230000,
+      forks: 46000,
+      starsPeriod: 450,
+      since: 'daily',
+      summaryKo: '컴포넌트 기반 UI 라이브러리입니다.',
+      keyFeaturesKo: ['선언형 UI', '가상 DOM', '풍부한 생태계'],
+      tags: ['Frontend', 'UI', 'JavaScript'],
+    };
+
+    it('validates item without report field (backward compatibility)', () => {
+      expect(isValidTrendItem(baseItem)).toBe(true);
+    });
+
+    it('validates item with complete valid report field', () => {
+      const itemWithReport: TrendItem = {
+        ...baseItem,
+        report: {
+          overview: '차세대 리액티브 UI 프레임워크',
+          background: '기존 DOM 조작의 성능 한계 극복',
+          architecture: ['가상 DOM Diffing', 'Fiber Reconciler'],
+          useCases: ['엔터프라이즈 웹 앱', '크로스 플랫폼 앱'],
+          quickStart: {
+            installCommand: 'npm install react react-dom',
+            codeSnippet: 'import { createRoot } from "react-dom/client";',
+            language: 'typescript',
+          },
+          prosCons: {
+            strengths: ['거대한 커뮤니티', '입증된 안정성'],
+            considerations: ['상태 관리 보일러플레이트'],
+          },
+        },
+      };
+      expect(isValidTrendItem(itemWithReport)).toBe(true);
+    });
+
+    it('rejects item if report is present but malformed (e.g. missing required overview or architecture)', () => {
+      const invalidReportItem = {
+        ...baseItem,
+        report: {
+          overview: 123, // should be string
+          architecture: 'not-an-array',
+        },
+      };
+      expect(isValidTrendItem(invalidReportItem)).toBe(false);
+    });
+  });
 });

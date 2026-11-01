@@ -1,5 +1,25 @@
 export type Period = 'daily' | 'weekly' | 'monthly';
 
+export interface QuickStartInfo {
+  installCommand?: string;
+  codeSnippet?: string;
+  language?: string;
+}
+
+export interface ProsConsInfo {
+  strengths: string[];
+  considerations: string[];
+}
+
+export interface TechReport {
+  overview: string;
+  background: string;
+  architecture: string[];
+  useCases: string[];
+  quickStart?: QuickStartInfo;
+  prosCons?: ProsConsInfo;
+}
+
 export interface TrendItem {
   id: string;                      // "owner/repo"
   owner: string;                   // "facebook"
@@ -16,6 +36,9 @@ export interface TrendItem {
   summaryKo: string;               // Concise Korean 1~2 sentence summary
   keyFeaturesKo: string[];         // 3~4 key bullet points in Korean
   tags: string[];                  // Category tags (e.g. ["Frontend", "UI", "React"])
+
+  // Deep 1-Page Tech Report (optional for backward compatibility)
+  report?: TechReport;
 }
 
 export interface TrendSnapshot {
@@ -39,7 +62,8 @@ export interface FilterState {
 
 export function isValidTrendItem(item: any): item is TrendItem {
   if (!item || typeof item !== 'object') return false;
-  return (
+
+  const basicValid = (
     typeof item.id === 'string' &&
     typeof item.owner === 'string' &&
     typeof item.repo === 'string' &&
@@ -54,6 +78,23 @@ export function isValidTrendItem(item: any): item is TrendItem {
     Array.isArray(item.keyFeaturesKo) &&
     Array.isArray(item.tags)
   );
+
+  if (!basicValid) return false;
+
+  if (item.report !== undefined && item.report !== null) {
+    const r = item.report;
+    if (
+      typeof r !== 'object' ||
+      typeof r.overview !== 'string' ||
+      typeof r.background !== 'string' ||
+      !Array.isArray(r.architecture) ||
+      !Array.isArray(r.useCases)
+    ) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 export interface GlobalSearchIndexItem {
