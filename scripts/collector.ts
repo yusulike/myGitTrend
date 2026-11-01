@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as path from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { TrendItem, TrendSnapshot, Period, GlobalSearchIndexItem } from '../src/types/trend';
+import { TrendItem, TrendSnapshot, Period, GlobalSearchIndexItem, TechReport } from '../src/types/trend';
 import { generateMockSnapshot } from './mockData';
 
 // Auto-load .env if present in root
@@ -90,10 +90,62 @@ export function parseTrendingHtml(html: string, since: Period): RawRepoItem[] {
   return items;
 }
 
+export async function fetchReadmeSnippet(owner: string, repo: string): Promise<string> {
+  const branches = ['HEAD', 'main', 'master'];
+  for (const branch of branches) {
+    try {
+      const url = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/README.md`;
+      const response = await fetch(url, {
+        headers: { 'User-Agent': 'myGitTrend-Collector' },
+        signal: AbortSignal.timeout(4000),
+      });
+      if (response.ok) {
+        const text = await response.text();
+        return text.slice(0, 5000).trim();
+      }
+    } catch {
+      // Continue to next branch fallback
+    }
+  }
+  return '';
+}
+
+export function generateFallbackReport(raw: RawRepoItem): TechReport {
+  const lang = raw.language || 'Software';
+  return {
+    overview: `${raw.repo}는 ${lang} 기반으로 개발된 오픈소스 프로젝트로, ${raw.description}`,
+    background: `기존 ${lang} 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.`,
+    architecture: [
+      `${lang} 기반의 최적화된 내부 구조 설계`,
+      `모듈식 아키텍처를 통한 유연한 확장성 제공`,
+      `불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소`,
+    ],
+    useCases: [
+      `${lang} 기반 실무 애플리케이션 개발 팀`,
+      `고성능과 빠른 개발 속도가 요구되는 최신 프로젝트`,
+    ],
+    quickStart: {
+      installCommand: `git clone ${raw.url}.git`,
+      codeSnippet: `cd ${raw.repo}\n# 프로젝트 README를 참조하여 시작하세요.`,
+      language: 'bash',
+    },
+    prosCons: {
+      strengths: [
+        `최근 +${raw.starsPeriod.toLocaleString()} 스타를 획득한 급상승 커뮤니티 활성도`,
+        `실무에 즉시 참고할 수 있는 현대적인 코드베이스`,
+      ],
+      considerations: [
+        `도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다.`,
+      ],
+    },
+  };
+}
+
 export function generateFallbackSummary(raw: RawRepoItem): {
   summaryKo: string;
   keyFeaturesKo: string[];
   tags: string[];
+  report: TechReport;
 } {
   const desc = raw.description;
   const lang = raw.language;
@@ -121,6 +173,7 @@ export function generateFallbackSummary(raw: RawRepoItem): {
     summaryKo,
     keyFeaturesKo,
     tags: Array.from(new Set(tags)),
+    report: generateFallbackReport(raw),
   };
 }
 
@@ -129,8 +182,8 @@ let activeWorkingModel = process.env.GEMINI_MODEL || 'gemini-flash-lite-latest';
 export async function summarizeBatchWithGemini(
   items: RawRepoItem[],
   apiKey: string,
-): Promise<Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[] }>> {
-  const results = new Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[] }>();
+): Promise<Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[]; report?: TechReport }>> {
+  const results = new Map<string, { summaryKo: string; keyFeaturesKo: string[]; tags: string[]; report?: TechReport }>();
   if (items.length === 0) return results;
 
   const genAI = new GoogleGenerativeAI(apiKey);
@@ -227,7 +280,7 @@ ${idx + 1}. [${item.owner}/${item.repo}]
 export async function summarizeWithGemini(
   raw: RawRepoItem,
   apiKey: string,
-): Promise<{ summaryKo: string; keyFeaturesKo: string[]; tags: string[] }> {
+): Promise<{ summaryKo: string; keyFeaturesKo: string[]; tags: string[]; report?: TechReport }> {
   const map = await summarizeBatchWithGemini([raw], apiKey);
   return map.get(`${raw.owner}/${raw.repo}`) || generateFallbackSummary(raw);
 }

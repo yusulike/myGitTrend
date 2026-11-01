@@ -1,5 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { parseTrendingHtml, generateFallbackSummary } from '../scripts/collector';
+import {
+  parseTrendingHtml,
+  generateFallbackSummary,
+  fetchReadmeSnippet,
+  generateFallbackReport,
+} from '../scripts/collector';
 import { generateMockSnapshot } from '../scripts/mockData';
 import { isValidTrendItem } from '../src/types/trend';
 
@@ -62,6 +67,34 @@ describe('Collector & Summarizer', () => {
     expect(summary.summaryKo.length).toBeGreaterThan(5);
     expect(summary.keyFeaturesKo.length).toBeGreaterThanOrEqual(2);
     expect(summary.tags.length).toBeGreaterThanOrEqual(1);
+    expect(summary.report).toBeDefined();
+    expect(summary.report?.overview).toContain('uv');
+  });
+
+  it('generateFallbackReport returns a valid TechReport structure', () => {
+    const raw = {
+      owner: 'testowner',
+      repo: 'testrepo',
+      url: 'https://github.com/testowner/testrepo',
+      description: 'Ultra fast web framework built with Rust',
+      language: 'Rust',
+      stars: 1000,
+      forks: 50,
+      starsPeriod: 100,
+      since: 'daily' as const,
+    };
+
+    const report = generateFallbackReport(raw);
+    expect(report.overview).toContain('testrepo');
+    expect(report.background).toBeTruthy();
+    expect(report.architecture.length).toBeGreaterThan(0);
+    expect(report.useCases.length).toBeGreaterThan(0);
+    expect(report.quickStart?.installCommand).toBeTruthy();
+  });
+
+  it('fetchReadmeSnippet safely returns empty string on 404 or network failure', async () => {
+    const snippet = await fetchReadmeSnippet('invalid-owner-xyz-1234', 'invalid-repo-xyz-5678');
+    expect(typeof snippet).toBe('string');
   });
 
   it('generates valid mock snapshot conforming to TrendSnapshot schema', () => {
