@@ -84,4 +84,21 @@ describe('RepoCard & RepoList', () => {
     fireEvent.click(resetBtn);
     expect(handleReset).toHaveBeenCalled();
   });
+
+  it('calls onOpenReport when 1p report button is clicked', () => {
+    const onOpenReport = vi.fn();
+    render(
+      <RepoCard
+        item={mockItem}
+        isBookmarked={false}
+        onToggleBookmark={() => {}}
+        onOpenReport={onOpenReport}
+      />
+    );
+
+    const reportBtn = screen.getByRole('button', { name: /1p 심층 리포트/i });
+    expect(reportBtn).toBeDefined();
+    fireEvent.click(reportBtn);
+    expect(onOpenReport).toHaveBeenCalledWith(mockItem);
+  });
 });

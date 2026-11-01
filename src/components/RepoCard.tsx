@@ -12,6 +12,7 @@ import {
   ChevronDown,
   ChevronUp,
   Crown,
+  FileText,
 } from 'lucide-react';
 
 interface RepoCardProps {
@@ -19,6 +20,7 @@ interface RepoCardProps {
   isBookmarked: boolean;
   onToggleBookmark: (id: string) => void;
   onTagClick?: (tag: string) => void;
+  onOpenReport?: (item: TrendItem) => void;
   rank?: number;
 }
 
@@ -42,6 +44,7 @@ export function RepoCard({
   isBookmarked,
   onToggleBookmark,
   onTagClick,
+  onOpenReport,
   rank,
 }: RepoCardProps) {
   const [copied, setCopied] = useState(false);
@@ -171,9 +174,25 @@ export function RepoCard({
 
         {/* AI Summary Highlight Box */}
         <div className="bg-sky-50/60 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/30 rounded-xl p-4 mb-3.5 shadow-sm dark:shadow-inner">
-          <div className="flex items-center gap-1.5 text-sky-600 dark:text-sky-400 text-xs font-bold mb-2">
-            <Sparkles className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-            <span>AI 핵심 요약</span>
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <div className="flex items-center gap-1.5 text-sky-600 dark:text-sky-400 text-xs font-bold">
+              <Sparkles className="w-4 h-4 text-sky-600 dark:text-sky-400" />
+              <span>AI 핵심 요약</span>
+            </div>
+            {onOpenReport && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onOpenReport(item);
+                }}
+                className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-lg bg-sky-600 hover:bg-sky-700 text-white shadow-xs hover:shadow transition-all"
+                title="1-Page 기술 심층 분석 보고서 열기"
+              >
+                <FileText className="w-3.5 h-3.5" />
+                <span>1p 심층 리포트</span>
+              </button>
+            )}
           </div>
           <p className="text-sm font-semibold text-slate-800 dark:text-[#f0f6fc] leading-relaxed mb-3">
             {item.summaryKo}

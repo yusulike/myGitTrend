@@ -7,6 +7,7 @@ interface RepoListProps {
   isBookmarked: (id: string) => boolean;
   onToggleBookmark: (id: string) => void;
   onTagClick?: (tag: string) => void;
+  onOpenReport?: (item: TrendItem) => void;
   isLoading?: boolean;
   onResetFilters?: () => void;
 }
@@ -16,6 +17,7 @@ export function RepoList({
   isBookmarked,
   onToggleBookmark,
   onTagClick,
+  onOpenReport,
   isLoading = false,
   onResetFilters,
 }: RepoListProps) {
@@ -62,6 +64,7 @@ export function RepoList({
           isBookmarked={isBookmarked(item.id)}
           onToggleBookmark={onToggleBookmark}
           onTagClick={onTagClick}
+          onOpenReport={onOpenReport}
         />
       ))}
     </div>

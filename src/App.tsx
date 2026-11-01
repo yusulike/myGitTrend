@@ -10,7 +10,8 @@ import { FilterBar } from './components/FilterBar';
 import { RepoList } from './components/RepoList';
 import { GlobalRepoList } from './components/GlobalRepoList';
 import { BookmarkDrawer } from './components/BookmarkDrawer';
-import { FilterState, createDefaultFilterState } from './types/trend';
+import { TechReportModal } from './components/TechReportModal';
+import { FilterState, createDefaultFilterState, TrendItem } from './types/trend';
 import { AlertCircle, RefreshCw, Sparkles, Flame, Zap, Sun, Trophy, ExternalLink } from 'lucide-react';
 import { DateSelector } from './components/DateSelector';
 
@@ -18,6 +19,7 @@ export default function App() {
   const [selectedDate, setSelectedDate] = useState<string>('');
   const [filter, setFilter] = useState<FilterState>(createDefaultFilterState());
   const [isBookmarkDrawerOpen, setIsBookmarkDrawerOpen] = useState(false);
+  const [selectedReportItem, setSelectedReportItem] = useState<TrendItem | null>(null);
 
   const { data, availableDates, isLoading, error, reload } = useTrendData(selectedDate);
   const { indexData: globalIndex, isLoading: isGlobalLoading } = useGlobalSearch();
@@ -549,6 +551,7 @@ export default function App() {
               isBookmarked={isBookmarked}
               onToggleBookmark={toggleBookmark}
               onTagClick={handleTagClick}
+              onOpenReport={setSelectedReportItem}
               isLoading={isLoading}
               onResetFilters={handleResetFilters}
             />
@@ -563,6 +566,13 @@ export default function App() {
         items={bookmarkedItems}
         onToggleBookmark={toggleBookmark}
         onClearAll={clearBookmarks}
+      />
+
+      {/* 1-Page Tech Report Modal */}
+      <TechReportModal
+        item={selectedReportItem}
+        isOpen={selectedReportItem !== null}
+        onClose={() => setSelectedReportItem(null)}
       />
 
       {/* Footer */}
