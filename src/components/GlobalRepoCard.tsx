@@ -157,7 +157,7 @@ export function GlobalRepoCard({
         <div className="mb-3.5 p-3 rounded-xl bg-slate-50 dark:bg-[#0d1117] border border-slate-100 dark:border-[#21262d]">
           <div className="flex items-center gap-1.5 mb-1.5 text-xs font-semibold text-sky-700 dark:text-[#58a6ff]">
             <Sparkles className="w-3.5 h-3.5 text-sky-500" />
-            <span>AI 핵심 분석</span>
+            <span>핵심 요약</span>
           </div>
           <p className="text-sm text-slate-700 dark:text-[#c9d1d9] leading-relaxed">
             {item.summaryKo || item.description}

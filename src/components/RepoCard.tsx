@@ -158,7 +158,7 @@ export function RepoCard({
           <div className="flex items-center justify-between gap-2 mb-2">
             <div className="flex items-center gap-1.5 text-sky-700 dark:text-sky-300 text-xs font-black tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-              <span>AI 핵심 요약</span>
+              <span>핵심 요약</span>
             </div>
             {onOpenReport && (
               <button
