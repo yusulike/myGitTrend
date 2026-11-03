@@ -29,7 +29,8 @@ export default function App() {
   // Earliest date recorded in archives (Start Date)
   const archiveStartDate = useMemo(() => {
     if (!availableDates || availableDates.length === 0) return '';
-    return availableDates[availableDates.length - 1];
+    const sorted = [...availableDates].sort();
+    return sorted[0];
   }, [availableDates]);
 
   // All ranked trending items for the Leaderboard

@@ -140,7 +140,7 @@ export function TechReportModal({ item, isOpen, onClose }: TechReportModalProps)
             <div className="min-w-0">
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="text-xs font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wider">
-                  1-Page 기술 심층 리포트
+                  한페이지 정리
                 </span>
                 <span className="text-[11px] px-2 py-0.5 rounded-full bg-slate-200/70 dark:bg-[#21262d] text-slate-600 dark:text-[#8b949e] font-medium">
                   {item.language}
@@ -388,7 +388,7 @@ export function TechReportModal({ item, isOpen, onClose }: TechReportModalProps)
               </div>
               <h3 className="text-base font-semibold">이전 아카이브 요약 정보</h3>
               <p className="text-xs text-slate-500 dark:text-[#8b949e] max-w-md mx-auto">
-                해당 저장소는 1p 심층 리포트 도입 이전 아카이브에 수집된 항목입니다. 기본 AI 요약 정보를 제공합니다.
+                해당 저장소는 한페이지 정리 도입 이전 아카이브에 수집된 항목입니다. 기본 AI 요약 정보를 제공합니다.
               </p>
               <div className="bg-slate-50 dark:bg-[#21262d] border border-slate-200 dark:border-[#30363d] rounded-xl p-4 text-left max-w-lg mx-auto text-xs space-y-2">
                 <p className="font-semibold text-slate-800 dark:text-[#f0f6fc]">{item.summaryKo}</p>

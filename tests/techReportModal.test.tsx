@@ -50,7 +50,7 @@ describe('TechReportModal Component', () => {
   it('renders report sections when open with valid item', () => {
     render(<TechReportModal item={mockItem} isOpen={true} onClose={() => {}} />);
 
-    expect(screen.getByText('1-Page 기술 심층 리포트')).toBeInTheDocument();
+    expect(screen.getByText('한페이지 정리')).toBeInTheDocument();
     expect(screen.getByText('astral-sh / uv')).toBeInTheDocument();
     expect(screen.getByText(/uv는 기존 pip 및 virtualenv의 느린 설치 속도/)).toBeInTheDocument();
     expect(screen.getByText(/대규모 모노레포와 CI 환경/)).toBeInTheDocument();

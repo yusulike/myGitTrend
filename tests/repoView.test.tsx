@@ -96,7 +96,7 @@ describe('RepoCard & RepoList', () => {
       />
     );
 
-    const reportBtn = screen.getByRole('button', { name: /1p 심층 리포트/i });
+    const reportBtn = screen.getByRole('button', { name: /한페이지 정리/i });
     expect(reportBtn).toBeDefined();
     fireEvent.click(reportBtn);
     expect(onOpenReport).toHaveBeenCalledWith(mockItem);

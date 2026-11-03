@@ -170,7 +170,7 @@ export function RepoCard({
                 className="inline-flex items-center gap-1 px-3 py-1 text-xs font-bold rounded-lg bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white shadow hover:shadow-md transition-all"
               >
                 <FileText className="w-3.5 h-3.5" />
-                <span>1p 심층 리포트</span>
+                <span>한페이지 정리</span>
               </button>
             )}
           </div>

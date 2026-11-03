@@ -56,7 +56,8 @@ export function DateSelector({
     }
     if (availableDates.length > 0) {
       // Use the latest available date
-      const latest = availableDates[availableDates.length - 1];
+      const sorted = [...availableDates].sort();
+      const latest = sorted[sorted.length - 1];
       const parsed = parseDateStr(latest);
       if (parsed) return { year: parsed.year, month: parsed.month };
     }
@@ -90,8 +91,22 @@ export function DateSelector({
         setViewYear(parsed.year);
         setViewMonth(parsed.month);
       }
+    } else {
+      if (availableDates.length > 0) {
+        const sorted = [...availableDates].sort();
+        const latest = sorted[sorted.length - 1];
+        const parsed = parseDateStr(latest);
+        if (parsed) {
+          setViewYear(parsed.year);
+          setViewMonth(parsed.month);
+        }
+      } else {
+        const now = new Date();
+        setViewYear(now.getFullYear());
+        setViewMonth(now.getMonth());
+      }
     }
-  }, [selectedDate]);
+  }, [selectedDate, availableDates]);
 
   // Close popover when clicking outside or pressing Escape
   useEffect(() => {
