@@ -2,8 +2,8 @@ name: Daily Trend Collection & Deploy
 
 on:
   schedule:
-    # 매일 UTC 00:00 (한국 시간 오전 9시) 자동 실행
-    - cron: '0 0 * * *'
+    # 매일 2회 자동 실행: UTC 00:00 (KST 오전 9시), UTC 12:00 (KST 오후 9시)
+    - cron: '0 0,12 * * *'
   workflow_dispatch: # 수동 즉시 실행 지원
   push:
     branches:
