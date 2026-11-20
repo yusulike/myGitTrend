@@ -77,21 +77,21 @@ GitHub Trending은 세계적인 개발 트렌드를 발견하는 가장 훌륭�
 
 ```mermaid
 flowchart LR
-    subgraph Automation [GitHub Actions (매일 2회: KST 09:00 / 21:00)]
-        A[GitHub Trending 크롤러<br/>Cheerio] --> B[Gemini Flash AI<br/>한국어 요약 및 심층 리포트 생성]
-        B --> C[JSON 데이터 저장 & 색인<br/>latest / archives / search-index]
-        C --> D[Vite 정적 빌드]
+    subgraph Automation ["GitHub Actions (매일 2회: KST 09:00 / 21:00)"]
+        A["GitHub Trending 크롤러<br/>Cheerio"] --> B["Gemini Flash AI<br/>한국어 요약 및 심층 리포트 생성"]
+        B --> C["JSON 데이터 저장 & 색인<br/>latest / archives / search-index"]
+        C --> D["Vite 정적 빌드"]
     end
 
-    subgraph Hosting [GitHub Pages]
-        D --> E[정적 웹 애플리케이션<br/>SPA React 19]
+    subgraph Hosting ["GitHub Pages"]
+        D --> E["정적 웹 애플리케이션<br/>SPA React 19"]
     end
 
-    subgraph Client [사용자 브라우저]
-        E --> F[빠른 스캐닝 & 필터링]
-        E --> G[심층 기술 리포트 / MD 복사]
-        E --> H[캘린더 아카이브 & 전역 검색]
-        E --> I[LocalStorage 북마크]
+    subgraph Client ["사용자 브라우저"]
+        E --> F["빠른 스캐닝 & 필터링"]
+        E --> G["심층 기술 리포트 / MD 복사"]
+        E --> H["캘린더 아카이브 & 전역 검색"]
+        E --> I["LocalStorage 북마크"]
     end
 ```
 
