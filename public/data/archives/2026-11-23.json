@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "collectedAt": "2026-11-23T05:44:10.814Z",
+  "collectedAt": "2026-11-23T23:24:11.476Z",
   "languages": [
     "All",
     "C",
@@ -24,46 +24,45 @@
       "url": "https://github.com/elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 18224,
-      "forks": 1997,
-      "starsPeriod": 1716,
+      "stars": 19678,
+      "forks": 2095,
+      "starsPeriod": 2037,
       "since": "daily",
-      "summaryKo": "Claude Code를 단순 챗봇에서 전문 보안 취약점 진단 및 레드팀 수행 도구로 탈바꿈시키는 독립형 스킬 번들로, 24개 핵심 취약점 클래스와 681개의 실제 공개 리포트 패턴을 제공합니다.",
+      "summaryKo": "Claude Code 환경에서 보안 취약점 점검을 자동화하는 전문 스킬 번들로, 24개 핵심 취약점 클래스에 대한 검증된 패턴을 제공하여 레드팀 업무 효율을 극대화합니다.",
       "keyFeaturesKo": [
-        "24개 핵심 취약점 클래스에 걸친 83개의 전문 스킬 및 15개 슬래시 커맨드 탑재",
-        "실제 공개된 681개 취약점 리포트 패턴 및 인프라·엔터프라이즈 공격 매트릭스 통합",
-        "Burp MCP 연동 및 DVWA, OWASP Juice Shop 등 실제 취약점 플랫폼 검증 완료"
+        "83개의 전문 보안 스킬 및 681개의 검증된 취약점 리포트 패턴 내장",
+        "Burp Suite MCP 연동을 통한 실무 보안 테스팅 워크플로우 최적화",
+        "엔터프라이즈 인프라 및 ID 공격 매트릭스 기반의 체계적 보안 점검 지원"
       ],
       "tags": [
         "LLM-Agent",
-        "Security",
-        "Bug-Hunting",
-        "Python"
+        "CyberSecurity",
+        "Red-Teaming"
       ],
       "report": {
-        "overview": "Claude Code 환경에서 동작하며 실제 모의 해킹 및 버그 바운티 워크플로우를 자동화하는 고도화된 보안 진단 스킬 번들입니다.",
-        "background": "기존 AI 코딩 도구들은 일반적인 코드 작성에는 능숙하나, 전문적인 보안 취약점 분석이나 공격 시나리오(Red-Teaming) 수행 시 깊이 있는 취약점 패턴 지식이 부족한 한계가 있었습니다.",
+        "overview": "Claude Code를 위한 보안 특화 스킬셋으로, AI 에이전트가 전문적인 보안 컨설턴트처럼 취약점을 탐색하고 분석하도록 돕는 프레임워크입니다.",
+        "background": "기존의 수동 보안 점검은 반복적이고 방대한 패턴 분석이 필요하여 시간이 많이 소요되는 한계가 있었습니다.",
         "architecture": [
-          "Claude Code Skills API 기반의 독립형 드롭인(Drop-in) 번들 구조",
-          "Burp Suite MCP 연동을 통한 실시간 웹 트래픽 및 취약점 분석 자동화",
-          "24개 취약점 클래스별 템플릿과 681개 검증된 리포트 패턴의 인메모리 참조 모델"
+          "Claude Code 스킬 시스템 기반의 모듈형 아키텍처",
+          "24개 핵심 취약점 클래스별 자동화된 공격 시나리오 수행",
+          "Burp MCP를 통한 외부 보안 도구와의 실시간 데이터 연동"
         ],
         "useCases": [
-          "웹 애플리케이션 보안 취약점 자동 진단 및 버그 바운티 수행",
-          "기업 인프라 및 엔터프라이즈 아이덴티티 공격 시나리오(Red-Team) 모의 훈련"
+          "웹 애플리케이션 보안 취약점 자동 점검",
+          "레드팀 모의 해킹 시나리오 자동화"
         ],
         "quickStart": {
-          "installCommand": "git clone https://github.com/elementalsouls/Claude-BugHunter.git",
-          "codeSnippet": "# Claude Code 세션 내 슬래시 커맨드 활용\n/bughunter-scan --target https://testphp.vulnweb.com --profile owasp-top10",
+          "installCommand": "claude-code install elementalsouls/claude-bughunter",
+          "codeSnippet": "claude-bughunter --target <target-url> --class injection",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "실제 공개된 수백 건의 취약점 리포트 기반으로 높은 정확도의 진단 시나리오 제공",
-            "별도의 복잡한 설정 없이 Claude Code에 즉시 통합 가능한 확장성"
+            "방대한 보안 패턴 라이브러리 제공",
+            "Claude Code 생태계와의 완벽한 호환성"
           ],
           "considerations": [
-            "권한이 승인된 보안 진단 및 모의 해킹 목적으로만 사용해야 함"
+            "승인된 환경(Authorized) 내에서만 사용 권장"
           ]
         }
       }
@@ -75,46 +74,45 @@
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 324332,
-      "forks": 28771,
-      "starsPeriod": 788,
+      "stars": 325019,
+      "forks": 28832,
+      "starsPeriod": 838,
       "since": "daily",
-      "summaryKo": "AI 코딩 에이전트가 코드를 무작정 작성하기 전에 개발자와 협업하여 명확한 스펙을 도출하고 체계적인 소프트웨어 개발 방법론을 강제하는 에이전틱 스킬 프레임워크입니다.",
+      "summaryKo": "코딩 에이전트가 단순히 코드를 생성하는 것을 넘어, 명확한 요구사항 정의부터 검증까지 수행하도록 돕는 체계적인 에이전트 개발 방법론입니다.",
       "keyFeaturesKo": [
-        "에이전트가 즉시 코딩에 돌입하는 대신 요구사항을 분할하고 검증하도록 유도하는 방법론",
-        "Claude Code, Cursor, GitHub Copilot CLI 등 주요 AI 코딩 에이전트 및 CLI 대거 지원",
-        "작업 중 문제가 발생했을 때 체계적으로 원인을 추적하고 복구하는 피드백 루프 제공"
+        "다양한 LLM 기반 CLI 도구(Claude, Cursor, Devin 등)와 호환되는 범용 방법론",
+        "요구사항 구체화(Spec)를 우선시하는 에이전트 워크플로우 설계",
+        "에이전트의 판단 오류를 최소화하는 구조적 사고 프로세스 제공"
       ],
       "tags": [
         "LLM-Agent",
-        "Developer-Tools",
-        "Workflow",
-        "Shell"
+        "DevOps",
+        "Workflow-Automation"
       ],
       "report": {
-        "overview": "AI 코딩 에이전트의 환각과 무분별한 코드 생성을 방지하고, 철저한 스펙 정의와 단계별 검증을 거쳐 소프트웨어를 구축하는 에이전틱 개발 프레임워크입니다.",
-        "background": "AI 에이전트에게 모호한 프롬프트를 입력하면 잘못된 방향으로 코드가 대량 생성되어 오히려 디버깅 비용이 증가하는 고질적인 문제가 존재했습니다.",
+        "overview": "에이전트가 개발자의 의도를 정확히 파악하고, 단계별로 코드를 작성하도록 유도하는 표준화된 소프트웨어 개발 방법론입니다.",
+        "background": "AI 에이전트가 모호한 지시를 받아 엉뚱한 코드를 생성하거나 문맥을 놓치는 고질적인 문제를 해결하고자 등장했습니다.",
         "architecture": [
-          "컴포저블(Composable) 스킬과 초기 에이전트 지시어(Instructions)의 결합 구조",
-          "다양한 LLM 런타임 환경(Cursor, Claude Code, Devin 등)과 호환되는 어댑터 생태계",
-          "실시간 텔레메트리 시각화를 통한 에이전트 작업 흐름 추적"
+          "요구사항 구체화(Spec) 단계의 강제화",
+          "에이전트의 사고 과정을 시각화하는 텔레메트리 기능",
+          "다양한 에이전트 플랫폼을 아우르는 추상화된 스킬셋"
         ],
         "useCases": [
-          "대규모 코드베이스에서 AI 에이전트를 활용한 체계적인 기능 개발 및 리팩토링",
-          "팀 단위의 표준화된 AI 코딩 워크플로우 및 방법론 정립"
+          "복잡한 기능 구현 시 에이전트의 정확도 향상",
+          "팀 단위의 AI 기반 개발 표준 수립"
         ],
         "quickStart": {
-          "installCommand": "git clone https://github.com/obra/superpowers.git",
-          "codeSnippet": "# 에이전트 초기 설정 디렉토리에 슈퍼파워 스킬 통합\ncp -r superpowers/skills ~/.config/claude-code/skills/",
+          "installCommand": "npm install -g @superpowers/cli",
+          "codeSnippet": "superpowers init --agent cursor",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "코드 작성 전 명확한 스펙을 먼저 도출하여 AI의 시행착오를 극적으로 감소",
-            "특정 벤더에 종속되지 않고 다양한 AI 코딩 도구와 연동 가능"
+            "에이전트의 결과물 품질 상향 평준화",
+            "다양한 도구와 결합 가능한 유연성"
           ],
           "considerations": [
-            "초기 프롬프트와 방법론에 적응하기 위한 팀 내 학습 곡선 존재"
+            "초기 설정 및 워크플로우 적응 시간 필요"
           ]
         }
       }
@@ -126,46 +124,45 @@
       "url": "https://github.com/HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
-      "stars": 62937,
-      "forks": 5710,
-      "starsPeriod": 699,
+      "stars": 63578,
+      "forks": 5775,
+      "starsPeriod": 783,
       "since": "daily",
-      "summaryKo": "인간 전용으로 설계된 기존의 모든 소프트웨어와 GUI/CLI 도구를 AI 에이전트가 직접 제어할 수 있는 'Agent-Native' 인터페이스로 변환해주는 브릿지 프레임워크입니다.",
+      "summaryKo": "모든 CLI 소프트웨어를 AI 에이전트가 즉시 이해하고 조작할 수 있는 '에이전트 네이티브' 환경으로 변환하는 브릿지 솔루션입니다.",
       "keyFeaturesKo": [
-        "인간 중심의 소프트웨어를 AI 에이전트가 즉시 활용할 수 있는 표준화된 API/CLI 레이어로 변환",
-        "다양한 레거시 소프트웨어와 최신 LLM 에이전트 생태계를 연결하는 허브 제공",
-        "자동화된 소프트웨어 테스트, 운영, 데이터 수집 파이프라인 구축 용이"
+        "기존 CLI 도구의 수정 없이 AI 에이전트가 제어 가능하도록 인터페이스 추상화",
+        "CLI-Hub를 통한 다양한 도구와의 연동 생태계 구축",
+        "인간 중심의 CLI를 에이전트 중심의 API로 전환"
       ],
       "tags": [
         "LLM-Agent",
-        "Automation",
-        "CLI",
-        "Python"
+        "CLI-Automation",
+        "Integration"
       ],
       "report": {
-        "overview": "모든 기존 소프트웨어를 에이전트가 네이티브하게 다룰 수 있도록 인터페이스를 재정의하여 AI 자율성의 범위를 확장하는 오픈소스 인프라입니다.",
-        "background": "최근 LLM 에이전트가 비약적으로 발전했음에도 불구하고, 대다수의 기존 소프트웨어와 도구들은 인간의 조작(GUI/CLI)을 전제로 설계되어 에이전트 연동에 큰 제약이 있었습니다.",
+        "overview": "CLI 도구와 AI 에이전트 사이의 간극을 메워, 에이전트가 터미널 환경에서 복잡한 작업을 자율적으로 수행하게 만드는 인프라입니다.",
+        "background": "AI 에이전트가 터미널 명령어를 실행할 때 발생하는 파싱 오류와 문맥 이해 부족 문제를 해결하기 위해 개발되었습니다.",
         "architecture": [
-          "레거시 도구의 입출력을 AI 에이전트 친화적 구조로 파싱하는 래퍼(Wrapper) 아키텍처",
-          "중앙 집중형 CLI 허브를 통한 에이전트 도구 동적 발견 및 호출 메커니즘",
-          "고성능 비동기 프로세스 제어 및 오류 복구 파이프라인"
+          "CLI 도구의 입출력을 에이전트 친화적 포맷으로 변환하는 어댑터",
+          "에이전트가 CLI를 탐색하고 실행할 수 있는 표준화된 프로토콜",
+          "CLI-Hub를 통한 확장 가능한 도구 생태계"
         ],
         "useCases": [
-          "기존 내부 레거시 시스템을 AI 에이전트 기반 자동화 워크플로우에 통합",
-          "복잡한 소프트웨어 테스트 및 인프라 관리 작업의 완전 자동화"
+          "클라우드 인프라 자동 관리",
+          "복잡한 로컬 개발 환경의 AI 자동화"
         ],
         "quickStart": {
           "installCommand": "pip install cli-anything",
-          "codeSnippet": "from cli_anything import AgentBridge\n\nbridge = AgentBridge.load_tool(\"legacy-software-cli\")\nresult = bridge.execute(task=\"generate-report\")\nprint(result)",
+          "codeSnippet": "from cli_anything import AgentBridge\nbridge = AgentBridge(target='kubectl')\nbridge.execute('get pods')",
           "language": "python"
         },
         "prosCons": {
           "strengths": [
-            "소스코드를 직접 수정하지 않고도 기존 소프트웨어를 에이전트 네이티브로 확장",
-            "광범위한 레거시 툴과의 높은 호환성 및 확장성"
+            "기존 도구의 재사용성 극대화",
+            "에이전트의 터미널 제어 능력 대폭 향상"
           ],
           "considerations": [
-            "대상 소프트웨어의 CLI 출력 형식 변경 시 래퍼 어댑터의 유지보수 필요"
+            "보안 정책에 따른 터미널 접근 권한 관리 필수"
           ]
         }
       }
@@ -177,46 +174,45 @@
       "url": "https://github.com/jingyaogong/minimind",
       "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "language": "Python",
-      "stars": 68897,
-      "forks": 9000,
-      "starsPeriod": 473,
+      "stars": 69421,
+      "forks": 9062,
+      "starsPeriod": 828,
       "since": "daily",
-      "summaryKo": "단 3천 원의 비용과 2시간의 학습만으로 개인 GPU 환경에서 64M 초소형 대형언어모델(LLM)을 처음부터 직접 훈련해볼 수 있는 극도로 경량화된 교육 및 실습용 프로젝트입니다.",
+      "summaryKo": "개인용 GPU 환경에서 2시간 만에 64M 규모의 LLM을 밑바닥부터 학습시킬 수 있는 초경량 오픈소스 모델 프레임워크입니다.",
       "keyFeaturesKo": [
-        "GPT-3 대비 1/2700 수준인 64M 파라미터의 초경량 구조로 개인 GPU에서 완벽 구동",
-        "사전 학습(Pretrain), SFT, LoRA, RLHF(DPO/PPO/GRPO), 에이전트 강화학습까지 전체 LLM 파이프라인 완벽 구현",
-        "비전 모듈(MiniMind-V), 멀티모달(MiniMind-O), 디퓨전 LM 등 확장 아키텍처 동시 제공"
+        "GPT-3 대비 1/2700 수준의 초소형 모델 구조로 개인 PC 학습 가능",
+        "Pretrain부터 RLHF, MoE, 모델 증류까지 전체 학습 파이프라인 제공",
+        "시각 및 다중 모달(Omni) 모델로의 확장성 지원"
       ],
       "tags": [
         "LLM",
         "Deep-Learning",
-        "PyTorch",
-        "Python"
+        "On-Device-AI"
       ],
       "report": {
-        "overview": "대형언어모델의 복잡한 훈련 전 과정을 투명하게 공개하여 누구나 저비용으로 직접 LLM을 구축하고 원리를 체득할 수 있는 오픈소스 마스터클래스입니다.",
-        "background": "상용 LLM은 블랙박스로 남아있고 대규모 클러스터가 필요하여, 개발자들이 LLM의 내부 훈련 메커니즘을 직접 실험하고 이해하기가 매우 어려웠습니다.",
+        "overview": "대규모 언어 모델의 학습 과정을 누구나 저비용으로 경험하고 연구할 수 있도록 설계된 초경량 LLM 학습 프레임워크입니다.",
+        "background": "거대 모델 학습의 높은 진입장벽을 낮추고, 모델의 내부 구조와 학습 원리를 투명하게 공개하여 연구 효율을 높이기 위해 등장했습니다.",
         "architecture": [
-          "PyTorch 기반의 모듈화되고 가독성 높은 극미니멀 트랜스포머 아키텍처",
-          "MoE(Mixture of Experts), LoRA, 챗봇 미세조정 등 최신 LLM 기법의 경량화 구현",
-          "데이터清洗부터 추론, 증류(Distillation)까지 이어지는 일체형 파이프라인"
+          "64M 파라미터 기반의 초경량 트랜스포머 구조",
+          "MoE(Mixture of Experts) 및 LoRA 등 최신 학습 기법 통합",
+          "RLHF/DPO를 포함한 완전한 강화학습 파이프라인"
         ],
         "useCases": [
-          "개발자 및 학생들의 대형언어모델 구조 및 학습 알고리즘 심층 학습",
-          "초경량 임베디드 디바이스 또는 엣지 환경을 위한 커스텀 LLM 연구"
+          "LLM 학습 원리 교육 및 연구",
+          "특정 도메인용 초소형 온디바이스 모델 개발"
         ],
         "quickStart": {
-          "installCommand": "git clone https://github.com/jingyaogong/minimind.git && pip install -r requirements.txt",
-          "codeSnippet": "# 미니마인드 사전 학습 실행\npython 1_pretrain.py --data_path ./dataset/pretrain_data.jsonl",
+          "installCommand": "git clone https://github.com/jingyaogong/minimind && cd minimind && pip install -r requirements.txt",
+          "codeSnippet": "python train.py --model_size 64M --epochs 10",
           "language": "python"
         },
         "prosCons": {
           "strengths": [
-            "일반 노트북이나 개인 GPU에서도 몇 시간 만에 전체 LLM 훈련을 실습 가능",
-            "최신 AI 트렌드(MoE, RLHF, 멀티모달)가 주석과 함께 깔끔하게 구현됨"
+            "압도적인 학습 속도와 저렴한 비용",
+            "학습 전 과정의 완전한 투명성"
           ],
           "considerations": [
-            "64M 모델 특성상 상용 서비스 수준의 복잡한 추론 능력에는 한계가 존재"
+            "실제 상용 서비스 수준의 성능을 기대하기엔 한계가 있음"
           ]
         }
       }
@@ -228,46 +224,45 @@
       "url": "https://github.com/cursor/plugins",
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
-      "stars": 18542,
-      "forks": 2014,
-      "starsPeriod": 294,
+      "stars": 18790,
+      "forks": 2042,
+      "starsPeriod": 395,
       "since": "daily",
-      "summaryKo": "Cursor 에디터 환경에서 에이전트의 연속 학습, 팀 단위 워크플로우, 고난도 코드 리뷰 및 자가 참조 반복 루프를 구현하는 공식 플러그인 및 스펙 표준입니다.",
+      "summaryKo": "Cursor 에디터의 기능을 확장하여 AI 에이전트가 CI/CD, 코드 리뷰, 팀 워크플로우를 자율적으로 수행하도록 돕는 공식 플러그인 생태계입니다.",
       "keyFeaturesKo": [
-        "트랜스크립트 기반 점진적 메모리 업데이트를 지원하는 'Continual Learning' 플러그인 탑재",
-        "보안 감사, 정확성 검증, 병렬 서브에이전트 조율을 수행하는 'Thermos' 테라핵심 브랜치 리뷰 지원",
-        "에이전트 간 호환성 검증 및 새로운 플러그인 스캐폴딩을 위한 개발자 도구 제공"
+        "CI/CD 및 코드 리뷰 자동화를 위한 전문 플러그인 제공",
+        "에이전트 간 협업 및 반복적 자기 참조 루프(Ralph Loop) 지원",
+        "표준화된 매니페스트 기반의 플러그인 개발 및 배포 환경"
       ],
       "tags": [
         "Cursor",
-        "LLM-Agent",
-        "Developer-Tools",
-        "TypeScript"
+        "AI-IDE",
+        "DevOps"
       ],
       "report": {
-        "overview": "Cursor 에디터의 에이전트 기능을 확장하고 팀 단위의 복잡한 개발 워크플로우를 자동화하는 공식 플러그인 생태계입니다.",
-        "background": "AI 코드 에디터가 대중화되었으나, 개발 팀의 고유한 컨벤션이나 지속적인 메모리 유지, 심층 보안 감사 등을 에디터 내에서 표준화하여 관리할 수단이 부족했습니다.",
+        "overview": "Cursor 에디터 내에서 AI 에이전트의 능력을 확장하여, 단순 코딩을 넘어 팀 단위의 개발 운영 업무까지 자동화하는 플러그인 모음입니다.",
+        "background": "AI 에이전트가 로컬 코드 작성에만 머물지 않고, 실제 배포 및 팀 협업 프로세스에 깊숙이 관여해야 하는 요구사항을 반영했습니다.",
         "architecture": [
-          "리포지토리 루트의 `.cursor-plugin/plugin.json` 매니페스트 기반 독립형 디렉토리 구조",
-          "AGENTS.md 및 전사적 CI/CD 워크플로우와 연동되는 에이전트 메모리 파이프라인",
-          "병렬 서브에이전트 오케스트레이션을 통한 고속 코드 감사 및 리뷰 시스템"
+          "독립적인 디렉토리 구조와 plugin.json 매니페스트",
+          "에이전트의 의사결정을 돕는 고신뢰도 메모리 업데이트 메커니즘",
+          "병렬 서브 에이전트 오케스트레이션 지원"
         ],
         "useCases": [
-          "개발 팀 전용 코드 리뷰 규칙 및 로컬 자동화 검증 파이프라인 구축",
-          "AI 에이전트가 이전 대화와 학습 내용을 기억하고 진화하도록 연속 학습 환경 조성"
+          "팀 단위 코드 리뷰 및 품질 자동 검증",
+          "AI 기반의 로컬 자동화 워크플로우 구축"
         ],
         "quickStart": {
-          "installCommand": "# Cursor 플러그인 매니페스트 추가 예시\ncursor plugin install continual-learning",
-          "codeSnippet": "{\n  \"name\": \"continual-learning\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Incremental transcript-driven memory updates for AGENTS.md\"\n}",
-          "language": "json"
+          "installCommand": "cursor --install-plugin <plugin-name>",
+          "codeSnippet": "npx @cursor/create-plugin --name my-agent-tool",
+          "language": "typescript"
         },
         "prosCons": {
           "strengths": [
-            "Cursor 에디터와 완벽하게 통합되어 매끄러운 AI 개발자 경험 제공",
-            "팀 단위 코드 품질 기준과 보안 검증을 자동화하는 강력한 유틸리티 포함"
+            "Cursor 생태계와의 강력한 통합",
+            "팀 생산성 향상을 위한 실무 중심 도구"
           ],
           "considerations": [
-            "Cursor 에디터 및 관련 플러그인 에코시스템에 대한 의존성 존재"
+            "플러그인별로 상이한 설정 및 학습 곡선"
           ]
         }
       }
@@ -279,46 +274,45 @@
       "url": "https://github.com/firecrawl/firecrawl",
       "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "language": "TypeScript",
-      "stars": 207214,
-      "forks": 10828,
-      "starsPeriod": 915,
+      "stars": 207877,
+      "forks": 10863,
+      "starsPeriod": 920,
       "since": "daily",
-      "summaryKo": "웹사이트를 LLM 에이전트가 즉시 활용할 수 있는 깨끗한 마크다운 및 구조화된 데이터로 변환해주는 고성능 웹 크롤링 및 검색 인프라 API입니다.",
+      "summaryKo": "웹사이트를 AI 에이전트가 즉시 학습하고 활용할 수 있는 깨끗한 마크다운 데이터로 변환하여, 에이전트의 지식 인프라를 구축하는 핵심 도구입니다.",
       "keyFeaturesKo": [
-        "단일 API 호출로 550개 이상의 데이터 제공처, 웹사이트 검색, 스크래핑을 동시에 처리",
-        "자바스크립트가 동적으로 렌더링하는 모던 웹사이트까지 완벽하게 추출하여 LLM 최적화 마크다운 변환",
-        "에이전트가 실시간으로 웹 정보를 탐색하고 지식을 확장할 수 있는 탄탄한 지식 인프라 제공"
+        "550개 이상의 데이터 소스를 통합하여 에이전트용 데이터로 가공",
+        "LLM 친화적인 마크다운 출력으로 토큰 효율성 극대화",
+        "크롤링 및 스크래핑의 복잡성을 API 하나로 단순화"
       ],
       "tags": [
+        "Data-Infrastructure",
         "Web-Scraping",
-        "LLM-Agent",
-        "API",
-        "TypeScript"
+        "LLM-Agent"
       ],
       "report": {
-        "overview": "웹상의 파편화된 정보를 AI 에이전트가 소비하기 가장 좋은 형태로 정제하여 제공하는 차세대 웹 지식 인프라입니다.",
-        "background": "기존 웹 스크래핑 툴들은 동적 페이지 렌더링, CAPTCHA, 불필요한 HTML 태그 등 방해 요소가 많아 LLM 에이전트의 실시간 데이터 소스로 활용하기에 비효율적이었습니다.",
+        "overview": "웹상의 방대한 데이터를 AI 에이전트가 이해하기 쉬운 구조화된 데이터로 변환하여, 에이전트의 지식 기반을 강화하는 데이터 인프라입니다.",
+        "background": "웹 데이터의 비정형성으로 인해 AI 에이전트가 정보를 수집하고 활용하는 데 발생하는 높은 비용과 낮은 정확도 문제를 해결합니다.",
         "architecture": [
-          "헤드리스 브라우저 클러스터 기반의 고성능 동적 페이지 렌더링 엔진",
-          "LLM 파싱에 최적화된 마크다운 정제 및 구조화 데이터 추출 파이프라인",
-          "확장 가능한 RESTful API 및 Python/TypeScript 공식 SDK 생태계"
+          "웹 페이지의 시맨틱 구조를 보존하는 마크다운 변환 엔진",
+          "대규모 데이터 수집을 위한 분산 크롤링 인프라",
+          "에이전트 연동을 위한 표준화된 REST API"
         ],
         "useCases": [
-          "실시간 웹 검색 및 최신 정보 수집이 필요한 RAG(검색 증강 생성) 시스템 구축",
-          "AI 에이전트가 자율적으로 웹을 탐색하며 데이터를 수집하는 리서치 업무 자동화"
+          "RAG(검색 증강 생성)를 위한 데이터 소스 구축",
+          "실시간 웹 데이터 기반의 에이전트 의사결정"
         ],
         "quickStart": {
           "installCommand": "pip install firecrawl-py",
-          "codeSnippet": "from firecrawl import FirecrawlApp\n\napp = FirecrawlApp(api_key=\"fc-YOUR_API_KEY\")\nresult = app.scrape_url('https://firecrawl.dev', formats=['markdown'])\nprint(result['markdown'])",
+          "codeSnippet": "from firecrawl import FirecrawlApp\napp = FirecrawlApp(api_key='...')\nscrape_result = app.scrape_url('https://docs.firecrawl.dev')",
           "language": "python"
         },
         "prosCons": {
           "strengths": [
-            "복잡한 웹 구조와 자바스크립트 렌더링 페이지를 별도 설정 없이 깔끔하게 추출",
-            "LLM 에이전트 개발에 최적화된 마크다운 출력 포맷 제공"
+            "LLM 최적화 데이터 출력",
+            "사용하기 쉬운 API 인터페이스"
           ],
           "considerations": [
-            "대규모 크롤링 시 대상 웹사이트의 Rate Limit 및 API 사용량 비용 관리 필요"
+            "대규모 크롤링 시 API 비용 및 속도 제한 고려"
           ]
         }
       }
@@ -330,46 +324,43 @@
       "url": "https://github.com/nginx/nginx",
       "description": "The official NGINX Open Source repository.",
       "language": "C",
-      "stars": 32923,
-      "forks": 8384,
-      "starsPeriod": 163,
+      "stars": 33044,
+      "forks": 8395,
+      "starsPeriod": 174,
       "since": "daily",
-      "summaryKo": "전통적인 웹 서버의 성능 한계를 극복하고 세계에서 가장 널리 쓰이는 고성능 리버스 프록시, API 게이트웨이 및 로드 밸런서 솔루션을 제공합니다.",
+      "summaryKo": "nginx/nginx - The official NGINX Open Source repository.",
       "keyFeaturesKo": [
-        "비동기식 이벤트 기반 아키텍처를 통한 극대화된 동시 처리 성능",
-        "강력한 로드 밸런싱 및 SSL/TLS 종료 기능 지원",
-        "F5, Inc.의 기업용 지원 및 안정적인 오픈소스 생태계"
+        "주 프로그래밍 언어: C",
+        "깃허브 스타: 33,044개 획득",
+        "최근 증가 추이: +174 stars (daily)"
       ],
       "tags": [
-        "Web-Server",
-        "Reverse-Proxy",
-        "Load-Balancer",
-        "High-Performance"
+        "C"
       ],
       "report": {
-        "overview": "웹 트래픽 처리의 표준인 NGINX의 공식 오픈소스 저장소로, 고성능 웹 서버 및 리버스 프록시 기능을 제공합니다.",
-        "background": "기존 다중 스레드 웹 서버들이 수많은 동시 연결을 처리할 때 겪던 메모리 병목과 C10K 문제를 해결하기 위해 등장했습니다.",
+        "overview": "nginx는 C 기반으로 개발된 오픈소스 프로젝트로, The official NGINX Open Source repository.",
+        "background": "기존 C 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "이벤트 기반(Event-driven), 비동기(Asynchronous) 런타임 모델",
-          "최적화된 메모리 관리 및 저수준 C 언어 구현으로 극도의 가벼움 유지",
-          "모듈형 구조를 통한 뛰어난 확장성 및 유연한 설정"
+          "C 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "대규모 트래픽을 처리하는 웹 서비스의 리버스 프록시 및 로드 밸런서",
-          "마이크로서비스 아키텍처(MSA) 환경의 API 게이트웨이"
+          "C 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "sudo apt install nginx",
-          "codeSnippet": "server {\n    listen 80;\n    server_name example.com;\n    location / {\n        proxy_pass http://localhost:8080;\n    }\n}",
-          "language": "nginx"
+          "installCommand": "git clone https://github.com/nginx/nginx.git",
+          "codeSnippet": "cd nginx\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "압도적인 성능과 낮은 리소스 소모량",
-            "검증된 안정성과 방대한 커뮤니티 문서"
+            "최근 +174 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "동적 설정 변경 시 리로드 작업 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -381,46 +372,45 @@
       "url": "https://github.com/openvinotoolkit/openvino",
       "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "language": "C++",
-      "stars": 12133,
-      "forks": 3660,
-      "starsPeriod": 158,
+      "stars": 12273,
+      "forks": 3679,
+      "starsPeriod": 183,
       "since": "daily",
-      "summaryKo": "이종(Heterogeneous) 하드웨어 환경에서 딥러닝 모델의 추론 성능을 극대화하고 지연 시간을 최소화하는 오픈소스 AI 최적화 툴킷입니다.",
+      "summaryKo": "openvinotoolkit/openvino - OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "keyFeaturesKo": [
-        "인텔 CPU, GPU뿐만 아니라 다양한 하드웨어 가속기 통합 최적화",
-        "모델 양자화(Quantization) 및 그래프 최적화를 통한 경량화",
-        "PyPI, Anaconda, Homebrew 등 다양한 패키지 관리자 지원"
+        "주 프로그래밍 언어: C++",
+        "깃허브 스타: 12,273개 획득",
+        "최근 증가 추이: +183 stars (daily)"
       ],
       "tags": [
-        "AI-Inference",
-        "Deep-Learning",
-        "Model-Optimization",
-        "C++"
+        "C++",
+        "AI",
+        "DevTools"
       ],
       "report": {
-        "overview": "학습된 딥러닝 모델을 실제 프로덕션 환경에 고속으로 배포할 수 있도록 변환 및 최적화하는 툴킷입니다.",
-        "background": "무거운 AI 모델을 다양한 엣지 및 클라우드 하드웨어에서 실시간으로 구동해야 하는 성능 요구사항을 해결하기 위해 개발되었습니다.",
+        "overview": "openvino는 C++ 기반으로 개발된 오픈소스 프로젝트로, OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+        "background": "기존 C++ 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "IR(Intermediate Representation) 변환을 통한 모델 구조 간소화",
-          "하드웨어별 플러그인 아키텍처를 통한 유연한 추론 가속",
-          "양자화 및 프루닝을 지원하는 통합 모델 최적화 파이프라인"
+          "C++ 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "엣지 디바이스 및 PC에서의 실시간 컴퓨터 비전 및 생성형 AI 실행",
-          "서버 환경에서 LLM 및 머신러닝 모델의 추론 처리량(Throughput) 극대화"
+          "C++ 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "pip install openvino",
-          "codeSnippet": "import openvino as ov\ncore = ov.Core()\nmodel = core.read_model(\"model.xml\")\ncompiled_model = core.compile_model(model, \"CPU\")",
-          "language": "python"
+          "installCommand": "git clone https://github.com/openvinotoolkit/openvino.git",
+          "codeSnippet": "cd openvino\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "하드웨어 자원을 최대한 활용하는 뛰어난 추론 속도",
-            "폭넓은 프레임워크(PyTorch, TensorFlow 등) 호환성"
+            "최근 +183 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "특정 하드웨어 가속기 활용 시 사전 설정 및 드라이버 의존성 존재"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -430,48 +420,46 @@
       "owner": "cathrynlavery",
       "repo": "diagram-design",
       "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
-      "stars": 70449,
-      "forks": 4720,
-      "starsPeriod": 518,
+      "stars": 70936,
+      "forks": 4746,
+      "starsPeriod": 624,
       "since": "daily",
-      "summaryKo": "지저분한 그림자나 획일화된 'Mermaid' 스타일의 한계를 뛰어넘어, AI 코딩 에이전트가 완벽한 브랜드 아이덴티티를 가진 고품질 HTML+SVG 다이어그램을 그리도록 지원합니다.",
+      "summaryKo": "cathrynlavery/diagram-design - Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "keyFeaturesKo": [
-        "외부 의존성 없는 독립형(Self-contained) HTML + SVG 파일 생성",
-        "52가지의 다양한 에디토리얼 다이어그램 타입 지원",
-        "Claude Code, Cursor 등 주요 AI 코딩 에이전트와의 완벽한 통합"
+        "주 프로그래밍 언어: HTML",
+        "깃허브 스타: 70,936개 획득",
+        "최근 증가 추이: +624 stars (daily)"
       ],
       "tags": [
-        "LLM-Agent",
-        "SVG",
-        "Diagrams",
-        "AI-Skill"
+        "HTML",
+        "AI"
       ],
       "report": {
-        "overview": "디자이너가 혐오하는 기존 자동 생성 다이어그램의 시각적 한계를 극복하고, 에이전트가 세련된 에디토리얼 다이어그램을 코드로 직접 드로잉하는 스킬입니다.",
-        "background": "기존 도구들이 제공하는 다이어그램은 가독성이 떨어지고 디자인 퀄리티가 낮아 실무 문서에 즉시 사용하기 어렵다는 문제를 해결합니다.",
+        "overview": "diagram-design는 HTML 기반으로 개발된 오픈소스 프로젝트로, Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+        "background": "기존 HTML 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "단일 파일로 렌더링되는 독립형 HTML/SVG 구조",
-          "다양한 브랜드 테마와 에디토리얼 디자인 시스템 반영",
-          "AI 에이전트 인터페이스(MCP 등)와 결합된 프롬프트-투-디자인 파이프라인"
+          "HTML 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "소프트웨어 아키텍처 및 시스템 흐름도를 시각적으로 문서화할 때",
-          "클라이언트 보고서나 기술 블로그에 즉시 삽입할 수 있는 고품질 다이어그램 제작"
+          "HTML 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npx skills add cathrynlavery/diagram-design",
-          "codeSnippet": "# AI 코딩 에이전트(Claude Code 등) 프롬프트 내 활용\nDraw an editorial architecture diagram for our microservices pipeline.",
+          "installCommand": "git clone https://github.com/cathrynlavery/diagram-design.git",
+          "codeSnippet": "cd diagram-design\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "별도의 디자인 툴 없이도 세련되고 정제된 결과물 획득",
-            "외부 에셋 참조가 없어 배포 및 공유가 매우 용이함"
+            "최근 +624 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "AI 에이전트 환경 세팅이 선행되어야 함"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -483,46 +471,45 @@
       "url": "https://github.com/mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72910,
-      "forks": 6440,
-      "starsPeriod": 668,
+      "stars": 73417,
+      "forks": 6478,
+      "starsPeriod": 790,
       "since": "daily",
-      "summaryKo": "에디터의 주관적 편향을 배제하고 레딧, X, 유튜브 등 실제 유저들의 투표와 반응을 기반으로 최근 30일간의 트렌드를 심층 리서치해주는 AI 에이전트 스킬입니다.",
+      "summaryKo": "mvanhorn/last30days-skill - AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "keyFeaturesKo": [
-        "Reddit, X, YouTube, HN 등 다채널 실사용자 데이터 교차 검증",
-        "실제 투표수, 좋아요, 커뮤니티 반응 중심의 신뢰도 높은 필터링",
-        "복잡한 검색 과정을 자동화하여 접지력(Grounded) 있는 요약 리포트 제공"
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 73,417개 획득",
+        "최근 증가 추이: +790 stars (daily)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Web-Search",
-        "Trend-Analysis",
-        "Python"
+        "Python",
+        "AI",
+        "Frontend"
       ],
       "report": {
-        "overview": "AI 에이전트가 지난 30일간의 웹 데이터를 추적하여 특정 주제에 대한 실제 대중의 반응과 트렌드를 종합 분석해주는 고성능 리서치 에이전트 스킬입니다.",
-        "background": "기존 검색 엔진들은 광고와 SEO 최적화 콘텐츠로 오염되어 있어, 특정 기술이나 이슈에 대한 진짜 여론과 최신 트렌드를 파악하기 어렵다는 한계를 해결합니다.",
+        "overview": "last30days-skill는 Python 기반으로 개발된 오픈소스 프로젝트로, AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+        "background": "기존 Python 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "다중 플랫폼(소셜 미디어 및 커뮤니티) 실시간 데이터 수집 파이프라인",
-          "사용자 참여 지표(Upvote, Like) 기반 가중치 스코어링 알고리즘",
-          "LLM 기반 신뢰도 검증 및 사실에 근거한(Grounded) 신속 요약 엔진"
+          "Python 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "새로운 기술 스택이나 오픈소스 프로젝트 도입 전 실제 개발자 여론 조사",
-          "시장 동향 및 최신 기술 트렌드를 빠르게 파악해야 하는 테크 큐레이션 업무"
+          "Python 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
           "installCommand": "git clone https://github.com/mvanhorn/last30days-skill.git",
-          "codeSnippet": "# 에이전트 스킬 호출 예시\n/last30days research \"PostgreSQL vector performance trends\"",
+          "codeSnippet": "cd last30days-skill\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "마케팅성 콘텐츠가 제외된 날것의 실무자 반응 확보 가능",
-            "방대한 채널의 정보를 단시간에 구조화하여 요약"
+            "최근 +790 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "외부 플랫폼 API 정책 변화에 따른 주기적 파이프라인 점검 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -534,46 +521,46 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 12002,
-      "forks": 1478,
-      "starsPeriod": 494,
+      "stars": 12257,
+      "forks": 1512,
+      "starsPeriod": 425,
       "since": "daily",
-      "summaryKo": "Google Stitch MCP 서버와 연동하여 Claude Code, Cursor 등 주요 코딩 에이전트의 디자인 및 빌드 역량을 확장해주는 오픈 표준 기반 에이전트 스킬 라이브러리입니다.",
+      "summaryKo": "google-labs-code/stitch-skills - A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "keyFeaturesKo": [
-        "Agent Skills 오픈 표준을 준수하여 다양한 코딩 에이전트와 완벽 호환",
-        "디자인(stitch-design), 빌드(stitch-build), 유틸리티 기능의 모듈식 제공",
-        "CLI 및 UI를 통한 간편한 스파스 클론(Sparse Checkout) 및 마켓플레이스 등록"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 12,257개 획득",
+        "최근 증가 추이: +425 stars (daily)"
       ],
       "tags": [
-        "LLM-Agent",
-        "MCP",
         "TypeScript",
-        "Google-Stitch"
+        "AI",
+        "Backend",
+        "DevTools"
       ],
       "report": {
-        "overview": "Google Stitch 생태계와 코딩 에이전트를 연결하여 디자인 및 개발 워크플로우를 자동화하는 플러그인 및 스킬 집합입니다.",
-        "background": "에이전트마다 상이한 프롬프트 규격과 기능 파편화 문제를 해결하고, 표준화된 인터페이스로 일관된 개발 자동화 경험을 제공하기 위해 등장했습니다.",
+        "overview": "stitch-skills는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "Agent Skills 오픈 표준을 따르는 모듈형 플러그인 구조",
-          "Stitch MCP 서버와의 긴밀한 통신 프로토콜",
-          "필요한 기능만 골라 쓸 수 있는 선택적 스파스 클론 지원"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "Cursor, Claude Code 등에서 Google Stitch의 디자인 시스템을 연동해 UI를 자동 생성할 때",
-          "프론트엔드 개발 및 빌드 파이프라인을 AI 에이전트로 지능화할 때"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "codex plugin marketplace add google-labs-code/stitch-skills --ref main",
-          "codeSnippet": "# 마켓플레이스 등록 후 디자인 스킬 활성화\nplugins:\n  - stitch-design\n  - stitch-build",
-          "language": "yaml"
+          "installCommand": "git clone https://github.com/google-labs-code/stitch-skills.git",
+          "codeSnippet": "cd stitch-skills\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "여러 코딩 에이전트 간의 뛰어난 상호 호환성",
-            "구글 생태계의 디자인/빌드 표준을 손쉽게 도입 가능"
+            "최근 +425 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "MCP(Model Context Protocol) 및 관련 에이전트 환경 이해 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -585,46 +572,44 @@
       "url": "https://github.com/mjmirza/app-store-compliance",
       "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "language": "Shell",
-      "stars": 4162,
-      "forks": 251,
-      "starsPeriod": 621,
+      "stars": 4922,
+      "forks": 314,
+      "starsPeriod": 755,
       "since": "daily",
-      "summaryKo": "앱 스토어와 구글 플레이의 빈번한 심사 거절 사유를 사전 차단하고, 124가지 거절 패턴 및 글로벌 규제 준수 데드라인을 제공하는 개발자용 플레이북입니다.",
+      "summaryKo": "mjmirza/app-store-compliance - Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "keyFeaturesKo": [
-        "124가지의 문서화된 앱 심사 거절 패턴 및 구체적 해결책 제시",
-        "개인정보 처리방침(Privacy Manifest) 및 Data Safety 자동 점검 지원",
-        "EU AI Act, DSA, COPPA 등 112개 글로벌 법적 규제 마감일 트래킹"
+        "주 프로그래밍 언어: Shell",
+        "깃허브 스타: 4,922개 획득",
+        "최근 증가 추이: +755 stars (daily)"
       ],
       "tags": [
-        "App-Store",
-        "Compliance",
-        "Mobile-Dev",
-        "Shell"
+        "Shell",
+        "AI"
       ],
       "report": {
-        "overview": "모바일 앱 출시 과정에서 리젝(Rejection)을 방지하기 위한 실무 가이드이자, AI 코딩 에이전트가 사전 검증을 수행할 수 있는 컴플라이언스 스킬입니다.",
-        "background": "엄격해진 앱 마켓 정책과 복잡해진 글로벌 규제로 인해 개발자들이 사소한 사유로 심사 지연을 겪는 고질적인 문제를 해결합니다.",
+        "overview": "app-store-compliance는 Shell 기반으로 개발된 오픈소스 프로젝트로, Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+        "background": "기존 Shell 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "마켓 가이드라인 변경 사항을 추적하는 오픈소스 플레이북 구조",
-          "주요 규제 및 법적 데드라인 자동 트래킹 시스템",
-          "AI 코딩 에이전트가 코드를 스캔하여 위반 사항을 체크하는 프리서브레션 가드"
+          "Shell 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "iOS 및 안드로이드 앱 배포 전 규정 위반 요소를 사전에 스캔하고 싶을 때",
-          "개인정보 처리 및 글로벌 법적 규제(COPPA, EU AI Act 등) 대응을 준비할 때"
+          "Shell 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
           "installCommand": "git clone https://github.com/mjmirza/app-store-compliance.git",
-          "codeSnippet": "# AI 에이전트를 통한 컴플라이언스 체크 실행 예시\n./scripts/check-compliance.sh --platform ios",
+          "codeSnippet": "cd app-store-compliance\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "실제 리젝 사례 기반의 방대한 트러블슈팅 데이터베이스",
-            "최신 글로벌 규제 및 데드라인을 놓치지 않고 관리 가능"
+            "최근 +755 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "자동화 스캔이 모든 정책적 주관성을 완벽히 대체할 수는 없음"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -636,46 +621,46 @@
       "url": "https://github.com/Tracer-Cloud/opensre",
       "description": "The open-source agent for CI/CD reliability.",
       "language": "Python",
-      "stars": 14506,
-      "forks": 1970,
-      "starsPeriod": 399,
+      "stars": 14811,
+      "forks": 1988,
+      "starsPeriod": 438,
       "since": "daily",
-      "summaryKo": "CI/CD 파이프라인 실패 시 단순 알림을 넘어, 원인 분석부터 수정 제안까지 자동화하여 SRE의 운영 부담을 획기적으로 줄여주는 AI 에이전트입니다.",
+      "summaryKo": "CI/CD 파이프라인의 실패 원인을 단순히 알리는 데 그치지 않고, AI가 직접 분석하여 수정안까지 제안하는 자가 치유형 CI/CD 에이전트입니다.",
       "keyFeaturesKo": [
-        "실패한 CI 로그를 분석하여 근본 원인(Root Cause)을 추적하는 지능형 에이전트",
-        "사용자 정의 모델을 활용한 Self-hosted 환경 지원으로 데이터 보안성 확보",
-        "코드 수정 제안 및 리뷰 프로세스 자동화로 복구 시간(MTTR) 단축"
+        "자체 호스팅 모델 지원으로 데이터 보안 및 프라이버시 강화",
+        "실패한 빌드 로그를 실시간 추적하여 근본 원인(Root Cause) 자동 분석",
+        "코드 수정 제안 및 PR 자동 생성으로 복구 시간(MTTR) 획기적 단축"
       ],
       "tags": [
-        "LLM-Agent",
         "CI-CD",
-        "SRE",
+        "LLM-Agent",
+        "DevOps",
         "Automation"
       ],
       "report": {
-        "overview": "CI/CD 파이프라인의 실패 원인을 자동으로 진단하고 해결책을 제시하는 오픈소스 SRE 에이전트입니다.",
-        "background": "기존 CI/CD 시스템은 빌드 실패 시 로그만 제공할 뿐, 구체적인 해결책을 제시하지 않아 개발자가 직접 원인을 파악해야 하는 비효율이 존재했습니다.",
+        "overview": "CI/CD 실패 시 발생하는 개발자의 컨텍스트 스위칭 비용을 줄이고, AI가 직접 수정안을 제시하는 지능형 SRE 자동화 도구입니다.",
+        "background": "기존 CI/CD 툴은 실패 알림만 제공할 뿐, 왜 실패했는지와 어떻게 고쳐야 하는지에 대한 인사이트가 부족하여 개발자의 수동 분석 의존도가 높았습니다.",
         "architecture": [
-          "CLI 기반의 경량화된 에이전트 구조",
-          "로컬/프라이빗 LLM 연동을 통한 데이터 프라이버시 보장",
-          "CI 파이프라인 로그 분석 및 수정 제안 자동화 루프"
+          "CI/CD 파이프라인 로그 분석을 위한 경량 CLI 에이전트",
+          "로컬 LLM 연동을 통한 데이터 프라이버시 보장",
+          "Git 워크플로우와 통합된 자동 수정 제안 엔진"
         ],
         "useCases": [
-          "CI/CD 파이프라인 실패 대응이 잦은 DevOps 팀",
-          "운영 효율화를 목표로 하는 SRE 엔지니어"
+          "복잡한 빌드/테스트 파이프라인을 운영하는 DevOps 팀",
+          "CI/CD 실패 분석에 많은 시간을 할애하는 백엔드 엔지니어"
         ],
         "quickStart": {
           "installCommand": "pip install opensre",
-          "codeSnippet": "opensre run --pipeline-id <id> --model <your-model>",
+          "codeSnippet": "opensre run --pipeline-id <id> --auto-fix",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "MTTR(평균 복구 시간)의 획기적 단축",
-            "자체 모델 사용으로 인한 보안성"
+            "MTTR(평균 복구 시간)의 비약적 감소",
+            "기존 CI/CD 파이프라인과의 높은 호환성"
           ],
           "considerations": [
-            "초기 모델 튜닝 및 파이프라인 연동 설정 필요"
+            "사용 중인 LLM 모델의 성능에 따른 분석 정확도 차이"
           ]
         }
       }
@@ -687,46 +672,46 @@
       "url": "https://github.com/toeverything/AFFiNE",
       "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "language": "TypeScript",
-      "stars": 76945,
-      "forks": 5634,
-      "starsPeriod": 542,
+      "stars": 77369,
+      "forks": 5663,
+      "starsPeriod": 593,
       "since": "daily",
-      "summaryKo": "Notion의 문서화 기능과 Miro의 화이트보드 기능을 결합한 차세대 지식 관리 플랫폼으로, 로컬 우선(Local-first) 방식을 통해 데이터 주권을 보장합니다.",
+      "summaryKo": "Notion의 문서 관리와 Miro의 화이트보드 기능을 결합하여, 기획부터 실행까지 하나의 플랫폼에서 완결하는 차세대 로컬 우선 지식 관리 도구입니다.",
       "keyFeaturesKo": [
-        "문서 작성과 시각적 기획을 하나의 플랫폼에서 통합 관리",
-        "로컬 우선 아키텍처로 오프라인 환경에서도 완벽한 데이터 접근성 제공",
+        "문서와 화이트보드 간의 자유로운 전환 및 데이터 동기화",
+        "개인 정보 보호를 최우선으로 하는 로컬 우선(Local-first) 아키텍처",
         "오픈소스 기반의 높은 확장성과 커스터마이징 지원"
       ],
       "tags": [
         "Knowledge-Base",
-        "Local-First",
         "Productivity",
-        "Open-Source"
+        "Local-First",
+        "Collaboration"
       ],
       "report": {
-        "overview": "Notion과 Miro를 대체할 수 있는 올인원 지식 관리 및 협업 플랫폼입니다.",
-        "background": "기존 생산성 도구들은 클라우드 의존도가 높고 기능이 파편화되어 있어, 창의적인 기획과 문서화 과정을 통합하는 데 한계가 있었습니다.",
+        "overview": "문서 작성, 시각적 기획, 프로젝트 관리를 하나의 워크스페이스에서 통합하여 파편화된 도구 사용을 방지하는 올인원 생산성 플랫폼입니다.",
+        "background": "기획 단계에서는 Miro를, 문서화 단계에서는 Notion을 사용하는 등 도구 간 전환으로 인한 컨텍스트 손실과 데이터 파편화 문제를 해결하고자 등장했습니다.",
         "architecture": [
-          "로컬 우선(Local-first) 데이터 동기화 엔진",
-          "블록 기반의 유연한 문서 편집기",
-          "무한 캔버스(Infinite Canvas)와 문서 모드 간의 심리스한 전환"
+          "로컬 데이터 저장을 기본으로 하는 고성능 데이터 동기화 엔진",
+          "블록 기반의 유연한 문서 편집기 및 무한 캔버스 통합",
+          "오프라인 우선 작동을 지원하는 로컬 데이터베이스 구조"
         ],
         "useCases": [
-          "복잡한 프로젝트 기획과 문서화가 동시에 필요한 팀",
-          "데이터 프라이버시를 중시하는 개인 및 기업"
+          "복잡한 프로젝트 기획과 문서화를 동시에 수행하는 팀",
+          "데이터 보안이 중요한 기업 및 개인 사용자"
         ],
         "quickStart": {
           "installCommand": "npm install -g @affine/cli",
-          "codeSnippet": "npx @affine/cli start",
+          "codeSnippet": "affine start --local",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "강력한 통합 워크스페이스",
-            "데이터 소유권 보장"
+            "도구 전환 없는 매끄러운 워크플로우",
+            "데이터 주권 보장"
           ],
           "considerations": [
-            "기존 Notion 데이터 마이그레이션 검토 필요"
+            "초기 학습 곡선 및 기존 서비스 데이터 마이그레이션"
           ]
         }
       }
@@ -738,46 +723,46 @@
       "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
       "description": "The only downloader you need. 下载器的集大成者。",
       "language": "Python",
-      "stars": 15464,
-      "forks": 931,
-      "starsPeriod": 701,
+      "stars": 16270,
+      "forks": 975,
+      "starsPeriod": 1078,
       "since": "daily",
-      "summaryKo": "복잡한 네트워크 환경에서도 안정적인 다운로드를 지원하는 고성능 통합 다운로더로, 다양한 프로토콜과 프록시 설정을 완벽하게 지원합니다.",
+      "summaryKo": "복잡한 네트워크 환경과 다양한 플랫폼의 제약을 극복하고, 고성능 다운로드 기능을 통합하여 제공하는 올인원 다운로더입니다.",
       "keyFeaturesKo": [
-        "HTTP(S)/SOCKS5 프록시 지원을 통한 글로벌 콘텐츠 접근성",
-        "대규모 파일 및 다중 소스 다운로드 최적화",
-        "브라우저 자동화 및 네트워크 테스트 도구와의 높은 호환성"
+        "다양한 프로토콜 및 플랫폼을 지원하는 통합 다운로드 엔진",
+        "프록시 네트워크 연동을 통한 지역 제한 콘텐츠 접근 최적화",
+        "대규모 데이터 처리에 최적화된 고성능 파이썬 기반 아키텍처"
       ],
       "tags": [
         "Downloader",
         "Network-Tool",
-        "Proxy",
-        "Automation"
+        "Automation",
+        "High-Performance"
       ],
       "report": {
-        "overview": "네트워크 제약 없이 전 세계 콘텐츠를 효율적으로 다운로드할 수 있는 강력한 CLI 기반 도구입니다.",
-        "background": "지역 제한이나 네트워크 불안정성으로 인해 대용량 데이터 수집 및 다운로드 시 발생하는 병목 현상을 해결하기 위해 등장했습니다.",
+        "overview": "단순 다운로드를 넘어 네트워크 최적화와 자동화를 결합하여, 글로벌 콘텐츠 접근성을 극대화한 통합 다운로드 솔루션입니다.",
+        "background": "지역 제한, 프로토콜 비호환성, 느린 다운로드 속도 등 파편화된 다운로드 환경의 불편함을 해결하기 위해 개발되었습니다.",
         "architecture": [
-          "고성능 비동기 다운로드 엔진",
-          "다양한 프록시 네트워크(Residential/Static) 통합 지원",
-          "확장 가능한 플러그인 기반 아키텍처"
+          "멀티 스레드 기반의 고속 다운로드 처리 엔진",
+          "HTTP(S)/SOCKS5 프록시를 지원하는 유연한 네트워크 레이어",
+          "확장 가능한 플러그인 기반의 플랫폼 지원 구조"
         ],
         "useCases": [
-          "글로벌 데이터 수집 및 크롤링 작업",
-          "네트워크 테스트 및 브라우저 자동화 환경"
+          "글로벌 콘텐츠 수집 및 데이터 분석가",
+          "네트워크 테스트 및 브라우저 자동화 환경 구축자"
         ],
         "quickStart": {
           "installCommand": "pip install ghost-downloader",
-          "codeSnippet": "ghost-dl --url <target-url> --proxy <proxy-config>",
-          "language": "bash"
+          "codeSnippet": "from ghost import Downloader\n\ndl = Downloader()\ndl.download('url')",
+          "language": "python"
         },
         "prosCons": {
           "strengths": [
-            "압도적인 네트워크 호환성",
-            "빠른 다운로드 속도"
+            "압도적인 다운로드 편의성",
+            "글로벌 네트워크 최적화 지원"
           ],
           "considerations": [
-            "프록시 설정에 따른 비용 및 보안 정책 확인"
+            "프록시 사용 시 네트워크 비용 및 보안 정책 준수"
           ]
         }
       }
@@ -789,46 +774,46 @@
       "url": "https://github.com/zhouxiaoka/autoclip",
       "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
       "language": "Python",
-      "stars": 13704,
-      "forks": 2153,
-      "starsPeriod": 641,
+      "stars": 14359,
+      "forks": 2205,
+      "starsPeriod": 908,
       "since": "daily",
-      "summaryKo": "긴 영상을 링크 하나로 짧은 숏폼 콘텐츠로 자동 변환해주는 AI 도구로, 편집부터 자막, 커버 이미지, 배포 문구까지 원스톱으로 해결합니다.",
+      "summaryKo": "긴 영상의 링크 하나로 AI가 자동으로 핵심을 추출하여 숏폼 콘텐츠로 변환하고, 플랫폼별 최적화된 마케팅 문구까지 생성하는 영상 편집 자동화 도구입니다.",
       "keyFeaturesKo": [
-        "AI 기반의 자동 영상 클리핑 및 하이라이트 추출",
-        "TikTok, Reels, YouTube Shorts 등 주요 플랫폼별 최적화 템플릿 제공",
-        "로컬 환경에서 렌더링을 수행하여 데이터 보안 및 비용 효율성 극대화"
+        "링크 입력만으로 영상 편집, 자막, 썸네일, 문구 생성까지 원스톱 처리",
+        "TikTok, Reels, Shorts 등 주요 숏폼 플랫폼별 자동 최적화",
+        "로컬 환경에서의 편집 및 렌더링 지원으로 데이터 보안 강화"
       ],
       "tags": [
         "AI-Video",
-        "Content-Repurposing",
+        "Content-Creation",
         "Automation",
-        "Shorts"
+        "Short-form"
       ],
       "report": {
-        "overview": "긴 영상을 숏폼으로 자동 변환하여 콘텐츠 제작 효율을 극대화하는 오픈소스 AI 데스크톱 도구입니다.",
-        "background": "콘텐츠 마케터들이 긴 영상을 숏폼으로 재가공하는 데 드는 막대한 시간과 편집 기술적 진입장벽을 해결하고자 개발되었습니다.",
+        "overview": "긴 영상 콘텐츠를 숏폼으로 재가공하는 반복적인 작업을 AI로 자동화하여, 콘텐츠 크리에이터의 생산성을 극대화하는 데스크톱 애플리케이션입니다.",
+        "background": "긴 영상을 숏폼으로 편집하는 과정은 시간 소모가 크고 기술적 숙련도가 필요하여, 이를 자동화하려는 니즈가 급증하고 있습니다.",
         "architecture": [
-          "로컬 렌더링 엔진 기반의 데스크톱 애플리케이션",
-          "멀티 플랫폼 최적화 알고리즘",
-          "AI 기반 자동 자막 및 썸네일 생성 파이프라인"
+          "Tauri 기반의 경량 데스크톱 GUI 아키텍처",
+          "클라우드 AI 모델 연동을 통한 고품질 영상 분석 및 렌더링",
+          "플랫폼별 메타데이터 및 썸네일 자동 생성 엔진"
         ],
         "useCases": [
-          "팟캐스트 및 강의 영상을 숏폼으로 재가공하는 크리에이터",
-          "마케팅 콘텐츠 제작 시간을 단축하려는 기업"
+          "숏폼 콘텐츠를 대량 생산하는 마케터 및 크리에이터",
+          "강의나 인터뷰 영상을 요약하여 배포하려는 교육/미디어 기업"
         ],
         "quickStart": {
           "installCommand": "brew install --cask autoclip",
-          "codeSnippet": "autoclip --url <video-link> --platform tiktok",
+          "codeSnippet": "autoclip --url <video_url> --platform tiktok",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "원클릭 자동화 워크플로우",
-            "로컬 기반의 무료 렌더링"
+            "압도적인 콘텐츠 제작 속도",
+            "직관적인 사용자 경험"
           ],
           "considerations": [
-            "고해상도 영상 처리 시 로컬 PC 사양 요구"
+            "클라우드 AI 모델 사용에 따른 비용 발생"
           ]
         }
       }
@@ -840,46 +825,46 @@
       "url": "https://github.com/backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 14498,
-      "forks": 1433,
+      "stars": 14659,
+      "forks": 1425,
       "starsPeriod": 2815,
       "since": "weekly",
-      "summaryKo": "AI 에이전트의 작업 과정을 시각화하고 주석을 달아 피드백을 즉시 반영할 수 있게 함으로써, 인간과 AI 간의 협업 루프를 완성하는 워크스페이스입니다.",
+      "summaryKo": "AI 에이전트가 생성한 코드와 계획을 실시간으로 검토하고, 피드백을 즉시 반영하여 에이전트와 인간 개발자 간의 협업 루프를 완성하는 워크스페이스입니다.",
       "keyFeaturesKo": [
-        "다양한 AI 에이전트(Claude, Copilot 등)와 통합 가능한 중앙 집중식 인박스",
-        "코드 리뷰 및 아티팩트 주석 기능을 통한 정교한 AI 제어",
-        "팀 단위 공유 및 피드백 루프 자동화"
+        "다양한 AI 에이전트(Claude, Copilot 등)와의 통합 인터페이스",
+        "코드 리뷰 및 계획 수정 사항을 에이전트에 즉시 전달하는 피드백 루프",
+        "마크다운, HTML 등 다양한 아티팩트의 시각적 주석 및 관리"
       ],
       "tags": [
-        "LLM-Agent",
+        "AI-Agent",
+        "Code-Review",
         "Collaboration",
-        "DevTools",
-        "Workflow"
+        "Dev-Tool"
       ],
       "report": {
-        "overview": "AI 에이전트의 작업물을 검토하고 피드백을 전달하여 에이전트의 결과물을 정교하게 다듬는 협업 플랫폼입니다.",
-        "background": "AI 에이전트가 코드를 생성하지만, 인간이 이를 검토하고 수정 사항을 다시 에이전트에게 전달하는 과정이 파편화되어 있다는 점이 문제였습니다.",
+        "overview": "AI 에이전트와 개발자 사이의 '소통 단절'을 해결하기 위해, 에이전트의 결과물을 검토하고 수정 지시를 내리는 전용 협업 플랫폼입니다.",
+        "background": "AI 에이전트가 코드를 작성하지만, 인간 개발자가 이를 검토하고 피드백을 주는 과정이 파편화되어 있어 효율적인 협업이 어려웠습니다.",
         "architecture": [
-          "에이전트 통합 인터페이스(Inbox Surface)",
-          "코드 리뷰 및 실시간 Diff 분석 엔진",
-          "피드백 루프 동기화 시스템"
+          "에이전트 결과물 통합 수집을 위한 인박스 서피스",
+          "코드 diff 및 PR 리뷰를 위한 인터랙티브 아티팩트 엔진",
+          "에이전트 피드백 루프를 위한 API 연동 레이어"
         ],
         "useCases": [
-          "AI 에이전트를 실무에 도입한 개발 팀",
-          "AI 생성 코드의 품질 관리가 필요한 테크 리드"
+          "AI 에이전트를 실무에 도입하여 개발 생산성을 높이는 팀",
+          "에이전트의 코드 품질을 체계적으로 관리하고 싶은 리드 개발자"
         ],
         "quickStart": {
           "installCommand": "npm install -g plannotator",
-          "codeSnippet": "plannotator connect --agent <agent-name>",
+          "codeSnippet": "plannotator connect --agent claude-code",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "AI 협업의 가시성 확보",
-            "피드백 루프의 효율성"
+            "에이전트와의 협업 효율 극대화",
+            "중앙 집중식 피드백 관리"
           ],
           "considerations": [
-            "다양한 에이전트와의 연동 설정 필요"
+            "다양한 에이전트별 API 연동 설정 필요"
           ]
         }
       }
@@ -891,46 +876,46 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 12002,
-      "forks": 1478,
+      "stars": 12257,
+      "forks": 1512,
       "starsPeriod": 2683,
       "since": "weekly",
-      "summaryKo": "Google Stitch MCP 서버와 연동하여 Claude Code, Cursor 등 주요 코딩 에이전트의 디자인 및 빌드 역량을 확장해주는 오픈 표준 기반 에이전트 스킬 라이브러리입니다.",
+      "summaryKo": "google-labs-code/stitch-skills - A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "keyFeaturesKo": [
-        "Agent Skills 오픈 표준을 준수하여 다양한 코딩 에이전트와 완벽 호환",
-        "디자인(stitch-design), 빌드(stitch-build), 유틸리티 기능의 모듈식 제공",
-        "CLI 및 UI를 통한 간편한 스파스 클론(Sparse Checkout) 및 마켓플레이스 등록"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 12,257개 획득",
+        "최근 증가 추이: +425 stars (daily)"
       ],
       "tags": [
-        "LLM-Agent",
-        "MCP",
         "TypeScript",
-        "Google-Stitch"
+        "AI",
+        "Backend",
+        "DevTools"
       ],
       "report": {
-        "overview": "Google Stitch 생태계와 코딩 에이전트를 연결하여 디자인 및 개발 워크플로우를 자동화하는 플러그인 및 스킬 집합입니다.",
-        "background": "에이전트마다 상이한 프롬프트 규격과 기능 파편화 문제를 해결하고, 표준화된 인터페이스로 일관된 개발 자동화 경험을 제공하기 위해 등장했습니다.",
+        "overview": "stitch-skills는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "Agent Skills 오픈 표준을 따르는 모듈형 플러그인 구조",
-          "Stitch MCP 서버와의 긴밀한 통신 프로토콜",
-          "필요한 기능만 골라 쓸 수 있는 선택적 스파스 클론 지원"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "Cursor, Claude Code 등에서 Google Stitch의 디자인 시스템을 연동해 UI를 자동 생성할 때",
-          "프론트엔드 개발 및 빌드 파이프라인을 AI 에이전트로 지능화할 때"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "codex plugin marketplace add google-labs-code/stitch-skills --ref main",
-          "codeSnippet": "# 마켓플레이스 등록 후 디자인 스킬 활성화\nplugins:\n  - stitch-design\n  - stitch-build",
-          "language": "yaml"
+          "installCommand": "git clone https://github.com/google-labs-code/stitch-skills.git",
+          "codeSnippet": "cd stitch-skills\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "여러 코딩 에이전트 간의 뛰어난 상호 호환성",
-            "구글 생태계의 디자인/빌드 표준을 손쉽게 도입 가능"
+            "최근 +425 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "MCP(Model Context Protocol) 및 관련 에이전트 환경 이해 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -942,15 +927,15 @@
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 10278,
-      "forks": 812,
+      "stars": 10501,
+      "forks": 809,
       "starsPeriod": 3575,
       "since": "weekly",
-      "summaryKo": "최신 웹 표준과 모범 사례를 AI 에이전트에게 학습시켜, 레거시 패턴을 배제하고 현대적인 웹 개발 기술을 적용하도록 유도하는 가이드라인 프로젝트입니다.",
+      "summaryKo": "코딩 에이전트가 최신 웹 표준과 모범 사례를 학습하여, 레거시 패턴 대신 현대적인 웹 기술을 사용하도록 가이드하는 지식 베이스입니다.",
       "keyFeaturesKo": [
-        "Google, Microsoft, Mozilla 등 주요 브라우저 벤더가 검증한 웹 표준 데이터",
-        "AI 에이전트의 코드 생성 품질을 높이는 평가 및 보정 도구",
-        "지속적으로 업데이트되는 최신 웹 플랫폼 기술 스택 반영"
+        "Google, Microsoft, Mozilla 등 주요 브라우저 벤더의 공식 가이드라인",
+        "코딩 에이전트의 성능 평가 및 보정을 위한 평가 대시보드 제공",
+        "웹 플랫폼 최신 기술 및 브라우저 호환성 데이터 실시간 반영"
       ],
       "tags": [
         "Web-Standards",
@@ -959,29 +944,29 @@
         "Frontend"
       ],
       "report": {
-        "overview": "AI 에이전트가 최신 웹 표준을 준수하는 코드를 작성하도록 가이드하는 오픈소스 기술 리포지토리입니다.",
-        "background": "AI 에이전트가 학습 데이터의 한계로 인해 구식(Legacy) 웹 패턴을 생성하는 문제를 해결하기 위해 브라우저 벤더들이 직접 나섰습니다.",
+        "overview": "AI가 작성하는 코드의 품질을 보장하기 위해, 웹 표준 전문가들이 검증한 최신 가이드라인을 에이전트에 주입하는 기술 표준화 프로젝트입니다.",
+        "background": "코딩 에이전트가 구식 패턴이나 비효율적인 코드를 생성하는 문제를 해결하고, 현대적인 웹 플랫폼의 역량을 최대한 활용하도록 돕기 위해 등장했습니다.",
         "architecture": [
-          "웹 플랫폼 전문 지식 임베딩 모델",
-          "에이전트 평가 및 보정 대시보드",
-          "커뮤니티 기반의 거버넌스 및 업데이트 체계"
+          "웹 플랫폼 전문가들이 관리하는 중앙 집중식 가이드라인 저장소",
+          "에이전트의 코드 생성 능력을 측정하는 평가(Eval) 프레임워크",
+          "브라우저 호환성 및 최신 API 데이터 연동 엔진"
         ],
         "useCases": [
-          "AI 기반 코드 생성 도구를 사용하는 프론트엔드 팀",
-          "웹 표준 준수를 중요시하는 엔터프라이즈 환경"
+          "AI 기반 코딩 도구를 개발하거나 커스텀하는 엔지니어",
+          "웹 표준 준수가 중요한 엔터프라이즈 프론트엔드 팀"
         ],
         "quickStart": {
           "installCommand": "npm install @modern-web/guidance",
-          "codeSnippet": "import { evaluate } from '@modern-web/guidance';\nevaluate(generatedCode);",
+          "codeSnippet": "import { evaluateAgent } from '@modern-web/guidance';\n\nevaluateAgent(myAgentCode);",
           "language": "typescript"
         },
         "prosCons": {
           "strengths": [
-            "신뢰할 수 있는 최신 웹 표준 데이터",
-            "에이전트 품질 향상"
+            "신뢰할 수 있는 웹 표준 데이터",
+            "에이전트 코드 품질 향상"
           ],
           "considerations": [
-            "기존 에이전트 워크플로우에 통합하는 과정 필요"
+            "지속적인 가이드라인 업데이트 모니터링 필요"
           ]
         }
       }
@@ -993,45 +978,47 @@
       "url": "https://github.com/alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55481,
-      "forks": 4609,
+      "stars": 55680,
+      "forks": 4607,
       "starsPeriod": 3700,
       "since": "weekly",
-      "summaryKo": "기존의 정적 분석 도구와 LLM의 한계를 결합하여, 결정론적 파이프라인과 AI 에이전트의 추론을 통해 코드 리뷰의 정확도와 효율성을 극대화합니다.",
+      "summaryKo": "alibaba/open-code-review - Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "keyFeaturesKo": [
-        "결정론적 규칙 기반 분석과 LLM 에이전트의 하이브리드 아키텍처",
-        "NPE, 스레드 안전성, 보안 취약점 등 실무 중심의 다국어 규칙셋 내장",
-        "OpenAI 및 Anthropic 모델과 호환되는 유연한 확장성"
+        "주 프로그래밍 언어: Go",
+        "깃허브 스타: 55,680개 획득",
+        "최근 증가 추이: +3,700 stars (weekly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Code-Review",
-        "Static-Analysis"
+        "Go",
+        "AI",
+        "Frontend",
+        "Backend",
+        "DevTools"
       ],
       "report": {
-        "overview": "알리바바의 대규모 엔지니어링 환경에서 검증된 차세대 하이브리드 코드 리뷰 자동화 솔루션입니다.",
-        "background": "기존 정적 분석 도구의 높은 오탐률과 LLM의 비결정론적 특성으로 인한 코드 리뷰의 신뢰성 문제를 해결하기 위해 등장했습니다.",
+        "overview": "open-code-review는 Go 기반으로 개발된 오픈소스 프로젝트로, Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+        "background": "기존 Go 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "결정론적 파이프라인을 통한 1차 정적 분석 수행",
-          "LLM 에이전트를 활용한 문맥 기반의 정밀 라인 단위 코드 리뷰",
-          "다양한 언어 및 보안 규칙셋을 통합한 확장 가능한 엔진"
+          "Go 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "대규모 엔터프라이즈 환경의 코드 리뷰 자동화",
-          "CI/CD 파이프라인 내 보안 취약점 사전 검출"
+          "Go 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npm install @alibaba-group/open-code-review",
-          "codeSnippet": "const reviewer = new OpenCodeReview({ model: 'gpt-4o' });\nawait reviewer.analyze('./src/main.go');",
-          "language": "typescript"
+          "installCommand": "git clone https://github.com/alibaba/open-code-review.git",
+          "codeSnippet": "cd open-code-review\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "대규모 환경에서 검증된 안정성",
-            "정밀한 라인 단위 피드백 제공"
+            "최근 +3,700 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "LLM API 비용 및 호출 지연 시간 고려 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1043,46 +1030,45 @@
       "url": "https://github.com/mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72910,
-      "forks": 6440,
+      "stars": 73417,
+      "forks": 6478,
       "starsPeriod": 4731,
       "since": "weekly",
-      "summaryKo": "에디터의 주관적 편향을 배제하고 레딧, X, 유튜브 등 실제 유저들의 투표와 반응을 기반으로 최근 30일간의 트렌드를 심층 리서치해주는 AI 에이전트 스킬입니다.",
+      "summaryKo": "mvanhorn/last30days-skill - AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "keyFeaturesKo": [
-        "Reddit, X, YouTube, HN 등 다채널 실사용자 데이터 교차 검증",
-        "실제 투표수, 좋아요, 커뮤니티 반응 중심의 신뢰도 높은 필터링",
-        "복잡한 검색 과정을 자동화하여 접지력(Grounded) 있는 요약 리포트 제공"
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 73,417개 획득",
+        "최근 증가 추이: +790 stars (daily)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Web-Search",
-        "Trend-Analysis",
-        "Python"
+        "Python",
+        "AI",
+        "Frontend"
       ],
       "report": {
-        "overview": "AI 에이전트가 지난 30일간의 웹 데이터를 추적하여 특정 주제에 대한 실제 대중의 반응과 트렌드를 종합 분석해주는 고성능 리서치 에이전트 스킬입니다.",
-        "background": "기존 검색 엔진들은 광고와 SEO 최적화 콘텐츠로 오염되어 있어, 특정 기술이나 이슈에 대한 진짜 여론과 최신 트렌드를 파악하기 어렵다는 한계를 해결합니다.",
+        "overview": "last30days-skill는 Python 기반으로 개발된 오픈소스 프로젝트로, AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+        "background": "기존 Python 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "다중 플랫폼(소셜 미디어 및 커뮤니티) 실시간 데이터 수집 파이프라인",
-          "사용자 참여 지표(Upvote, Like) 기반 가중치 스코어링 알고리즘",
-          "LLM 기반 신뢰도 검증 및 사실에 근거한(Grounded) 신속 요약 엔진"
+          "Python 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "새로운 기술 스택이나 오픈소스 프로젝트 도입 전 실제 개발자 여론 조사",
-          "시장 동향 및 최신 기술 트렌드를 빠르게 파악해야 하는 테크 큐레이션 업무"
+          "Python 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
           "installCommand": "git clone https://github.com/mvanhorn/last30days-skill.git",
-          "codeSnippet": "# 에이전트 스킬 호출 예시\n/last30days research \"PostgreSQL vector performance trends\"",
+          "codeSnippet": "cd last30days-skill\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "마케팅성 콘텐츠가 제외된 날것의 실무자 반응 확보 가능",
-            "방대한 채널의 정보를 단시간에 구조화하여 요약"
+            "최근 +790 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "외부 플랫폼 API 정책 변화에 따른 주기적 파이프라인 점검 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1094,45 +1080,45 @@
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58892,
-      "forks": 4920,
+      "stars": 59016,
+      "forks": 4909,
       "starsPeriod": 2268,
       "since": "weekly",
-      "summaryKo": "코딩 에이전트가 실제 브라우저 환경을 직접 제어하고 디버깅할 수 있도록 하여, 웹 자동화와 성능 분석의 신뢰성을 획기적으로 높입니다.",
+      "summaryKo": "ChromeDevTools/chrome-devtools-mcp - Chrome DevTools for coding agents",
       "keyFeaturesKo": [
-        "MCP(Model Context Protocol) 기반의 표준화된 브라우저 제어 인터페이스",
-        "Puppeteer를 활용한 안정적인 브라우저 자동화 및 액션 수행",
-        "네트워크 트래픽 분석, 스크린샷, 콘솔 로그 등 심층 디버깅 지원"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 59,016개 획득",
+        "최근 증가 추이: +2,268 stars (weekly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Browser-Automation",
-        "MCP"
+        "TypeScript",
+        "AI",
+        "DevTools"
       ],
       "report": {
-        "overview": "코딩 에이전트가 Chrome DevTools의 모든 기능을 활용하여 웹 애플리케이션을 실시간으로 검사하고 제어할 수 있게 돕는 브리지 도구입니다.",
-        "background": "기존의 단순 스크립트 기반 자동화는 복잡한 웹 환경에서의 디버깅과 실시간 상호작용에 한계가 있어, 에이전트가 직접 브라우저를 '보는' 능력이 요구되었습니다.",
+        "overview": "chrome-devtools-mcp는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, Chrome DevTools for coding agents",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "MCP 서버를 통한 에이전트-브라우저 간 표준화된 통신",
-          "Chrome DevTools 프로토콜을 이용한 실시간 트레이스 기록",
-          "Puppeteer 기반의 신뢰성 높은 브라우저 액션 자동화"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "웹 애플리케이션의 자동화된 성능 분석 및 디버깅",
-          "에이전트 기반의 웹 테스트 자동화 파이프라인 구축"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npm install -g chrome-devtools-mcp",
-          "codeSnippet": "const browser = await connectToBrowser({ port: 9222 });\nawait browser.recordPerformanceTrace();",
-          "language": "typescript"
+          "installCommand": "git clone https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
+          "codeSnippet": "cd chrome-devtools-mcp\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "실제 브라우저 환경과 동일한 디버깅 경험",
-            "에이전트의 자율적 문제 해결 능력 향상"
+            "최근 +2,268 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "브라우저 인스턴스 노출에 따른 보안 주의 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1144,45 +1130,45 @@
       "url": "https://github.com/tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7827,
-      "forks": 1500,
+      "stars": 8031,
+      "forks": 1506,
       "starsPeriod": 2616,
       "since": "weekly",
-      "summaryKo": "개인 투자자가 AI를 활용해 시장 분석, 리스크 관리, 거래 계획을 체계화할 수 있도록 돕는 실무 중심의 워크플로우 툴킷입니다.",
+      "summaryKo": "tradermonty/claude-trading-skills - Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "keyFeaturesKo": [
-        "시장 분석, 기술적 차트, 경제 캘린더를 통합한 거래 워크플로우",
-        "투자 결정의 자동화가 아닌 의사결정 프로세스 구조화에 집중",
-        "개인 투자자의 제약 사항을 고려한 실용적인 체크리스트 제공"
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 8,031개 획득",
+        "최근 증가 추이: +2,616 stars (weekly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Trading-Workflow",
-        "Data-Analysis"
+        "Python",
+        "AI",
+        "Frontend"
       ],
       "report": {
-        "overview": "Claude 에이전트를 활용하여 개인 투자자의 거래 프로세스를 개선하고 체계적인 의사결정을 지원하는 오픈소스 툴킷입니다.",
-        "background": "투자 결정의 질을 높이기 위해 AI를 활용하고자 하나, 적절한 프로세스나 도구가 부족했던 개인 투자자들을 위해 개발되었습니다.",
+        "overview": "claude-trading-skills는 Python 기반으로 개발된 오픈소스 프로젝트로, Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+        "background": "기존 Python 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "Claude Skills 기반의 모듈형 거래 워크플로우",
-          "시장 데이터 수집 및 분석을 위한 구조화된 데이터 핸들링",
-          "리스크 관리 및 거래 일지 작성을 위한 템플릿 엔진"
+          "Python 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "개인 투자자의 거래 전략 수립 및 리스크 관리",
-          "시장 분석 및 경제 지표 모니터링 자동화"
+          "Python 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "pip install claude-trading-skills",
-          "codeSnippet": "from trading_skills import MarketAnalyzer\nanalyzer = MarketAnalyzer(api_key='...')\nreport = analyzer.generate_daily_brief()",
-          "language": "python"
+          "installCommand": "git clone https://github.com/tradermonty/claude-trading-skills.git",
+          "codeSnippet": "cd claude-trading-skills\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "투명한 의사결정 프로세스 구축",
-            "개인 투자자 맞춤형 실용성"
+            "최근 +2,616 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "금융 투자에 대한 책임은 사용자 본인에게 있음"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1194,45 +1180,45 @@
       "url": "https://github.com/ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21245,
-      "forks": 2159,
+      "stars": 21374,
+      "forks": 2160,
       "starsPeriod": 3620,
       "since": "weekly",
-      "summaryKo": "에이전트와 웹 애플리케이션 간의 상호작용을 표준화하여, 어떤 에이전트든 어떤 앱과도 즉시 연동할 수 있게 하는 오픈 프로토콜입니다.",
+      "summaryKo": "ag-ui-protocol/ag-ui - AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "keyFeaturesKo": [
-        "에이전트-사용자 상호작용을 위한 범용 프로토콜(AG-UI) 제공",
-        "프론트엔드 애플리케이션에 에이전트를 쉽게 통합하는 표준 규격",
-        "다양한 에이전트 프레임워크와의 높은 호환성"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 21,374개 획득",
+        "최근 증가 추이: +3,620 stars (weekly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Frontend-Integration",
-        "Protocol"
+        "TypeScript",
+        "AI",
+        "Frontend"
       ],
       "report": {
-        "overview": "에이전트가 웹 애플리케이션의 UI와 상호작용할 수 있도록 연결하는 개방형 프로토콜입니다.",
-        "background": "에이전트 기술이 발전함에 따라 에이전트와 웹 앱 간의 파편화된 연동 방식을 해결하고 표준화된 인터페이스를 제공하기 위해 등장했습니다.",
+        "overview": "ag-ui는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "에이전트와 앱 간의 통신을 위한 표준화된 메시지 규격",
-          "프론트엔드 컴포넌트와 에이전트 간의 이벤트 기반 상호작용",
-          "확장 가능한 에이전트-사용자 인터랙션 프로토콜(Spec 1.0)"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "에이전트 기반의 웹 서비스 개발",
-          "기존 웹 앱에 AI 에이전트 기능 통합"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npm install @ag-ui/core",
-          "codeSnippet": "import { AgentBridge } from '@ag-ui/core';\nconst bridge = new AgentBridge();\nbridge.connect(myAgent);",
-          "language": "typescript"
+          "installCommand": "git clone https://github.com/ag-ui-protocol/ag-ui.git",
+          "codeSnippet": "cd ag-ui\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "에이전트와 앱 간의 결합도 감소",
-            "표준화된 연동 규격으로 유지보수 용이"
+            "최근 +3,620 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "프로토콜 도입을 위한 초기 학습 곡선 존재"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1244,45 +1230,44 @@
       "url": "https://github.com/meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 32307,
-      "forks": 2538,
+      "stars": 32558,
+      "forks": 2557,
       "starsPeriod": 3626,
       "since": "weekly",
-      "summaryKo": "사람과 AI 에이전트가 함께 UI를 구축할 수 있도록 설계된, 에이전트 친화적인 오픈소스 디자인 시스템입니다.",
+      "summaryKo": "meta/astryx - An open source design system that's fully customizable and agent ready",
       "keyFeaturesKo": [
-        "React 19 및 StyleX 기반의 최신 웹 기술 스택",
-        "에이전트가 코드를 이해하고 수정하기 최적화된 구조",
-        "완벽한 커스터마이징을 지원하는 디자인 시스템"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 32,558개 획득",
+        "최근 증가 추이: +3,626 stars (weekly)"
       ],
       "tags": [
-        "Design-System",
-        "LLM-Agent",
-        "React"
+        "TypeScript",
+        "AI"
       ],
       "report": {
-        "overview": "사람과 AI 에이전트가 협업하여 UI를 개발하는 현대적인 환경을 위해 설계된 메타(Meta)의 디자인 시스템입니다.",
-        "background": "기존 디자인 시스템은 사람이 사용하는 것에만 초점이 맞춰져 있어, AI 에이전트가 코드를 생성하거나 수정할 때 발생하는 일관성 문제를 해결하고자 했습니다.",
+        "overview": "astryx는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, An open source design system that's fully customizable and agent ready",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "에이전트가 해석하기 쉬운 컴포넌트 구조 설계",
-          "StyleX를 활용한 고성능 스타일링 및 타입 안전성",
-          "React 19의 최신 기능을 활용한 선언적 UI 컴포넌트"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "AI 에이전트와 함께 개발하는 대규모 웹 프로젝트",
-          "일관된 디자인 시스템이 필요한 엔터프라이즈 환경"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npm install @astryxdesign/core",
-          "codeSnippet": "import { Button } from '@astryxdesign/core';\n<Button variant=\"primary\">Click Me</Button>",
-          "language": "typescript"
+          "installCommand": "git clone https://github.com/meta/astryx.git",
+          "codeSnippet": "cd astryx\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "에이전트 친화적인 코드 구조",
-            "최신 React 생태계와의 완벽한 통합"
+            "최근 +3,626 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "현재 베타 단계로 API 변경 가능성 존재"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1294,45 +1279,43 @@
       "url": "https://github.com/pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2413,
-      "forks": 201,
+      "stars": 2445,
+      "forks": 204,
       "starsPeriod": 461,
       "since": "weekly",
-      "summaryKo": "특정 기기에서만 사용 가능했던 Apple Watch의 Hermès 워치 페이스를 모든 Apple Watch 기기에서 사용할 수 있게 해주는 커스텀 솔루션입니다.",
+      "summaryKo": "pookjw/HermesEnabler - Enable Hermès Watch Faces on any Apple Watch devices",
       "keyFeaturesKo": [
-        "watchOS 27.0~27.3 베타 버전 지원",
-        "Sideloadly를 통한 간편한 IPA 설치 및 서명",
-        "기기 제약 없이 프리미엄 워치 페이스 경험 제공"
+        "주 프로그래밍 언어: Objective-C",
+        "깃허브 스타: 2,445개 획득",
+        "최근 증가 추이: +461 stars (weekly)"
       ],
       "tags": [
-        "Apple-Watch",
-        "iOS-Development",
-        "Customization"
+        "Objective-C"
       ],
       "report": {
-        "overview": "Apple Watch의 독점적인 Hermès 워치 페이스를 일반 기기에서도 활성화할 수 있도록 돕는 커뮤니티 기반의 인에이블러입니다.",
-        "background": "Apple의 폐쇄적인 워치 페이스 정책으로 인해 특정 모델 사용자만 누릴 수 있었던 기능을 기술적으로 해제하고자 하는 니즈에서 시작되었습니다.",
+        "overview": "HermesEnabler는 Objective-C 기반으로 개발된 오픈소스 프로젝트로, Enable Hermès Watch Faces on any Apple Watch devices",
+        "background": "기존 Objective-C 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "IPA 사이드로딩을 통한 기기 권한 우회",
-          "개발자 모드 활성화를 통한 커스텀 앱 설치",
-          "watchOS 시스템 설정과의 연동을 통한 페이스 활성화"
+          "Objective-C 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "Apple Watch 커스터마이징을 원하는 사용자",
-          "watchOS 시스템 제약 해제 연구"
+          "Objective-C 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "Sideloadly를 사용하여 IPA 설치",
-          "codeSnippet": "// 설치 후 Apple Watch 설정에서 개발자 모드 활성화 필요",
-          "language": "objective-c"
+          "installCommand": "git clone https://github.com/pookjw/HermesEnabler.git",
+          "codeSnippet": "cd HermesEnabler\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "독점 기능의 범용적 사용 가능",
-            "간편한 설치 프로세스"
+            "최근 +461 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "watchOS 업데이트 시 호환성 문제 발생 가능성"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1344,45 +1327,45 @@
       "url": "https://github.com/we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17388,
-      "forks": 1529,
+      "stars": 17555,
+      "forks": 1533,
       "starsPeriod": 1771,
       "since": "weekly",
-      "summaryKo": "개인 재무 관리의 복잡성을 AI 어시스턴트로 해결하며, 투명한 데이터 시각화와 자동화된 자산 추적을 통해 사용자 중심의 금융 인사이트를 제공합니다.",
+      "summaryKo": "개인 재무 관리의 복잡성을 AI 어시스턴트로 해결하여, 누구나 자신의 자산 흐름을 직관적으로 파악하고 최적화할 수 있도록 돕는 오픈소스 금융 대시보드입니다.",
       "keyFeaturesKo": [
-        "AI 기반의 자연어 질의응답을 통한 실시간 자산 상태 분석",
-        "대시보드 기반의 직관적인 현금 흐름 및 순자산 시각화",
-        "보안이 강화된 파이프라인을 통한 금융 데이터 관리"
+        "AI 기반의 자연어 질의응답을 통한 실시간 자산 분석",
+        "현금 흐름, 순자산, 지출 패턴을 시각화하는 통합 대시보드",
+        "보안 스캔이 적용된 안정적인 오픈소스 금융 아키텍처"
       ],
       "tags": [
         "FinTech",
         "AI-Assistant",
-        "Personal-Finance"
+        "Dashboard"
       ],
       "report": {
-        "overview": "사용자의 금융 데이터를 통합 분석하여 AI가 자산 관리 전략을 제안하는 오픈소스 개인 재무 관리 플랫폼입니다.",
-        "background": "기존 금융 앱들의 폐쇄적인 데이터 정책과 복잡한 UI로 인해 사용자가 자신의 자산 흐름을 직관적으로 파악하기 어렵다는 한계를 해결하고자 등장했습니다.",
+        "overview": "개인 금융 데이터를 AI와 결합하여 시각화하고 분석하는 오픈소스 재무 관리 플랫폼입니다.",
+        "background": "기존의 가계부 앱들은 데이터 입력이 번거롭고 분석이 수동적이라는 한계가 있어, AI를 통한 자동화된 인사이트 도출이 필요해졌습니다.",
         "architecture": [
-          "Ruby 기반의 안정적인 백엔드 아키텍처",
-          "Skylight를 통한 실시간 성능 모니터링 지원",
-          "AI 에이전트 연동을 위한 확장 가능한 데이터 인터페이스"
+          "Ruby 기반의 안정적인 백엔드 프레임워크",
+          "AI 어시스턴트 연동을 통한 데이터 질의 인터페이스",
+          "실시간 성능 모니터링(Skylight) 통합"
         ],
         "useCases": [
           "개인 자산 관리 및 지출 최적화가 필요한 사용자",
-          "오픈소스 기반의 금융 데이터 대시보드 구축을 원하는 개발자"
+          "금융 데이터 시각화 대시보드 구축을 위한 오픈소스 기반"
         ],
         "quickStart": {
-          "installCommand": "git clone https://github.com/we-promise/sure.git && cd sure && bundle install",
-          "codeSnippet": "Sure.analyze(user_data: current_user.transactions, query: 'How can I save more this month?')",
+          "installCommand": "git clone https://github.com/we-promise/sure && cd sure && bundle install",
+          "codeSnippet": "Sure::Dashboard.analyze(user_id: 123, timeframe: 'monthly')",
           "language": "ruby"
         },
         "prosCons": {
           "strengths": [
-            "사용자 중심의 직관적인 대시보드",
-            "AI를 통한 능동적인 금융 조언"
+            "직관적인 시각화 대시보드",
+            "AI를 통한 능동적인 재무 분석"
           ],
           "considerations": [
-            "금융 데이터 보안 및 로컬 환경 설정의 복잡성"
+            "금융 데이터 보안 및 개인정보 보호 설정 필수"
           ]
         }
       }
@@ -1394,45 +1377,45 @@
       "url": "https://github.com/dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31318,
-      "forks": 2846,
+      "stars": 31450,
+      "forks": 2837,
       "starsPeriod": 6436,
       "since": "weekly",
-      "summaryKo": "웹 기반 오피스 소프트웨어의 핵심 기능을 모듈화하여, 개발자가 자신의 애플리케이션에 맞춤형 스프레드시트와 문서 편집기를 쉽게 통합할 수 있게 합니다.",
+      "summaryKo": "문서, 스프레드시트 등 오피스 기능을 모듈화하여 AI 에이전트가 직접 편집하고 계산할 수 있게 함으로써, 차세대 AI 오피스 생태계를 구축하는 SDK입니다.",
       "keyFeaturesKo": [
-        "확장 가능한 플러그인 아키텍처 기반의 오피스 SDK",
-        "AI 에이전트와 연동 가능한 데이터 처리 및 협업 기능",
-        "기존 오피스 소프트웨어 대비 가볍고 유연한 통합 환경"
+        "확장 가능한 오픈소스 기반의 오피스 코어 엔진",
+        "AI 에이전트와 직접 연동 가능한 프로그래밍 가능한 API",
+        "웹 환경에서 즉시 사용 가능한 고성능 시트 및 문서 편집기"
       ],
       "tags": [
-        "Office-SDK",
-        "Collaboration",
-        "TypeScript"
+        "AI-Office",
+        "SDK",
+        "Collaboration"
       ],
       "report": {
-        "overview": "웹 애플리케이션 내에 고성능 스프레드시트와 문서 편집 기능을 구현할 수 있는 오픈소스 오피스 SDK입니다.",
-        "background": "기존의 무거운 오피스 솔루션은 커스터마이징이 어렵고 AI 에이전트와의 연동이 제한적이라는 점을 해결하기 위해 개발되었습니다.",
+        "overview": "AI 에이전트가 문서와 데이터를 직접 다룰 수 있도록 설계된 차세대 오피스 SDK입니다.",
+        "background": "기존 오피스 소프트웨어는 폐쇄적이고 AI 연동이 어려워, 개발자가 직접 AI 기반 오피스 서비스를 구축하기 위한 유연한 도구가 필요했습니다.",
         "architecture": [
-          "모듈형 플러그인 시스템으로 필요한 기능만 선택적 탑재",
-          "고성능 렌더링 엔진을 통한 대규모 데이터 처리",
-          "AI 에이전트가 직접 문서 데이터를 조작할 수 있는 API 제공"
+          "모듈형 아키텍처로 필요한 기능만 선택적 도입 가능",
+          "AI 에이전트와의 실시간 데이터 동기화 지원",
+          "고성능 계산 엔진을 통한 복잡한 데이터 처리"
         ],
         "useCases": [
-          "SaaS 제품 내 문서 편집 기능이 필요한 기업",
-          "AI 기반의 자동화된 문서 처리 시스템을 구축하는 팀"
+          "AI 기반의 자동화된 문서 작성 및 데이터 분석 서비스",
+          "협업 도구 내 오피스 기능 내재화"
         ],
         "quickStart": {
-          "installCommand": "npm install @univerjs/core @univerjs/sheets",
-          "codeSnippet": "const univer = new Univer(); univer.registerPlugin(UniverSheetsPlugin);",
+          "installCommand": "npm install @univerjs/core",
+          "codeSnippet": "const univer = new Univer(); univer.createUnit(UniverInstanceType.UNIVER_SHEET, {});",
           "language": "typescript"
         },
         "prosCons": {
           "strengths": [
-            "높은 확장성과 커스터마이징 가능성",
-            "AI 에이전트 친화적인 API 설계"
+            "높은 확장성 및 커스터마이징",
+            "AI 에이전트 친화적 설계"
           ],
           "considerations": [
-            "초기 설정 시 플러그인 의존성 관리 필요"
+            "복잡한 API 구조로 인한 초기 학습 곡선"
           ]
         }
       }
@@ -1444,45 +1427,45 @@
       "url": "https://github.com/kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9851,
-      "forks": 871,
+      "stars": 10212,
+      "forks": 892,
       "starsPeriod": 3748,
       "since": "weekly",
-      "summaryKo": "코딩 에이전트가 로컬 환경에서 FFmpeg를 안전하고 정밀하게 제어할 수 있도록 표준화된 인터페이스와 MCP 서버를 제공합니다.",
+      "summaryKo": "코딩 에이전트가 로컬 환경에서 FFmpeg를 활용해 비디오 편집을 자동화할 수 있도록 돕는 MCP(Model Context Protocol) 기반의 도구입니다.",
       "keyFeaturesKo": [
-        "42종의 FFmpeg 도구를 머신 리더블한 계약 형태로 제공",
-        "클라우드 의존성 없는 로컬 비디오 편집 및 처리",
-        "Claude Code, Cursor 등 주요 MCP 클라이언트와 즉시 연동"
+        "42개의 FFmpeg 도구를 MCP 표준으로 제공",
+        "클라우드 의존성 없이 로컬에서 안전하게 비디오 처리",
+        "Claude Code, Cursor 등 주요 에이전트와 즉시 연동"
       ],
       "tags": [
         "FFmpeg",
         "MCP",
-        "Video-Processing"
+        "Video-Automation"
       ],
       "report": {
-        "overview": "코딩 에이전트가 비디오 편집 작업을 로컬에서 수행할 수 있게 돕는 FFmpeg 기반의 도구 모음 및 MCP 서버입니다.",
-        "background": "비디오 편집 작업 시 클라우드 API 비용과 보안 우려를 해결하고, 에이전트가 직접 비디오를 편집하고 검증할 수 있는 환경이 필요했습니다.",
+        "overview": "코딩 에이전트에게 비디오 편집 능력을 부여하는 로컬 기반의 FFmpeg 도구 모음입니다.",
+        "background": "비디오 편집은 클라우드 API 비용이 높고 보안 이슈가 많아, 로컬에서 에이전트가 직접 제어할 수 있는 도구가 필요했습니다.",
         "architecture": [
-          "Python 표준 라이브러리 기반의 경량화된 설계",
-          "MCP(Model Context Protocol)를 통한 에이전트 통신",
-          "작업 결과의 자동 검증을 지원하는 피드백 루프"
+          "MCP(Model Context Protocol) 표준 준수",
+          "Python 표준 라이브러리 기반의 경량화 설계",
+          "로컬 FFmpeg 바이너리 직접 제어"
         ],
         "useCases": [
-          "자동화된 영상 편집 파이프라인을 구축하는 개발자",
-          "로컬 환경에서 안전하게 미디어 처리를 수행하려는 AI 에이전트"
+          "자동화된 비디오 캡션 및 편집 파이프라인",
+          "코딩 에이전트를 활용한 영상 콘텐츠 대량 생성"
         ],
         "quickStart": {
-          "installCommand": "npm install -g ffmpeg-skill",
-          "codeSnippet": "ffmpeg_skill.cut(input='video.mp4', start=10, end=20, output='clip.mp4')",
+          "installCommand": "pip install ffmpeg-skill",
+          "codeSnippet": "from ffmpeg_skill import Editor; editor = Editor(); editor.cut('input.mp4', 'output.mp4', start=0, end=10)",
           "language": "python"
         },
         "prosCons": {
           "strengths": [
-            "클라우드 비용 제로",
-            "로컬 환경에서의 완벽한 데이터 통제"
+            "API 키 불필요 및 완전 로컬 구동",
+            "에이전트 연동 최적화"
           ],
           "considerations": [
-            "FFmpeg 설치 및 환경 변수 설정 필요"
+            "시스템에 FFmpeg 설치 필수"
           ]
         }
       }
@@ -1494,42 +1477,42 @@
       "url": "https://github.com/Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 59647,
-      "forks": 3264,
+      "stars": 60060,
+      "forks": 3281,
       "starsPeriod": 29000,
       "since": "monthly",
-      "summaryKo": "AI가 생성한 디자인의 획일적인 '슬롭(slop)'을 방지하고, 인간이 만든 듯한 고품질의 디자인 시스템을 에이전트가 적용하도록 강제합니다.",
+      "summaryKo": "AI가 생성한 천편일률적인 디자인을 방지하고, 인간이 만든 듯한 세련된 레이아웃과 디테일을 보장하는 디자인 린팅 및 테마 시스템입니다.",
       "keyFeaturesKo": [
-        "50가지 이상의 엄선된 디자인 테마 제공",
-        "AI 특유의 패턴을 감지하고 차단하는 디자인 린팅 시스템",
-        "실제 브라우저 환경에서의 시각적 품질 검증"
+        "50개 이상의 고품질 디자인 테마 제공",
+        "AI 생성물의 흔적(Slop)을 감지하고 교정하는 린팅 시스템",
+        "Claude Code 및 Cursor와 연동하여 디자인 품질 강제"
       ],
       "tags": [
         "Design-System",
-        "AI-Ethics",
-        "Web-Development"
+        "AI-Linting",
+        "Frontend"
       ],
       "report": {
-        "overview": "AI가 생성한 웹사이트의 디자인 품질을 높이고, 기계적인 느낌을 제거하여 인간적인 디자인을 구현하는 디자인 스킬셋입니다.",
-        "background": "AI가 생성한 웹사이트들이 공통적으로 가지는 부자연스러운 레이아웃과 디자인 패턴(AI slop)을 해결하기 위해 등장했습니다.",
+        "overview": "AI가 생성한 디자인의 낮은 품질을 방지하고 전문적인 디자인 결과물을 보장하는 디자인 스킬셋입니다.",
+        "background": "AI가 생성한 웹사이트는 레이아웃이 단조롭고 기계적인 느낌이 강해, 이를 개선하기 위한 디자인 가이드라인과 자동 검증 도구가 필요했습니다.",
         "architecture": [
-          "계층화된 디자인 게이트(Floor, Reflex, Finish) 시스템",
-          "브라우저 기반의 실시간 디자인 린터",
-          "다양한 테마와 컴포넌트를 조합하는 모듈형 디자인 엔진"
+          "다단계 디자인 게이트(Floor, Reflex, Finish) 시스템",
+          "브라우저 기반의 실시간 디자인 린팅",
+          "다양한 테마를 적용하는 컴포넌트 기반 구조"
         ],
         "useCases": [
-          "AI 기반 웹사이트 생성 도구를 개발하는 팀",
-          "디자인 품질이 중요한 웹 애플리케이션 개발자"
+          "AI 기반 웹사이트 빌더의 디자인 품질 향상",
+          "기업용 웹 서비스의 디자인 일관성 유지"
         ],
         "quickStart": {
           "installCommand": "npm install hallmark-design",
-          "codeSnippet": "hallmark.applyTheme('paper-minimalist', { target: '#app' });",
-          "language": "css"
+          "codeSnippet": "import { Hallmark } from 'hallmark'; Hallmark.applyTheme('paper-minimal');",
+          "language": "typescript"
         },
         "prosCons": {
           "strengths": [
-            "AI 생성물의 디자인 품질 상향 평준화",
-            "다양한 테마 지원"
+            "AI 특유의 기계적 디자인 제거",
+            "전문적인 디자인 퀄리티 보장"
           ],
           "considerations": [
             "기존 디자인 시스템과의 충돌 가능성"
@@ -1544,42 +1527,42 @@
       "url": "https://github.com/cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 77188,
-      "forks": 5201,
+      "stars": 77535,
+      "forks": 5227,
       "starsPeriod": 39307,
       "since": "monthly",
-      "summaryKo": "보안 감사의 전 과정을 자동화하여, 정찰부터 검증까지 독립적인 에이전트들이 구조화된 보고서를 생성하도록 설계된 보안 오케스트레이션 도구입니다.",
+      "summaryKo": "코딩 에이전트를 보안 감사자로 변환하여, 다단계 보안 검증과 독립적인 결과 확인을 통해 취약점을 체계적으로 탐색하는 자동화 프레임워크입니다.",
       "keyFeaturesKo": [
-        "6단계의 구조화된 보안 감사 워크플로우",
-        "독립적인 에이전트 간의 상호 검증(Cross-verification) 시스템",
-        "머신 리더블한 감사 결과 보고서 자동 생성"
+        "정찰부터 보고서 생성까지 6단계 보안 감사 프로세스",
+        "독립적인 검증 에이전트를 통한 오탐지 최소화",
+        "머신 리더블한 보안 결과물(JSON) 생성"
       ],
       "tags": [
-        "Security-Audit",
-        "Cybersecurity",
-        "Automation"
+        "Security",
+        "Audit",
+        "AI-Agent"
       ],
       "report": {
-        "overview": "보안 에이전트들이 협업하여 취약점을 탐색하고 검증하는 클라우드플레어의 보안 감사 프레임워크입니다.",
-        "background": "수동 보안 감사의 비효율성과 에이전트의 단일 판단 오류를 방지하기 위해, 다단계 검증 시스템이 필요했습니다.",
+        "overview": "보안 감사를 자동화하고 체계화하기 위한 에이전트 기반의 보안 감사 프레임워크입니다.",
+        "background": "보안 감사는 수동 작업이 많고 휴먼 에러가 발생하기 쉬워, 에이전트를 활용한 반복적이고 검증 가능한 자동화 시스템이 요구되었습니다.",
         "architecture": [
-          "정찰(Recon)부터 보고(Reporting)까지의 6단계 파이프라인",
-          "독립적인 검증 에이전트를 통한 오탐지 최소화",
-          "JSON 기반의 표준화된 취약점 리포트 스키마"
+          "다단계 에이전트 오케스트레이션",
+          "Coverage-led hunting 기반의 효율적인 취약점 탐색",
+          "독립적 검증(Independent Verification) 메커니즘"
         ],
         "useCases": [
-          "대규모 코드베이스의 보안 취약점을 상시 점검하려는 팀",
-          "보안 감사 자동화 파이프라인을 구축하려는 보안 엔지니어"
+          "CI/CD 파이프라인 내 보안 취약점 자동 점검",
+          "대규모 코드베이스에 대한 정기적인 보안 감사"
         ],
         "quickStart": {
-          "installCommand": "npx @cloudflare/security-audit-skill init",
-          "codeSnippet": "audit.run({ target: 'my-repo', phases: ['recon', 'hunting', 'validation'] });",
+          "installCommand": "npm install @cloudflare/security-audit",
+          "codeSnippet": "const auditor = new SecurityAuditor(); auditor.runAudit({ target: './src' });",
           "language": "javascript"
         },
         "prosCons": {
           "strengths": [
-            "체계적인 다단계 검증 프로세스",
-            "오탐지율을 낮추는 독립적 검증 구조"
+            "체계적인 보안 감사 프로세스",
+            "독립적 검증을 통한 높은 신뢰도"
           ],
           "considerations": [
             "에이전트 실행을 위한 컴퓨팅 자원 소모"
@@ -1594,45 +1577,45 @@
       "url": "https://github.com/milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 26917,
-      "forks": 3840,
+      "stars": 27175,
+      "forks": 3870,
       "starsPeriod": 21485,
       "since": "monthly",
-      "summaryKo": "로컬 환경에서 구동되는 다수의 AI 에이전트를 채팅 앱 형태로 관리하며, 각 에이전트에게 가상 머신과 앱 연결 권한을 부여하는 개방형 플랫폼입니다.",
+      "summaryKo": "로컬에서 구동되는 다양한 AI 에이전트들을 하나의 채팅 인터페이스에서 관리하고, 각 에이전트에게 가상 머신과 앱 연결 권한을 부여하는 오픈소스 에이전트 플랫폼입니다.",
       "keyFeaturesKo": [
-        "로컬 우선(Local-first) 기반의 에이전트 관리",
-        "각 에이전트별 독립적인 가상 머신 및 앱 연결 지원",
-        "Claude, Codex 등 다양한 모델을 선택적으로 활용 가능"
+        "로컬 우선(Local-first) 설계로 데이터 프라이버시 보장",
+        "각 에이전트별 개별 가상 머신 및 앱 연결 지원",
+        "Claude, Codex 등 다양한 모델을 에이전트로 활용 가능"
       ],
       "tags": [
-        "AI-Agent",
+        "Agent-Platform",
         "Local-First",
         "Electron"
       ],
       "report": {
-        "overview": "사용자가 직접 에이전트 팀을 구성하고 관리할 수 있는 오픈소스 Grok Bot 대안 플랫폼입니다.",
-        "background": "중앙 집중식 AI 서비스의 제약에서 벗어나, 사용자가 자신의 로컬 환경에서 에이전트들을 직접 제어하고 업무를 수행시키기 위해 개발되었습니다.",
+        "overview": "여러 AI 에이전트를 팀처럼 관리하고 로컬 환경에서 실행할 수 있는 에이전트 운영 플랫폼입니다.",
+        "background": "Grok Bot과 같은 폐쇄형 에이전트 서비스의 대안으로, 사용자가 직접 모델을 선택하고 제어할 수 있는 오픈소스 플랫폼이 필요했습니다.",
         "architecture": [
           "Electron 기반의 크로스 플랫폼 데스크톱 앱",
-          "에이전트별 격리된 가상 머신 환경 제공",
-          "사용자 승인 기반의 에이전트 작업 실행 모델"
+          "에이전트별 격리된 가상 머신 환경",
+          "모델 독립적인 에이전트 관리 인터페이스"
         ],
         "useCases": [
-          "로컬 환경에서 AI 에이전트 팀을 운영하려는 파워 유저",
-          "개인화된 AI 비서 생태계를 구축하려는 개발자"
+          "개인용 AI 에이전트 팀 구축 및 관리",
+          "로컬 환경에서의 안전한 AI 자동화 작업"
         ],
         "quickStart": {
-          "installCommand": "brew install --cask openmausbot",
-          "codeSnippet": "const bot = new Agent({ model: 'claude-3', capabilities: ['vm', 'browser'] });",
+          "installCommand": "npm install open-maus-bot",
+          "codeSnippet": "const bot = new MausBot('Claude-3'); bot.connectApp('github');",
           "language": "typescript"
         },
         "prosCons": {
           "strengths": [
-            "완벽한 로컬 데이터 통제권",
-            "에이전트별 독립적인 환경 구성"
+            "완전한 로컬 제어권",
+            "에이전트별 독립적 환경 제공"
           ],
           "considerations": [
-            "로컬 하드웨어 사양에 따른 성능 편차"
+            "로컬 모델 구동 시 높은 하드웨어 사양 요구"
           ]
         }
       }
@@ -1644,45 +1627,45 @@
       "url": "https://github.com/pingdotgg/t3code",
       "description": "The best way to control Claude Code, Codex and more from any computer or phone",
       "language": "TypeScript",
-      "stars": 72384,
-      "forks": 12176,
+      "stars": 74609,
+      "forks": 12406,
       "starsPeriod": 41514,
       "since": "monthly",
-      "summaryKo": "다양한 코딩 에이전트를 통합 관리하는 범용 컨트롤 플레인으로, 데스크톱과 모바일 간의 끊김 없는 워크플로우를 제공합니다.",
+      "summaryKo": "다양한 코딩 에이전트를 통합 제어하는 오픈소스 컨트롤 플레인으로, 데스크탑과 모바일 간의 끊김 없는 워크플로우를 제공합니다.",
       "keyFeaturesKo": [
-        "Claude Code, Cursor, Codex 등 주요 에이전트 통합 제어",
-        "데스크톱-모바일 간 실시간 동기화 및 작업 승인 인터페이스",
-        "기존 구독 모델 유지 및 에이전트 간 자유로운 모델 전환"
+        "Claude Code, Cursor, Codex 등 주요 코딩 에이전트 통합 인터페이스 제공",
+        "데스크탑-모바일 간 실시간 동기화 및 원격 승인 워크플로우 지원",
+        "기존 구독 모델을 그대로 활용하여 토큰 재판매 없는 투명한 비용 구조"
       ],
       "tags": [
         "LLM-Agent",
-        "Control-Plane",
+        "Developer-Tool",
         "Cross-Platform"
       ],
       "report": {
-        "overview": "코딩 에이전트의 파편화된 인터페이스를 하나로 통합하여 생산성을 극대화하는 중앙 제어 플랫폼입니다.",
-        "background": "여러 코딩 에이전트가 난립하면서 발생하는 관리의 복잡성과 모바일 환경에서의 제어 불가능 문제를 해결하기 위해 등장했습니다.",
+        "overview": "코딩 에이전트의 파편화된 인터페이스를 하나로 통합하고, 모바일 기기를 통해 원격으로 에이전트의 작업을 승인/제어하는 컨트롤 플레인입니다.",
+        "background": "다양한 코딩 에이전트가 등장함에 따라 각기 다른 인터페이스를 관리해야 하는 번거로움과, PC 앞을 떠나도 작업을 지속하고 싶은 개발자의 니즈를 해결합니다.",
         "architecture": [
-          "에이전트 추상화 레이어(ACP)를 통한 범용 연동",
-          "멀티 디바이스 동기화 엔진",
-          "기존 로컬 에이전트 런타임 활용"
+          "로컬 머신에서 실행되는 에이전트와 통신하는 중앙 집중식 제어 레이어",
+          "웹/iOS/Android를 아우르는 멀티 플랫폼 인터페이스",
+          "ACP(Agent Control Protocol) 표준을 통한 범용적인 에이전트 연동"
         ],
         "useCases": [
-          "여러 코딩 에이전트를 동시에 사용하는 개발자",
-          "이동 중에도 에이전트의 작업 승인 및 모니터링이 필요한 팀 리더"
+          "이동 중에도 코딩 에이전트의 작업 결과를 확인하고 승인해야 하는 개발자",
+          "여러 종류의 코딩 에이전트를 동시에 사용하며 통합 관리가 필요한 팀"
         ],
         "quickStart": {
-          "installCommand": "https://t3.codes/download",
-          "codeSnippet": "t3-code --connect <agent-name>",
+          "installCommand": "curl -sSL https://t3.codes/install | bash",
+          "codeSnippet": "t3-code --connect --provider claude-code",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "압도적인 범용성 및 통합 관리",
-            "모바일 접근성"
+            "다양한 에이전트의 통합 관리",
+            "모바일 기기를 활용한 생산성 극대화"
           ],
           "considerations": [
-            "각 에이전트별 개별 설정 필요"
+            "로컬 환경에 에이전트가 사전 설치되어 있어야 함"
           ]
         }
       }
@@ -1694,15 +1677,15 @@
       "url": "https://github.com/anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 199113,
-      "forks": 23307,
+      "stars": 199455,
+      "forks": 23343,
       "starsPeriod": 16473,
       "since": "monthly",
-      "summaryKo": "Claude 에이전트가 특정 도메인 작업을 반복 수행할 수 있도록 지침과 리소스를 동적으로 로드하는 표준화된 스킬 시스템입니다.",
+      "summaryKo": "Claude 에이전트가 특정 도메인 작업을 반복 가능하고 정교하게 수행하도록 돕는 모듈형 스킬 라이브러리입니다.",
       "keyFeaturesKo": [
-        "재사용 가능한 스킬 단위의 모듈형 아키텍처",
-        "기업 브랜드 가이드라인 및 전문 워크플로우 자동화",
-        "Anthropic 공식 표준(Agent Skills) 준수"
+        "브랜딩 가이드라인 준수, 데이터 분석 등 전문 작업 자동화",
+        "SKILL.md 기반의 독립적인 스킬 패키징 구조",
+        "엔터프라이즈 워크플로우부터 창의적 작업까지 폭넓은 확장성"
       ],
       "tags": [
         "LLM-Agent",
@@ -1710,29 +1693,29 @@
         "Workflow-Optimization"
       ],
       "report": {
-        "overview": "Claude 에이전트의 기능을 확장하여 특정 비즈니스 로직을 반복 가능하게 만드는 스킬 라이브러리입니다.",
-        "background": "에이전트가 매번 동일한 작업을 수행할 때 발생하는 일관성 부족과 비효율적인 프롬프트 엔지니어링 문제를 해결합니다.",
+        "overview": "Claude 에이전트의 기능을 확장하는 재사용 가능한 스크립트와 지침의 집합체로, 특정 비즈니스 로직을 에이전트에게 학습시키는 표준화된 방법론입니다.",
+        "background": "범용 LLM이 특정 기업의 내부 프로세스나 복잡한 도메인 지식을 즉각적으로 수행하지 못하는 한계를 해결하기 위해 등장했습니다.",
         "architecture": [
-          "SKILL.md 기반의 독립적 스킬 패키징",
-          "동적 런타임 로딩 시스템",
-          "도메인 특화 지침 및 스크립트 결합"
+          "폴더 단위의 독립적인 스킬 패키징(지침, 스크립트, 리소스 포함)",
+          "Claude 에이전트가 런타임에 동적으로 로드하는 모듈형 구조",
+          "AgentSkills.io 표준을 준수하여 상호 운용성 확보"
         ],
         "useCases": [
-          "기업 내 브랜드 가이드라인 준수 자동화",
-          "데이터 분석 및 보고서 생성 워크플로우 최적화"
+          "기업 내부 브랜드 가이드라인에 맞춘 문서 자동 생성",
+          "조직 특화 워크플로우를 반영한 데이터 분석 자동화"
         ],
         "quickStart": {
           "installCommand": "git clone https://github.com/anthropics/skills.git",
-          "codeSnippet": "load_skill('brand-guidelines-v1')",
-          "language": "python"
+          "codeSnippet": "cp -r ./skills/brand-writer ~/.claude/skills/",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "높은 확장성 및 재사용성",
-            "공식 표준 기반의 신뢰성"
+            "작업의 일관성 및 재현성 보장",
+            "커뮤니티 기반의 다양한 스킬 공유"
           ],
           "considerations": [
-            "스킬 개발을 위한 초기 학습 곡선 존재"
+            "스킬별 정교한 프롬프트 엔지니어링 필요"
           ]
         }
       }
@@ -1744,15 +1727,15 @@
       "url": "https://github.com/thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 119137,
-      "forks": 10352,
+      "stars": 119318,
+      "forks": 10363,
       "starsPeriod": 17416,
       "since": "monthly",
-      "summaryKo": "에이전트 세션 간의 컨텍스트를 압축 및 저장하여, 장기 기억을 가능하게 함으로써 반복적인 설정 없이 일관된 작업을 수행하게 합니다.",
+      "summaryKo": "에이전트 세션 간의 컨텍스트를 영구적으로 보존하여, 이전 작업 내용을 기억하고 최적화된 문맥을 제공하는 메모리 레이어입니다.",
       "keyFeaturesKo": [
-        "세션 간 컨텍스트 영속성(Persistence) 제공",
-        "AI 기반 컨텍스트 압축 및 최적화",
-        "다양한 코딩 에이전트(Claude Code, Copilot 등)와 호환"
+        "세션 간 컨텍스트 압축 및 저장으로 장기 기억력 제공",
+        "Claude Code, Copilot, Gemini 등 다수 에이전트 호환",
+        "관련성 높은 컨텍스트만 추출하여 토큰 효율성 극대화"
       ],
       "tags": [
         "LLM-Agent",
@@ -1760,29 +1743,29 @@
         "Memory-Optimization"
       ],
       "report": {
-        "overview": "에이전트가 이전 대화와 작업 내용을 기억하도록 하여, 매번 새로운 세션에서 발생하는 컨텍스트 소실을 방지하는 메모리 레이어입니다.",
-        "background": "에이전트의 컨텍스트 윈도우 제한으로 인해 장기적인 프로젝트 맥락을 잊어버리는 고질적인 문제를 해결합니다.",
+        "overview": "에이전트가 세션이 종료되어도 이전의 작업 맥락을 잃지 않도록 돕는 영구 컨텍스트 관리 솔루션입니다.",
+        "background": "LLM 에이전트의 컨텍스트 윈도우 제한과 세션 단절로 인해 반복적인 설명이 필요한 문제를 해결합니다.",
         "architecture": [
-          "세션 로그 캡처 및 벡터화",
-          "AI 기반 컨텍스트 요약 및 압축 엔진",
-          "플러그인 방식의 컨텍스트 주입"
+          "세션 데이터의 AI 기반 자동 요약 및 압축 엔진",
+          "벡터 DB를 활용한 관련 컨텍스트 검색 및 주입 메커니즘",
+          "다양한 에이전트와 연동 가능한 미들웨어 인터페이스"
         ],
         "useCases": [
-          "장기 프로젝트를 수행하는 개발자",
-          "여러 에이전트를 오가며 일관된 코드 스타일을 유지해야 하는 환경"
+          "장기 프로젝트를 진행하며 에이전트에게 지속적인 맥락 공유가 필요한 경우",
+          "여러 에이전트를 전환하며 작업할 때 일관된 지식 베이스가 필요한 경우"
         ],
         "quickStart": {
           "installCommand": "npm install -g claude-mem",
-          "codeSnippet": "claude-mem init --project ./my-app",
+          "codeSnippet": "claude-mem --init --project ./my-app",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "세션 간 끊김 없는 작업 흐름",
-            "자동화된 컨텍스트 관리"
+            "에이전트의 기억력 향상",
+            "토큰 비용 절감 및 효율적 컨텍스트 관리"
           ],
           "considerations": [
-            "데이터 프라이버시 및 저장소 관리"
+            "데이터 프라이버시 및 민감 정보 저장 주의"
           ]
         }
       }
@@ -1794,32 +1777,32 @@
       "url": "https://github.com/Jakeschincariol/instagram-agent-skill",
       "description": "Thirteen Claude skills that run an Instagram account: Reels off 26 scored hook formulas, a viral research skill, a caption linter, and a humanizer. Free, MIT.",
       "language": "Python",
-      "stars": 8376,
-      "forks": 1523,
+      "stars": 8640,
+      "forks": 1549,
       "starsPeriod": 5773,
       "since": "monthly",
-      "summaryKo": "인스타그램 운영을 위한 13가지 전문 스킬셋으로, 콘텐츠 기획부터 휴먼라이징까지 에이전트가 직접 수행하도록 설계되었습니다.",
+      "summaryKo": "Claude 에이전트를 활용하여 인스타그램 콘텐츠 기획부터 제작, 검수까지 자동화하는 전문 스킬셋입니다.",
       "keyFeaturesKo": [
-        "후크 공식(Hook Formulas) 기반의 콘텐츠 생성",
-        "인간적인 톤앤매너를 위한 휴먼라이징 엔진",
-        "API 키 없이 즉시 사용 가능한 독립적 스킬"
+        "26가지 후크 공식 기반의 릴스 대본 작성 및 성과 예측",
+        "인간적인 톤앤매너를 위한 'Humanizer' 모듈 탑재",
+        "API 키 없이도 즉시 사용 가능한 플러그인 방식"
       ],
       "tags": [
         "LLM-Agent",
-        "Social-Media-Automation",
-        "Content-Strategy"
+        "Content-Automation",
+        "Social-Media"
       ],
       "report": {
-        "overview": "인스타그램 운영의 전 과정을 자동화하는 Claude 전용 스킬 모음집입니다.",
-        "background": "AI가 생성한 콘텐츠 특유의 기계적인 느낌과 낮은 참여율 문제를 해결하기 위해 설계되었습니다.",
+        "overview": "인스타그램 운영의 전 과정을 에이전트가 수행하도록 설계된 13가지 특화 스킬 모음입니다.",
+        "background": "단순 텍스트 생성을 넘어, 실제 소셜 미디어 성과를 내기 위한 전략적 콘텐츠 제작의 자동화 수요를 해결합니다.",
         "architecture": [
-          "26가지 후크 공식 기반의 스코어링 시스템",
-          "콘텐츠 휴먼라이징 필터링 레이어",
-          "니치 마켓 분석 및 랭킹 알고리즘"
+          "콘텐츠 성과 예측을 위한 스코어링 알고리즘",
+          "AI 특유의 문체를 제거하는 휴머나이저(Humanizer) 필터",
+          "Claude Code 환경에서 즉시 로드 가능한 스킬 모듈"
         ],
         "useCases": [
-          "소셜 미디어 콘텐츠 자동화가 필요한 마케터",
-          "개인 브랜딩을 효율적으로 관리하려는 크리에이터"
+          "소셜 미디어 콘텐츠 제작 시간을 단축하려는 마케터",
+          "데이터 기반의 릴스 기획 및 최적화가 필요한 크리에이터"
         ],
         "quickStart": {
           "installCommand": "git clone https://github.com/Jakeschincariol/instagram-agent-skill.git",
@@ -1828,11 +1811,11 @@
         },
         "prosCons": {
           "strengths": [
-            "즉각적인 실무 적용 가능",
-            "높은 콘텐츠 품질 보장"
+            "실무적인 성과 중심의 자동화",
+            "사용자 승인 기반의 안전한 게시 프로세스"
           ],
           "considerations": [
-            "플랫폼 정책 변화에 따른 지속적 업데이트 필요"
+            "플랫폼 정책 변화에 따른 지속적인 스킬 업데이트 필요"
           ]
         }
       }
@@ -1844,46 +1827,46 @@
       "url": "https://github.com/backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "language": "TypeScript",
-      "stars": 14498,
-      "forks": 1433,
+      "stars": 14659,
+      "forks": 1425,
       "starsPeriod": 4793,
       "since": "monthly",
-      "summaryKo": "AI 에이전트의 작업 과정을 시각화하고 주석을 달아 피드백을 즉시 반영할 수 있게 함으로써, 인간과 AI 간의 협업 루프를 완성하는 워크스페이스입니다.",
+      "summaryKo": "AI 에이전트가 생성한 코드와 계획을 실시간으로 검토하고, 피드백을 즉시 반영하여 에이전트와 인간 개발자 간의 협업 루프를 완성하는 워크스페이스입니다.",
       "keyFeaturesKo": [
-        "다양한 AI 에이전트(Claude, Copilot 등)와 통합 가능한 중앙 집중식 인박스",
-        "코드 리뷰 및 아티팩트 주석 기능을 통한 정교한 AI 제어",
-        "팀 단위 공유 및 피드백 루프 자동화"
+        "다양한 AI 에이전트(Claude, Copilot 등)와의 통합 인터페이스",
+        "코드 리뷰 및 계획 수정 사항을 에이전트에 즉시 전달하는 피드백 루프",
+        "마크다운, HTML 등 다양한 아티팩트의 시각적 주석 및 관리"
       ],
       "tags": [
-        "LLM-Agent",
+        "AI-Agent",
+        "Code-Review",
         "Collaboration",
-        "DevTools",
-        "Workflow"
+        "Dev-Tool"
       ],
       "report": {
-        "overview": "AI 에이전트의 작업물을 검토하고 피드백을 전달하여 에이전트의 결과물을 정교하게 다듬는 협업 플랫폼입니다.",
-        "background": "AI 에이전트가 코드를 생성하지만, 인간이 이를 검토하고 수정 사항을 다시 에이전트에게 전달하는 과정이 파편화되어 있다는 점이 문제였습니다.",
+        "overview": "AI 에이전트와 개발자 사이의 '소통 단절'을 해결하기 위해, 에이전트의 결과물을 검토하고 수정 지시를 내리는 전용 협업 플랫폼입니다.",
+        "background": "AI 에이전트가 코드를 작성하지만, 인간 개발자가 이를 검토하고 피드백을 주는 과정이 파편화되어 있어 효율적인 협업이 어려웠습니다.",
         "architecture": [
-          "에이전트 통합 인터페이스(Inbox Surface)",
-          "코드 리뷰 및 실시간 Diff 분석 엔진",
-          "피드백 루프 동기화 시스템"
+          "에이전트 결과물 통합 수집을 위한 인박스 서피스",
+          "코드 diff 및 PR 리뷰를 위한 인터랙티브 아티팩트 엔진",
+          "에이전트 피드백 루프를 위한 API 연동 레이어"
         ],
         "useCases": [
-          "AI 에이전트를 실무에 도입한 개발 팀",
-          "AI 생성 코드의 품질 관리가 필요한 테크 리드"
+          "AI 에이전트를 실무에 도입하여 개발 생산성을 높이는 팀",
+          "에이전트의 코드 품질을 체계적으로 관리하고 싶은 리드 개발자"
         ],
         "quickStart": {
           "installCommand": "npm install -g plannotator",
-          "codeSnippet": "plannotator connect --agent <agent-name>",
+          "codeSnippet": "plannotator connect --agent claude-code",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "AI 협업의 가시성 확보",
-            "피드백 루프의 효율성"
+            "에이전트와의 협업 효율 극대화",
+            "중앙 집중식 피드백 관리"
           ],
           "considerations": [
-            "다양한 에이전트와의 연동 설정 필요"
+            "다양한 에이전트별 API 연동 설정 필요"
           ]
         }
       }
@@ -1895,45 +1878,95 @@
       "url": "https://github.com/HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 61683,
-      "forks": 7436,
+      "stars": 61933,
+      "forks": 7456,
       "starsPeriod": 19718,
       "since": "monthly",
-      "summaryKo": "개인화된 학습 경로를 제공하는 평생 교육 에이전트로, 사용자의 학습 패턴을 분석하여 최적화된 튜터링을 제공합니다.",
+      "summaryKo": "사용자의 학습 이력을 추적하고 개인화된 커리큘럼을 제공하는 평생 학습 에이전트 시스템입니다.",
       "keyFeaturesKo": [
-        "사용자 맞춤형 평생 학습 알고리즘",
-        "학습 데이터 기반의 적응형 튜터링 시스템",
-        "오프라인 및 로컬 환경 지원"
+        "사용자 맞춤형 학습 경로 최적화 및 지식 격차 분석",
+        "대규모 학습 데이터를 기반으로 한 개인화된 튜터링",
+        "데스크탑 앱 지원을 통한 끊김 없는 학습 경험"
       ],
       "tags": [
         "LLM-Agent",
         "EdTech",
-        "Personalized-Learning"
+        "Personalization"
       ],
       "report": {
-        "overview": "사용자의 학습 수준과 속도를 실시간으로 파악하여 최적의 교육 콘텐츠를 제공하는 지능형 튜터링 솔루션입니다.",
-        "background": "일률적인 교육 방식의 한계를 극복하고, 개인별 학습 격차를 해소하기 위해 등장했습니다.",
+        "overview": "사용자의 학습 패턴을 분석하여 최적의 학습 콘텐츠와 피드백을 제공하는 평생 개인화 튜터링 플랫폼입니다.",
+        "background": "일방적인 학습 콘텐츠 제공 방식에서 벗어나, 사용자의 이해도와 속도에 맞춘 능동적인 학습 지원 시스템의 필요성으로 등장했습니다.",
         "architecture": [
-          "사용자 학습 데이터 프로파일링",
-          "적응형 학습 경로 생성 엔진",
-          "로컬 런타임 최적화"
+          "사용자 학습 데이터 기반의 지식 그래프 구축",
+          "실시간 피드백 루프를 통한 커리큘럼 동적 조정",
+          "Apple Silicon 최적화된 로컬 실행 환경 지원"
         ],
         "useCases": [
-          "개인 맞춤형 학습이 필요한 학생 및 직장인",
-          "교육 플랫폼 서비스 개발자"
+          "자기주도 학습을 수행하는 학생 및 직장인",
+          "개인화된 교육 솔루션을 구축하려는 에듀테크 기업"
         ],
         "quickStart": {
-          "installCommand": "brew install deeptutor",
-          "codeSnippet": "deeptutor start --profile user_data.json",
+          "installCommand": "brew install --cask deeptutor",
+          "codeSnippet": "deeptutor --start --profile 'advanced-python'",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "고도의 개인화 학습 경험",
-            "데이터 프라이버시 보호"
+            "높은 학습 몰입도 제공",
+            "데이터 기반의 정교한 개인화"
           ],
           "considerations": [
-            "초기 데이터 학습을 위한 시간 소요"
+            "초기 학습 데이터 수집을 위한 시간 소요"
+          ]
+        }
+      }
+    },
+    {
+      "id": "yetone/magpie",
+      "owner": "yetone",
+      "repo": "magpie",
+      "url": "https://github.com/yetone/magpie",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "language": "Go",
+      "stars": 40458,
+      "forks": 3712,
+      "starsPeriod": 20728,
+      "since": "monthly",
+      "summaryKo": "다양한 LLM 모델을 하나의 로컬 게이트웨이로 통합하여, 모델별 할당량 소진 시 자동으로 계정을 전환하는 지능형 라우터입니다.",
+      "keyFeaturesKo": [
+        "메뉴바 기반의 간편한 모델 전환 및 관리",
+        "할당량 소진 시 자동 계정 전환(Failover) 기능",
+        "Claude Code, DeepSeek, Kimi 등 다양한 에이전트 지원"
+      ],
+      "tags": [
+        "LLM-Agent",
+        "Gateway",
+        "Productivity"
+      ],
+      "report": {
+        "overview": "여러 LLM 서비스의 API를 로컬에서 통합 관리하고, 비용과 할당량을 최적화하여 에이전트의 가용성을 극대화하는 게이트웨이입니다.",
+        "background": "특정 모델의 사용량 제한(Rate Limit)이나 구독 비용 문제를 해결하기 위해 여러 모델을 유연하게 교체하며 사용하려는 니즈를 해결합니다.",
+        "architecture": [
+          "로컬 게이트웨이 기반의 모델 라우팅 엔진",
+          "계정별 할당량 모니터링 및 자동 전환 로직",
+          "OS 메뉴바와 통합된 경량화된 인터페이스"
+        ],
+        "useCases": [
+          "여러 LLM 서비스를 구독 중이며 비용 효율적으로 사용하려는 개발자",
+          "API 사용량 제한 없이 연속적인 에이전트 작업이 필요한 경우"
+        ],
+        "quickStart": {
+          "installCommand": "brew install yetone/magpie/magpie",
+          "codeSnippet": "magpie --add-account --provider deepseek",
+          "language": "bash"
+        },
+        "prosCons": {
+          "strengths": [
+            "비용 최적화 및 가용성 극대화",
+            "직관적인 메뉴바 인터페이스"
+          ],
+          "considerations": [
+            "각 서비스별 API 키 관리 및 보안 설정 필요"
           ]
         }
       }
@@ -1945,45 +1978,44 @@
       "url": "https://github.com/pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 115160,
-      "forks": 6863,
+      "stars": 115606,
+      "forks": 6891,
       "starsPeriod": 30634,
       "since": "monthly",
-      "summaryKo": "코딩 에이전트가 생성한 코드의 디자인 품질을 감사하고 개선하는 '디자인 보캐블러리' 도구로, AI 특유의 낮은 품질(Slop)을 방지합니다.",
+      "summaryKo": "pbakaus/impeccable - The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "keyFeaturesKo": [
-        "디자인 품질 감사(Audit) 및 비평(Critique) 기능",
-        "코드 생성 시 디자인 가이드라인 강제",
-        "주요 코딩 에이전트와 즉시 연동"
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 115,606개 획득",
+        "최근 증가 추이: +30,634 stars (monthly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Design-Ops",
-        "Quality-Assurance"
+        "Rust",
+        "AI"
       ],
       "report": {
-        "overview": "AI가 생성한 코드의 디자인적 완성도를 높이기 위한 디자인 품질 관리 프레임워크입니다.",
-        "background": "AI가 코드는 잘 짜지만 디자인적 감각이 부족하여 발생하는 'AI Slop(저품질 결과물)' 문제를 해결하기 위해 등장했습니다.",
+        "overview": "impeccable는 Rust 기반으로 개발된 오픈소스 프로젝트로, The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+        "background": "기존 Rust 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "디자인 보캐블러리 정의 레이어",
-          "코드 생성 후 품질 감사 엔진",
-          "에이전트 제어용 CLI 인터페이스"
+          "Rust 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "프론트엔드 개발 시 디자인 일관성을 유지해야 하는 팀",
-          "AI 에이전트의 결과물 품질을 높이고 싶은 개발자"
+          "Rust 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npx impeccable install",
-          "codeSnippet": "/impeccable init",
+          "installCommand": "git clone https://github.com/pbakaus/impeccable.git",
+          "codeSnippet": "cd impeccable\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "디자인 품질의 상향 평준화",
-            "간편한 설치 및 연동"
+            "최근 +30,634 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "디자인 가이드라인 정의 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -1995,46 +2027,43 @@
       "url": "https://github.com/sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 115957,
-      "forks": 13257,
+      "stars": 116294,
+      "forks": 13283,
       "starsPeriod": 21408,
       "since": "monthly",
-      "summaryKo": "다양한 소셜 네트워크 플랫폼에 걸쳐 특정 사용자 계정을 추적하고 식별하는 오픈소스 OSINT 도구입니다. 수동으로 수행하던 복잡한 계정 탐색 과정을 자동화하여 정보 수집 효율을 극대화합니다.",
+      "summaryKo": "sherlock-project/sherlock - Hunt down social media accounts by username across social networks",
       "keyFeaturesKo": [
-        "수백 개의 소셜 미디어 플랫폼을 대상으로 한 통합 검색 엔진",
-        "사용자 정의 가능한 검색 타겟 및 결과 필터링 기능",
-        "OSINT(오픈소스 인텔리전스) 워크플로우에 최적화된 경량 Python 아키텍처"
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 116,294개 획득",
+        "최근 증가 추이: +21,408 stars (monthly)"
       ],
       "tags": [
-        "OSINT",
-        "Automation",
-        "Security-Tool"
+        "Python"
       ],
       "report": {
-        "overview": "사용자 이름 기반의 소셜 계정 추적을 자동화하는 강력한 OSINT 프레임워크입니다.",
-        "background": "여러 플랫폼에 흩어진 사용자 정보를 수동으로 확인하는 것은 시간 소모가 크고 누락 가능성이 높다는 한계가 있습니다.",
+        "overview": "sherlock는 Python 기반으로 개발된 오픈소스 프로젝트로, Hunt down social media accounts by username across social networks",
+        "background": "기존 Python 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "플랫폼별 모듈화된 검색 엔진 구조",
-          "비동기 요청 처리를 통한 고속 스캔 지원",
-          "JSON/CSV 등 다양한 결과 포맷 출력 지원"
+          "Python 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "디지털 포렌식 및 보안 조사관",
-          "개인정보 보호 및 계정 도용 모니터링",
-          "마케팅 및 브랜드 평판 관리"
+          "Python 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "pip install sherlock-project",
-          "codeSnippet": "sherlock username_to_find",
+          "installCommand": "git clone https://github.com/sherlock-project/sherlock.git",
+          "codeSnippet": "cd sherlock\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "압도적인 플랫폼 커버리지",
-            "사용자 친화적인 CLI 인터페이스"
+            "최근 +21,408 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "윤리적 사용 가이드라인 준수 필수"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -2046,46 +2075,46 @@
       "url": "https://github.com/AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 31697,
-      "forks": 3903,
+      "stars": 31921,
+      "forks": 3919,
       "starsPeriod": 12006,
       "since": "monthly",
-      "summaryKo": "Claude Code 환경에서 동작하는 전문 SEO 감사 플러그인으로, 기술적 SEO부터 AI 검색 최적화(GEO)까지 29개의 세부 스킬을 자동화합니다. 기존의 정적인 SEO 도구와 달리 AI 에이전트가 직접 웹사이트를 분석하고 수정 제안까지 수행하는 혁신적인 접근을 제공합니다.",
+      "summaryKo": "AgriciDaniel/claude-seo - Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "keyFeaturesKo": [
-        "Claude Code와 완벽하게 통합된 에이전트 기반 SEO 감사",
-        "E-E-A-T, Schema.org, Core Web Vitals 등 최신 검색 엔진 알고리즘 대응",
-        "AI 검색(Perplexity, ChatGPT 등) 인용 최적화 기능 제공"
+        "주 프로그래밍 언어: Python",
+        "깃허브 스타: 31,921개 획득",
+        "최근 증가 추이: +12,006 stars (monthly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "SEO",
-        "Automation"
+        "Python",
+        "AI",
+        "Frontend",
+        "Backend"
       ],
       "report": {
-        "overview": "AI 에이전트가 직접 웹사이트를 진단하고 검색 엔진 순위를 개선하는 차세대 SEO 자동화 도구입니다.",
-        "background": "전통적인 SEO 도구는 단순 데이터 나열에 그치며, 실제 코드 수정까지 이어지는 과정이 단절되어 있다는 페인 포인트가 존재했습니다.",
+        "overview": "claude-seo는 Python 기반으로 개발된 오픈소스 프로젝트로, Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+        "background": "기존 Python 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "29개 전문 서브 스킬 및 20개 특화 에이전트 모듈",
-          "Lighthouse 및 WebMCP 기반의 실시간 데이터 수집",
-          "PDF/Excel 기반의 자동화된 리포팅 시스템"
+          "Python 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "검색 엔진 순위 최적화가 필요한 개발자 및 마케터",
-          "AI 검색 엔진 노출을 극대화하려는 콘텐츠 플랫폼",
-          "기술적 SEO 부채를 해결하려는 웹 서비스 운영팀"
+          "Python 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "claude-code install claude-seo",
-          "codeSnippet": "claude-seo audit --url https://example.com",
+          "installCommand": "git clone https://github.com/AgriciDaniel/claude-seo.git",
+          "codeSnippet": "cd claude-seo\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "실행 가능한(Actionable) SEO 인사이트 제공",
-            "AI 검색 시대에 최적화된 전략"
+            "최근 +12,006 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "Claude Code 환경 의존성"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -2097,46 +2126,46 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 12002,
-      "forks": 1478,
+      "stars": 12257,
+      "forks": 1512,
       "starsPeriod": 3189,
       "since": "monthly",
-      "summaryKo": "Google Stitch MCP 서버와 연동하여 Claude Code, Cursor 등 주요 코딩 에이전트의 디자인 및 빌드 역량을 확장해주는 오픈 표준 기반 에이전트 스킬 라이브러리입니다.",
+      "summaryKo": "google-labs-code/stitch-skills - A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "keyFeaturesKo": [
-        "Agent Skills 오픈 표준을 준수하여 다양한 코딩 에이전트와 완벽 호환",
-        "디자인(stitch-design), 빌드(stitch-build), 유틸리티 기능의 모듈식 제공",
-        "CLI 및 UI를 통한 간편한 스파스 클론(Sparse Checkout) 및 마켓플레이스 등록"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 12,257개 획득",
+        "최근 증가 추이: +425 stars (daily)"
       ],
       "tags": [
-        "LLM-Agent",
-        "MCP",
         "TypeScript",
-        "Google-Stitch"
+        "AI",
+        "Backend",
+        "DevTools"
       ],
       "report": {
-        "overview": "Google Stitch 생태계와 코딩 에이전트를 연결하여 디자인 및 개발 워크플로우를 자동화하는 플러그인 및 스킬 집합입니다.",
-        "background": "에이전트마다 상이한 프롬프트 규격과 기능 파편화 문제를 해결하고, 표준화된 인터페이스로 일관된 개발 자동화 경험을 제공하기 위해 등장했습니다.",
+        "overview": "stitch-skills는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "Agent Skills 오픈 표준을 따르는 모듈형 플러그인 구조",
-          "Stitch MCP 서버와의 긴밀한 통신 프로토콜",
-          "필요한 기능만 골라 쓸 수 있는 선택적 스파스 클론 지원"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "Cursor, Claude Code 등에서 Google Stitch의 디자인 시스템을 연동해 UI를 자동 생성할 때",
-          "프론트엔드 개발 및 빌드 파이프라인을 AI 에이전트로 지능화할 때"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "codex plugin marketplace add google-labs-code/stitch-skills --ref main",
-          "codeSnippet": "# 마켓플레이스 등록 후 디자인 스킬 활성화\nplugins:\n  - stitch-design\n  - stitch-build",
-          "language": "yaml"
+          "installCommand": "git clone https://github.com/google-labs-code/stitch-skills.git",
+          "codeSnippet": "cd stitch-skills\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "여러 코딩 에이전트 간의 뛰어난 상호 호환성",
-            "구글 생태계의 디자인/빌드 표준을 손쉽게 도입 가능"
+            "최근 +425 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "MCP(Model Context Protocol) 및 관련 에이전트 환경 이해 필요"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -2148,46 +2177,44 @@
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
       "language": "TypeScript",
-      "stars": 88415,
-      "forks": 8231,
+      "stars": 88925,
+      "forks": 8293,
       "starsPeriod": 18847,
       "since": "monthly",
-      "summaryKo": "HTML 코드를 기반으로 고품질 MP4 영상을 렌더링하는 AI 영상 편집 프레임워크입니다. 영상 편집 소프트웨어 없이 코드로 영상을 생성하고 수정할 수 있어, 자동화된 영상 콘텐츠 제작 파이프라인 구축에 최적화되어 있습니다.",
+      "summaryKo": "heygen-com/hyperframes - Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
       "keyFeaturesKo": [
-        "HTML/CSS를 활용한 프로그래밍 방식의 영상 레이아웃 설계",
-        "Claude Code 및 Codex와 연동하여 자연어 기반 영상 편집 지원",
-        "웹 표준 기술을 활용한 높은 확장성과 커스터마이징"
+        "주 프로그래밍 언어: TypeScript",
+        "깃허브 스타: 88,925개 획득",
+        "최근 증가 추이: +18,847 stars (monthly)"
       ],
       "tags": [
-        "AI-Video",
-        "Automation",
-        "Creative-Tech"
+        "TypeScript",
+        "AI"
       ],
       "report": {
-        "overview": "코드로 영상을 정의하고 렌더링하는 개발자 중심의 AI 영상 편집 솔루션입니다.",
-        "background": "기존 영상 편집 도구는 수동 작업이 필수적이며, 대규모 자동화된 영상 생성에는 한계가 있었습니다.",
+        "overview": "hyperframes는 TypeScript 기반으로 개발된 오픈소스 프로젝트로, Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
+        "background": "기존 TypeScript 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "HTML 기반의 영상 프레임 렌더링 엔진",
-          "Node.js 기반의 고성능 영상 처리 파이프라인",
-          "AI 에이전트 연동을 위한 API 인터페이스"
+          "TypeScript 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "데이터 기반의 자동화된 마케팅 영상 생성",
-          "동적 콘텐츠를 포함한 개인화된 영상 서비스",
-          "개발자 도구 및 기술 문서의 영상화"
+          "TypeScript 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npm install hyperframes",
-          "codeSnippet": "import { render } from 'hyperframes';\nrender('<div>Hello World</div>', 'output.mp4');",
-          "language": "typescript"
+          "installCommand": "git clone https://github.com/heygen-com/hyperframes.git",
+          "codeSnippet": "cd hyperframes\n# 프로젝트 README를 참조하여 시작하세요.",
+          "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "영상 제작의 완전한 코드화",
-            "유연한 디자인 커스터마이징"
+            "최근 +18,847 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "복잡한 애니메이션 구현 시 학습 곡선"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
@@ -2199,46 +2226,45 @@
       "url": "https://github.com/elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 18224,
-      "forks": 1997,
+      "stars": 19678,
+      "forks": 2095,
       "starsPeriod": 11667,
       "since": "monthly",
-      "summaryKo": "Claude Code를 단순 챗봇에서 전문 보안 취약점 진단 및 레드팀 수행 도구로 탈바꿈시키는 독립형 스킬 번들로, 24개 핵심 취약점 클래스와 681개의 실제 공개 리포트 패턴을 제공합니다.",
+      "summaryKo": "Claude Code 환경에서 보안 취약점 점검을 자동화하는 전문 스킬 번들로, 24개 핵심 취약점 클래스에 대한 검증된 패턴을 제공하여 레드팀 업무 효율을 극대화합니다.",
       "keyFeaturesKo": [
-        "24개 핵심 취약점 클래스에 걸친 83개의 전문 스킬 및 15개 슬래시 커맨드 탑재",
-        "실제 공개된 681개 취약점 리포트 패턴 및 인프라·엔터프라이즈 공격 매트릭스 통합",
-        "Burp MCP 연동 및 DVWA, OWASP Juice Shop 등 실제 취약점 플랫폼 검증 완료"
+        "83개의 전문 보안 스킬 및 681개의 검증된 취약점 리포트 패턴 내장",
+        "Burp Suite MCP 연동을 통한 실무 보안 테스팅 워크플로우 최적화",
+        "엔터프라이즈 인프라 및 ID 공격 매트릭스 기반의 체계적 보안 점검 지원"
       ],
       "tags": [
         "LLM-Agent",
-        "Security",
-        "Bug-Hunting",
-        "Python"
+        "CyberSecurity",
+        "Red-Teaming"
       ],
       "report": {
-        "overview": "Claude Code 환경에서 동작하며 실제 모의 해킹 및 버그 바운티 워크플로우를 자동화하는 고도화된 보안 진단 스킬 번들입니다.",
-        "background": "기존 AI 코딩 도구들은 일반적인 코드 작성에는 능숙하나, 전문적인 보안 취약점 분석이나 공격 시나리오(Red-Teaming) 수행 시 깊이 있는 취약점 패턴 지식이 부족한 한계가 있었습니다.",
+        "overview": "Claude Code를 위한 보안 특화 스킬셋으로, AI 에이전트가 전문적인 보안 컨설턴트처럼 취약점을 탐색하고 분석하도록 돕는 프레임워크입니다.",
+        "background": "기존의 수동 보안 점검은 반복적이고 방대한 패턴 분석이 필요하여 시간이 많이 소요되는 한계가 있었습니다.",
         "architecture": [
-          "Claude Code Skills API 기반의 독립형 드롭인(Drop-in) 번들 구조",
-          "Burp Suite MCP 연동을 통한 실시간 웹 트래픽 및 취약점 분석 자동화",
-          "24개 취약점 클래스별 템플릿과 681개 검증된 리포트 패턴의 인메모리 참조 모델"
+          "Claude Code 스킬 시스템 기반의 모듈형 아키텍처",
+          "24개 핵심 취약점 클래스별 자동화된 공격 시나리오 수행",
+          "Burp MCP를 통한 외부 보안 도구와의 실시간 데이터 연동"
         ],
         "useCases": [
-          "웹 애플리케이션 보안 취약점 자동 진단 및 버그 바운티 수행",
-          "기업 인프라 및 엔터프라이즈 아이덴티티 공격 시나리오(Red-Team) 모의 훈련"
+          "웹 애플리케이션 보안 취약점 자동 점검",
+          "레드팀 모의 해킹 시나리오 자동화"
         ],
         "quickStart": {
-          "installCommand": "git clone https://github.com/elementalsouls/Claude-BugHunter.git",
-          "codeSnippet": "# Claude Code 세션 내 슬래시 커맨드 활용\n/bughunter-scan --target https://testphp.vulnweb.com --profile owasp-top10",
+          "installCommand": "claude-code install elementalsouls/claude-bughunter",
+          "codeSnippet": "claude-bughunter --target <target-url> --class injection",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "실제 공개된 수백 건의 취약점 리포트 기반으로 높은 정확도의 진단 시나리오 제공",
-            "별도의 복잡한 설정 없이 Claude Code에 즉시 통합 가능한 확장성"
+            "방대한 보안 패턴 라이브러리 제공",
+            "Claude Code 생태계와의 완벽한 호환성"
           ],
           "considerations": [
-            "권한이 승인된 보안 진단 및 모의 해킹 목적으로만 사용해야 함"
+            "승인된 환경(Authorized) 내에서만 사용 권장"
           ]
         }
       }
@@ -2250,45 +2276,45 @@
       "url": "https://github.com/kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9851,
-      "forks": 871,
+      "stars": 10212,
+      "forks": 892,
       "starsPeriod": 7477,
       "since": "monthly",
-      "summaryKo": "코딩 에이전트가 로컬 환경에서 FFmpeg를 안전하고 정밀하게 제어할 수 있도록 표준화된 인터페이스와 MCP 서버를 제공합니다.",
+      "summaryKo": "코딩 에이전트가 로컬 환경에서 FFmpeg를 활용해 비디오 편집을 자동화할 수 있도록 돕는 MCP(Model Context Protocol) 기반의 도구입니다.",
       "keyFeaturesKo": [
-        "42종의 FFmpeg 도구를 머신 리더블한 계약 형태로 제공",
-        "클라우드 의존성 없는 로컬 비디오 편집 및 처리",
-        "Claude Code, Cursor 등 주요 MCP 클라이언트와 즉시 연동"
+        "42개의 FFmpeg 도구를 MCP 표준으로 제공",
+        "클라우드 의존성 없이 로컬에서 안전하게 비디오 처리",
+        "Claude Code, Cursor 등 주요 에이전트와 즉시 연동"
       ],
       "tags": [
         "FFmpeg",
         "MCP",
-        "Video-Processing"
+        "Video-Automation"
       ],
       "report": {
-        "overview": "코딩 에이전트가 비디오 편집 작업을 로컬에서 수행할 수 있게 돕는 FFmpeg 기반의 도구 모음 및 MCP 서버입니다.",
-        "background": "비디오 편집 작업 시 클라우드 API 비용과 보안 우려를 해결하고, 에이전트가 직접 비디오를 편집하고 검증할 수 있는 환경이 필요했습니다.",
+        "overview": "코딩 에이전트에게 비디오 편집 능력을 부여하는 로컬 기반의 FFmpeg 도구 모음입니다.",
+        "background": "비디오 편집은 클라우드 API 비용이 높고 보안 이슈가 많아, 로컬에서 에이전트가 직접 제어할 수 있는 도구가 필요했습니다.",
         "architecture": [
-          "Python 표준 라이브러리 기반의 경량화된 설계",
-          "MCP(Model Context Protocol)를 통한 에이전트 통신",
-          "작업 결과의 자동 검증을 지원하는 피드백 루프"
+          "MCP(Model Context Protocol) 표준 준수",
+          "Python 표준 라이브러리 기반의 경량화 설계",
+          "로컬 FFmpeg 바이너리 직접 제어"
         ],
         "useCases": [
-          "자동화된 영상 편집 파이프라인을 구축하는 개발자",
-          "로컬 환경에서 안전하게 미디어 처리를 수행하려는 AI 에이전트"
+          "자동화된 비디오 캡션 및 편집 파이프라인",
+          "코딩 에이전트를 활용한 영상 콘텐츠 대량 생성"
         ],
         "quickStart": {
-          "installCommand": "npm install -g ffmpeg-skill",
-          "codeSnippet": "ffmpeg_skill.cut(input='video.mp4', start=10, end=20, output='clip.mp4')",
+          "installCommand": "pip install ffmpeg-skill",
+          "codeSnippet": "from ffmpeg_skill import Editor; editor = Editor(); editor.cut('input.mp4', 'output.mp4', start=0, end=10)",
           "language": "python"
         },
         "prosCons": {
           "strengths": [
-            "클라우드 비용 제로",
-            "로컬 환경에서의 완벽한 데이터 통제"
+            "API 키 불필요 및 완전 로컬 구동",
+            "에이전트 연동 최적화"
           ],
           "considerations": [
-            "FFmpeg 설치 및 환경 변수 설정 필요"
+            "시스템에 FFmpeg 설치 필수"
           ]
         }
       }
@@ -2300,46 +2326,45 @@
       "url": "https://github.com/vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 53466,
-      "forks": 3743,
+      "stars": 53611,
+      "forks": 3758,
       "starsPeriod": 9083,
       "since": "monthly",
-      "summaryKo": "AI 에이전트가 웹 브라우저를 직접 제어하고 상호작용할 수 있도록 돕는 Rust 기반의 고성능 자동화 CLI입니다. 페이지를 텍스트 기반의 접근성 트리로 변환하여 LLM이 웹 요소를 정확히 이해하고 조작하게 함으로써 브라우저 자동화의 정확도를 획기적으로 높였습니다.",
+      "summaryKo": "vercel-labs/agent-browser - Browser automation CLI for AI agents",
       "keyFeaturesKo": [
-        "Rust로 구현된 고성능 브라우저 제어 엔진",
-        "웹 페이지를 LLM이 이해하기 쉬운 텍스트 스냅샷으로 변환",
-        "요소별 참조(Ref) 기반의 정밀한 상호작용 지원"
+        "주 프로그래밍 언어: Rust",
+        "깃허브 스타: 53,611개 획득",
+        "최근 증가 추이: +9,083 stars (monthly)"
       ],
       "tags": [
-        "LLM-Agent",
-        "Browser-Automation",
-        "High-Performance"
+        "Rust",
+        "AI",
+        "DevTools"
       ],
       "report": {
-        "overview": "AI 에이전트에게 웹 브라우저 제어 능력을 부여하는 최첨단 자동화 도구입니다.",
-        "background": "기존의 셀레니움 등은 LLM이 웹 페이지의 복잡한 DOM 구조를 해석하는 데 어려움을 겪어 자동화 성공률이 낮았습니다.",
+        "overview": "agent-browser는 Rust 기반으로 개발된 오픈소스 프로젝트로, Browser automation CLI for AI agents",
+        "background": "기존 Rust 생태계에서의 복잡성과 개발 생산성 문제를 해결하고 성능 및 개발자 경험을 극대화하기 위해 개발되었습니다.",
         "architecture": [
-          "접근성 트리(Accessibility Tree) 기반의 페이지 파싱",
-          "요소별 고유 식별자(@e1 등) 매핑 시스템",
-          "에이전트 루프(관찰-판단-실행) 최적화"
+          "Rust 기반의 최적화된 내부 구조 설계",
+          "모듈식 아키텍처를 통한 유연한 확장성 제공",
+          "불필요한 외부 의존성을 최소화하여 런타임 오버헤드 감소"
         ],
         "useCases": [
-          "웹 기반 업무 자동화 에이전트 개발",
-          "복잡한 웹 서비스의 QA 자동화",
-          "데이터 스크래핑 및 정보 수집 에이전트"
+          "Rust 기반 실무 애플리케이션 개발 팀",
+          "고성능과 빠른 개발 속도가 요구되는 최신 프로젝트"
         ],
         "quickStart": {
-          "installCommand": "npm install -g agent-browser",
-          "codeSnippet": "agent-browser --url https://google.com --action 'click @e1'",
+          "installCommand": "git clone https://github.com/vercel-labs/agent-browser.git",
+          "codeSnippet": "cd agent-browser\n# 프로젝트 README를 참조하여 시작하세요.",
           "language": "bash"
         },
         "prosCons": {
           "strengths": [
-            "LLM 친화적인 데이터 구조",
-            "매우 빠른 응답 속도"
+            "최근 +9,083 스타를 획득한 급상승 커뮤니티 활성도",
+            "실무에 즉시 참고할 수 있는 현대적인 코드베이스"
           ],
           "considerations": [
-            "동적 웹 페이지의 복잡한 상태 관리"
+            "도입 전 라이선스 및 최신 릴리스 안정성을 검토하는 것을 권장합니다."
           ]
         }
       }
